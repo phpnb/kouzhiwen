@@ -1,0 +1,73 @@
+{include file="admin/root/common/header"}
+<script>
+    var mr = 1;
+</script>
+<!-- 顶部 -->
+<div id="top" class="clearfix">
+    <div class="logo fl">
+        <h2><span>ZPF</span> Framework Pro</h2>
+    </div>
+    <a href="javascript:;" class="fl glyphicon glyphicon-chevron-left menu-morel vh"></a>
+    <div id="top-menu" class="clearfix fl">
+        <ul class="fl clearfix">
+            <li  class="this" >
+            <a href="{:url('info/teachernotice/index')}" target="iframe">
+                信息通知
+            </a>
+            </li>
+        </ul>
+    </div>
+<?php use think\Session; $users = Session::get('teacherUser'); ?>
+    {if count($group) > 8}
+    <a href="javascript:;" class="fl glyphicon glyphicon-chevron-right menu-morer"></a>
+    {/if}
+
+    <div class="fr">
+        <p>
+            <i class="glyphicon glyphicon-user"></i> {$user.username}
+            <a href="{:url('root/login/login_out')}">[退出]</a>
+            <a href="{:url('root/login/edit_pwd')}" target="iframe">[改密]</a>
+        </p>
+    </div>
+</div>
+
+<!-- 左侧导航 -->
+<div id="menu">
+    <!--<h2><i class="glyphicon glyphicon-check"></i>Framework UI</h2>-->
+    <!--<p>-->
+        <!--<a href="{:url('admin/root/index/table')}" target="iframe">table</a>-->
+        <!--<a href="{:url('admin/root/index/form')}" target="iframe">form</a>-->
+        <!--<a href="{:url('admin/root/index/chart')}" target="iframe">chart</a>-->
+    <!--</p>-->
+    <p></p>
+
+    <?php  $one = 1;?>
+
+        <h2 {if condition="$one == 1"} class="this" {/if}><i class="glyphicon glyphicon-home"></i>管理</h2>
+        <p {if condition="$one == 1"} style="display: block;" {/if}>
+            {if(in_array(2,$identity))}
+                <a href="{:url('course/study/class_notice',['id'=>$user['id']])}" target="iframe">班级通知</a>
+                <a href="{:url('info/teacherarticle/index',['type'=>2])}" target="iframe">班级热点</a>
+    <a href="{:url('teacher/course/study/index',['id'=>$user['id']])}" target="iframe">班级列表</a>
+            {/if}
+
+            {if(in_array(1,$identity) || in_array(3,$identity))}
+    <a href="{:url('teacher/course/study/kecheng',['id'=>$user['id']])}" target="iframe">课程列表</a>
+                <a href="{:url('info/teacherarticle/index',['type'=>1])}" target="iframe">研究动态</a>
+                <a href="{:url('course/study/user_quiz',['id'=>$user['id']])}" target="iframe">主讲课程</a>
+                <a href="{:url('course/broadcast/index',['id'=>$user['id']])}" target="iframe">直播管理</a>
+                <a href="{:url('course/study/teacher_pay',['id'=>$user['id']])}" target="iframe">提现列表</a>
+                <a href="{:url('course/study/qianbao',['id'=>$user['id']])}" target="iframe">钱包</a>
+            {/if}
+                <a href="{:url('course/study/questionnaire_user',['id'=>$user['id']])}" target="iframe">问卷列表</a>
+                <a href="{:url('course/study/paper',['id'=>$user['id']])}" target="iframe">阅卷列表</a>
+                <a href="{$url}/im/im.html?id={$user['id']}" target="_blank">IM聊天</a>
+                <a href="{:url('root/login/updetail')}" target="iframe">个人信息</a>
+        </p>
+        <?php $one = 0;?>
+</div>
+
+<div id="content">
+    <iframe src="{:url('index/welcome',['id'=>$id])}" scrolling="auto" frameborder="0" name="iframe"></iframe>
+</div>
+{include file="admin/root/common/footer"}

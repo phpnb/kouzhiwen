@@ -1,0 +1,47 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <!-- 菜单 -->
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="姓名/昵称">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+
+            </form>
+        </div>
+        <table class="table">
+            <tr>
+                <th width="20">序号</th>
+                <th width="200">类型</th>
+                <th width="200">课程名称</th>
+                <th width="200">图片</th>
+            </tr>
+            <!-- </table>-->
+            {if (!empty($ags))}
+            {foreach $ags AS $k=>$v}
+            <tr>
+                <td width="20">{$k+1}</td>
+                <td>
+                    {if $v.type == 2}录播课{else}直播课 {/if}
+                </td>
+                <td width="200">{$v.title}</td>
+                <td>
+                    <img src='{$v.photo}' style='max-width:100px;'>
+                </td>
+            {/foreach}
+            {else}
+            <tr>
+                <td align="center" colspan="20">暂无数据！</td>
+            </tr>
+            {/if}
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+</script>
+{include file="admin/root/common/footer"}

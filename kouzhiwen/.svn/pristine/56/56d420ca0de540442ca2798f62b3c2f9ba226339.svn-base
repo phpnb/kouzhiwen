@@ -1,0 +1,85 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        ddddd
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="#" class="this">数据列表</a></li>
+        <li>
+            <a
+                href="{:url('add')}" target="frame_dispose"
+                onclick="open_frame('添加', 100, 100, true);">
+                添加数据
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+                <button type="button" class="btn btn-danger btn-sm"
+                onclick="all_operation('{:url('del')}','uid[]');">
+                    删除<i class="glyphicon glyphicon-trash ml5"></i>
+                </button>
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="账号/昵称">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th width="20">
+                    <input onclick="check_all('uid[]');" name="check_all" type="checkbox" value="">
+                </th>
+                <th>主键</th>
+                <th>账号</th>
+                <th>密码</th>
+                <th>昵称</th>
+                <th>邮箱</th>
+                <th>头像</th>
+                <th>注册时间</th>
+
+                <th width="100">操作</th>
+            </tr>
+            {if (!empty($data))}
+            {foreach $data AS $v}
+                <tr>
+                    <td>
+                        <input name="uid[]" type="checkbox" value="{$v.uid}">
+                    </td>
+                    <td>{$v.uid}</td>
+                    <td>{$v.phone}</td>
+                    <td>{$v.password}</td>
+                    <td>{$v.nickname}</td>
+                    <td>{$v.email}</td>
+                    <td>{$v.face}</td>
+                    <td>{$v.add_time}</td>
+
+                    <td class="operation">
+                        <a href="{:url('edit',['uid'=>$v['uid']])}" target="frame_dispose"
+                        onclick="open_frame('修改数据', 100, 100, true)"
+                        class="glyphicon glyphicon-edit" title="编辑"></a>
+<a class="glyphicon glyphicon-trash"
+                        onclick="ajax_post('{:url('del')}',{'id':{$v['uid']}});" title="删除"></a>
+
+                    </td>
+                </tr>
+            {/foreach}
+            {/if}
+        </table>
+        <div>{$page}</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="admin/root/common/footer"}

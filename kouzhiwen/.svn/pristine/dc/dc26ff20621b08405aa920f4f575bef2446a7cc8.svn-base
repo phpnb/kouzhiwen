@@ -1,0 +1,41 @@
+{include file="admin/root/common/header"}
+
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        讨论组管理
+    </div>
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="{:url('discuss',['id'=>$id])}" >数据列表</a></li>
+        <li><a href="{:url('add_qun',['id'=>$id])}" class="this">添加讨论组</a></li>
+    </ul>
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="msg">组长</th>
+                <td>
+                    <select name="uid" class="form-control w426" datatype="*">
+                        {foreach $checkVal['user_Val'] as $v}
+                        <option value="{$v.uid}">{$v.name}</option>user
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">组名称</th>
+                <td><input name="name" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <input type="hidden" name="class_id" value="{$id}" />
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="teacher/root/common/footer"}

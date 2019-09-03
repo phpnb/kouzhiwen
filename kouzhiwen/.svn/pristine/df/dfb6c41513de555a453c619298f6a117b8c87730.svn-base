@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZPF Framework doc</title>
+    <link rel="stylesheet" href="/static/common/bootstrap/css/bootstrap.css?1=1">
+    <link rel="stylesheet" href="/static/common/css/base.css">
+    <link rel="stylesheet" href="/static/common/css/Validform.css">
+    <link rel="stylesheet" href="/static/admin/css/main.css?1=3">
+    <link rel="stylesheet" href="/static/doc/main.css?1=3">
+</head>
+<body>
+<div id="right_content">
+    <h1 class="cl-blue">后台模板开发常用功能</h1>
+
+    <h2 class="cl-gre">ajax_get异步GET请求</h2>
+    <pre class="mt20">
+        <code>
+        url 请求地址 必须 例如 {:url('index/list')}
+        fn  回调函数 可选 默认为成功后刷新当前页面
+
+        ajax_get(url, fn);
+
+        function fn(){
+
+        }
+
+        ajax_get(url, function(){
+
+        });
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">ajax_post异步POST请求(带确认提示)</h2>
+    <pre class="mt20">
+        <code>
+        url  请求地址 必须 例如 {:url('index/list')}
+        data 请求数据 可选 例如 {a:1,b:2}
+        fn   回调函数 可选 默认为成功后刷新当前页面
+
+        ajax_post(url, data, fn);
+
+        function fn(){
+
+        }
+
+        ajax_get(url, data, function(){
+
+        });
+        </code>
+    </pre>
+    
+    <h2 class="cl-gre">ajax_noaffirm异步POST请求(不带确认提示)</h2>
+    <pre class="mt20">
+        <code>
+        url  请求地址 必须 例如 {:url('index/list')}
+        data 请求数据 可选 例如 {a:1,b:2}
+        fn   回调函数 可选 默认为成功后刷新当前页面
+
+        ajax_noaffirm(url, data, fn);
+
+        function fn(){
+
+        }
+
+        ajax_noaffirm(url, data, function(){
+
+        });
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">编辑器</h2>
+    <pre class="mt20">
+        <code>
+        // html
+        {include file="common/ueditor"}
+        &lt;textarea name="intro" style="width:600px;height:300px;" id="introEditor"&gt;&lt;/textarea&gt;
+
+        // js
+        UE.getEditor('introEditor', {
+            autoHeight: false,
+        });
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">日期选择</h2>
+    <pre class="mt20">
+        <code>
+        // html
+        {include file="common/dateplugin"}
+        &lt;div class="dateplugin" stype="selector"&gt;
+            &lt;input type="text" class="form-control w200 date-input" placeholder="选择日期"&gt;
+        &lt;/div&gt;
+
+        // js
+        不需要额外写JS
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">日期范围选择</h2>
+    <pre class="mt20">
+        <code>
+            // html
+            {include file="common/dateplugin"}
+            &lt;div class="dateplugin" stype="range"&gt;
+                &lt;input type="text" class="form-control w200 date-more" placeholder="选择日期"&gt;
+            &lt;/div&gt;
+
+            // js
+            不需要额外写JS
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">城市选择</h2>
+    <pre class="mt20">
+        <code>
+        // html
+        &lt;td style="position: relative;"&gt;
+            &lt;div id="mycity"&gt;&lt;input type="" name="" class="form-control w300"&gt;&lt;/div&gt;
+            &lt;input id="myids" type="hidden" name=""&gt;
+        &lt;/td&gt;
+
+        // js
+        &lt;script type="text/javascript"&gt;
+            var cityName = '#mycity', cityIds = '#myids';
+        &lt;/script&gt;
+        {include file="common/city"}
+        </code>
+    </pre>
+    <p class="cl-red">注意：include 要放在定义变量之后</p>
+
+    <h2 class="cl-gre">图片上传</h2>
+    <pre class="mt20">
+        <code>
+        // html
+        {include file="common/webuploader"}
+        &lt;div id="pic-picker"&gt;上传图片&lt;/div&gt;
+        &lt;div id="pic-list" class="uploader-list"&gt;
+            
+        &lt;/div&gt;
+
+        // js 
+        file_upload({
+            pick        : '#logo-picker',
+            container   : '#logo-list',
+            server      : '{:url("upload/upload")}',
+            mulit       : false,
+            inputname   : 'logo'
+        });
+
+        // php
+        public function upload(){
+            // 获取表单上传文件 例如上传了001.jpg
+            $file = request() -> file('file');
+            // 判断图片大小是否超限
+            $info = $file -> getInfo();
+            // 图片大小限制 3M
+            if ($info['size'] > 3145728) {
+                return ajax('上传的图片过大', 2);
+            }
+
+            // 移动到框架应用根目录/public/uploads/ 目录下
+            $info = $file -> move(ROOT_PATH . 'public' . DS . 'uploads');
+            if($info){
+                $path = $info -> getRealPath();
+                $fname = strstr($path, 'uploads');
+                $fname = '/' . str_replace('\\', '/', $fname);
+
+                // 是否需要裁剪图片
+                $cj = input('post.cj');
+                if (!empty($cj)) {
+                    // 执行裁剪
+                    $this -> _tailorImg($path, $cj);
+                }
+                return ajax('上传成功', 1, ['path'=>$fname]);
+            }else{
+                // 上传失败获取错误信息
+                return ajax($file->getError(), 2);
+            }
+        }
+
+        /**
+         * 裁剪图片
+         */
+        private function _tailorImg($fname, $cj){
+            // 打开图片
+            $image = Image::open($fname);
+            // 获取原图宽高
+            $width  = $image -> width();
+            $height = $image -> height();
+
+            // 裁剪
+            foreach (explode(',', $cj) as $v) {
+                // 计算比例
+                $ratio = $v / $width;
+                // 计算高度
+                $h = round($height * $ratio);
+                // 生成缩略 
+                $image -> thumb($v, $h, 2) -> save($fname . '_' . $v . '.jpg');
+            }
+        }
+        </code>
+    </pre>
+    <h2 class="cl-gre">图片上传参数解释</h2>
+    <p class="cl-red">
+        pick : 必须 按钮ID <br>
+        container : 必须 上传后图片容器ID<br>
+        server : 必须 后台处理地址<br>
+        mulit : 必须 是否支持多图上传 (true:是，false:否)<br>
+        inputname : 必须 上传成功后 保存图片路径的 input 名称 无需再HTML中添加，系统会自动生成<br>
+        formData    : { 可选  服务端裁剪图片 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cj : '800,400,200' // 等比例裁剪宽 800,400,200 的图片 <br>
+        } <br>
+        callbback   : function(res) { 自定义回调函数 res 为后台返回的数据 <br>
+        <br>
+        } <br>
+        compress    : 配置压缩的图片的选项。如果此选项为false, 则图片在上传前不进行压缩。(客户端压缩图片) <br>
+
+        <pre>
+        {
+            width: 1600,
+            height: 1600,
+
+            // 图片质量，只有type为`image/jpeg`的时候才有效。
+            quality: 90,
+
+            // 是否允许放大，如果想要生成小图的时候不失真，此选项应该设置为false.
+            allowMagnify: false,
+
+            // 是否允许裁剪。
+            crop: false,
+
+            // 是否保留头部meta信息。
+            preserveHeaders: true,
+
+            // 如果发现压缩后文件大小比原来还大，则使用原来图片
+            // 此属性可能会影响图片自动纠正功能
+            noCompressIfLarger: false,
+
+            // 单位字节，如果图片大小小于此值，不会采用压缩。
+            compressSize: 0
+        }
+        </pre>
+    </p>
+</div>
+</body>
+</html>

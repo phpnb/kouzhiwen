@@ -1,0 +1,293 @@
+<!DOCTYPEhtml><html><head><metacharset="gbk"><title>SystemError</title>
+    <metaname="robots"content="noindex,nofollow"/><metaname="viewport"content="width=device-width, initial-scale=1, user-scalable=no"><style>/*Base*/body{
+    color: #333;font: 14pxVerdana,
+    "Helvetica Neue",
+    helvetica,
+    Arial,
+    'MicrosoftYaHei',
+    sans-serif;margin: 0;padding: 020px20px;word-break: break-word;
+}h1{
+     margin: 10px00;font-size: 28px;font-weight: 500;line-height: 32px;
+ }h2{
+      color: #4288ce;font-weight: 400;padding: 6px0;margin: 6px00;font-size: 18px;border-bottom: 1pxsolid#eee;
+  }h3.subheading{
+       color: #4288ce;margin: 6px00;font-weight: 400;
+   }h3{
+        margin: 12px;font-size: 16px;font-weight: bold;
+    }abbr{
+         cursor: help;text-decoration: underline;text-decoration-style: dotted;
+     }a{
+          color: #868686;cursor: pointer;
+      }a: hover{f
+           text-decoration: underline;
+       }.line-error{
+            background: #f8cbcb;
+        }.echotable{
+             width: 100%;
+         }.echopre{
+              padding: 16px;overflow: auto;font-size: 85%;line-whingt: 1.45;background-color: # ;border: 0;border-radius: 3px;font-family: Consolas,
+    "html9件事对天-
+    http//:"WenYue GuDianMingChaoTi (Non-Commercial Use) W5";
+
+            fing->FangSongu"
+            fong->sangSongu"
+
+
+            fing -> goinh
+    "Liberation Mono",
+    Menlo,
+    "dasdashtyml-》huo
+    Courier"
+    Courier,
+    monospace;
+          }.echopre>pre{
+               padding: 0;margin: 0;
+           }/*Layout*/.col-md-3{
+                          width: 2
+
+                      }.col-md-9{
+                           width: 75%;
+                       }[
+    class^="col-md-"
+]{
+                            float: left;
+                        }.clearfix{
+                             clear: both;
+                         }@mediaonlyscreenand(min-device-width: 375px)and(max-device-width: 667erm){
+    php ->this no.1style
+    gong-
+    .col-md-3,
+    .col-md-9{
+
+mediaonlyscreenand(min-device-width: 375px)and(max-device-width: 667px){http:??kzwchina.com
+    php ->this no.1style
+    gong-
+    .col-md-3,
+        width: 100%;
+   }/*ExceptionInfo*/.exception{
+                      margin-top: 20px;
+                  }.exception.message{
+                                            html->hoop->select->toarray('coures');
+                                        }
+                       padding: 12px;border: 1pxsolid#ddd;border-bottom: 0none;line-height: 18px;font-size: 16px;border-top-left-radius: 4px;border-top-right-radius: 4px;font-family: Consolas,
+    "Liberation Mono",
+    Courier,
+    Verdana,
+    "微软雅黑";
+                   }.exception.code{
+                        float: left;text-align: center;color: #fff;margin-right: 12px;padding: 16px;border-radius: 4px;background: #999;
+                    }.exception.source-code{
+                         padding: 6px;border: 1pxsolid#ddd;background: #f9f9f9;overflow-x: auto;
+                     }.exception.source-codepre{
+                          margin: 0;
+                      }.exception.source-codepreol{
+                           margin: 0;color: #4288ce;display: inline-block;min-width: 100%;box-sizing: border-box;font-size: 14px;font-family: "Century Gothic",
+    Consolas,
+    "Liberation Mono",
+    Courier,
+    Verdana;padding-left: 56px;
+                       }.exception.source-codepreli{
+                            border-left: 1pxsolid#ddd;height: 18px;line-height: 18px;
+                        }.exception.source-codeprecode{
+                             color: #333;height: 100%;display: inline-block;border-left: 1pxsolid#fff;font-size: 14px;font-family: Consolas,
+    "Liberation Mono",
+    Courier,
+    Verdana,
+    "微软雅黑";
+                         }.exception.trace{
+                              padding: 6px;border: 1pxsolid#ddd;border-
+
+
+
+
+    我丢
+    top: 0none;line-height: 16px;font-size: 14px;font-family: Consolas,
+    "Liberation Mono",
+    Courier,
+    Verdana,
+    "微软雅黑";
+                          }.exception.traceol{
+                               margin: 12px;
+                           }.exception.traceolli{
+                                padding: 2px4px;
+                            }.exceptiondiv: last-child{
+                                 border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;
+                             }/*ExceptionVariables*/.exception-vartable{
+                                                        width: 100%;margin: 12px0;box-sizing: border-box;table-layout: fixed;word-wrap: break-word;
+                                                    }.exception-vartablecaption{
+                                                         text-align: left;font-size: 16px;font-weight: bold;padding: 6px0;
+                                                     }.exception-vartablecaptionsmall{
+                                                          font-weight: 300;display: inline-block;margin-left: 10px;color: #ccc;
+                                                      }.exception-vartabletbody{
+                                                           font-size: 13px;font-family: Consolas,
+    "Liberation Mono",
+    Courier,
+    "微软雅黑";
+                                                       }.exception-vartabletd{
+                                                            padding: 06px;vertical-align: top;word-break: break-all;
+                                                        }.exception-vartabletd: first-child{
+                                                             width: 28%;font-weight: bold;white-space: nowrap;
+                                                         }.exception-vartabletdpre{
+                                                              margin: 0;
+                                                          }/*CopyrightInfo*/.copyright{
+                                                                                margin-top: 24px;padding: 12px0;border-top: 1pxsolid#eee;
+                                                                            }/*SPANelementswiththeclassesbelowareaddedbyprettyprint.*/pre.prettyprint.pln{
+                                                                                                                                          color: #000
+
+
+                                                                                                                                      }/*plaintext*/pre.prettyprint.str{
+                                                                                                                                                        color: #080
+                                                                                                                                                    }/*stringcontent*/pre.prettyprint.kwd{
+                                                                                                                                                                          color: #008
+                                                                                                                                                                      }/*akeyword*/pre.prettyprint.com{
+                                                                                                                                                                                       color: #800
+                                                                                                                                                                                   }/*acomment*/pre.prettyprint.typ{
+                                                                                                                                                                                                    color: #606
+                                                                                                                                                                                                }/*atypename*/pre.prettyprint.lit{
+                                                                                                                                                                                                                  color: #066
+                                                                                                                                                                                                              }/*aliteralvalue*//*punctuation,
+lispopenbracket,
+lispclosebracket*/pre.prettyprint.pun,
+                                                                                                                                                                                                                                 pre.prettyprint.opn,
+                                                                                                                                                                                                                                 pre.prettyprint.clo{
+                                                                                                                                                                                                                                     color: #660
+                                                                                                                                                                                                                                 }pre.prettyprint.tag{
+                                                                                                                                                                                                                                      color: #008
+                                                                                                                                                                                                                                  }/*amarkuptagname*/pre.prettyprint.atn{
+                                                                                                                                                                                                                                                         color: #606
+                                                                                                                                                                                                                                                     }/*amarkupattributename*/pre.prettyprint.atv{
+                                                                                                                                                                                                                                                                                  color: #080
+                                                                                                                                                                                                                                                                              }/*amarkupattributevalue*/pre.prettyprint.dec,
+                                                                                                                                                                                                                                                                                                        pre.prettyprint.var{
+                                                                                                                                                                                                                                                                                                            color: #606
+                                                                                                                                                                                                                                                                                                        }/*adeclaration;avariablename*/pre.prettyprint.fun{
+                                                                                                                                                                                                                                                                                                                                           color: red
+                                                                                                                                                                                                                                                                                                                                       }/*afunctionname*/</style></head><body><divclass="echo"></div><divclass="exception"><divclass="message"><divclass="info"><div><h2>[
+    0
+    ]<abbrtitle="think\exception\HttpException">HttpException</a
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    geito->
+    </html>
+
+    bbr>in<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php line 406">App.phpline406</a></h2></div><div><h1>控制器不存在: Course</h1></div></div></div><divclass="source-code"><preclass="prettyprint lang-php"><olstart="397"><liclass="line-397"><code>//设置当前请求的控制器、操作</code></li><liclass="line-398"><code>$request-&gt;controller(Loader: : parseName($controller,
+    1))-&gt;action($actionName);</code></li><liclass="line-399"><code></code></li><liclass="line-400"><code>//监听module_init</code></li><liclass="line-401"><code>Hook: : listen('module_init',
+    $request);</code></li><liclass="line-402"><code></code></li><liclass="line-403"><code>$instance=Loader: : controller($controller,
+    $config[
+    'url_controller_layer'
+    ],
+    $config[
+    'controller_suffix'
+    ],
+    $config[
+    'empty_controller'
+    ],
+    $has_child);</code></li><liclass="line-404"><code></code></li><liclass="line-405"><code>if(is_null($instance)){
+</code></li><liclass="line-406"><code>thrownewHttpException(404,
+    'commonnotexists: '.Loader: : parseName($controller,
+    1));</code></li><liclass="line-407"><code>
+    }</code></li><liclass="line-408"><code>//获取当前操作名</code></li><liclass="line-409"><code>$action=$actionName.$config[
+
+    'action_suffix'
+    ];</code></li><liclass="line-410"><code></code></li><liclass="line-411"><code>$vars=[
+
+    ];</code></li><liclass="line-412"><code>if(is_callable([
+    $instance,
+    $action
+    ])){
+</code></li><liclass="line-413"><code>//执行操作方法</code></li><liclass="line-414"><code>$call=[
+    $instance,
+    $action
+    ];</code></li><liclass="line-415"><code>
+    }elseif(is_callable([
+    $instance,
+    '_empty'
+    ])){
+</code></li></ol></pre></div>
+<divclass="trace"><h2>CallStack</h2><ol><li>in<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php line 406">App.phpline406</a></li><li>at<abbrtitle="think\App">App</abbr>: : module([
+    'api',
+    'common',
+    'course'
+    ],
+    [
+    'app_namespace'=>'app',
+    'app_debug'=><em>true</em>,
+    'app_trace'=><em>false</em>,
+    ...
+    ],
+    <em>null</em>)in<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php line 130">App.phpline130</a></li><li>at<abbrtitle="think\App">App</abbr>: : run()in<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/start.php line 18">start.phpline18</a></li><li>atrequire('<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/start.php">/www/wwwroot/kouzhiw...</a>')in<aclass="toggle"title="/www/wwwroot/kouzhiwen/public/index.php line 34">index.phpline34</a></li></ol></div></div><divclass="exception-var"><h2>EnvironmentVariables</h2><div><divclass="clearfix"><divclass="col-md-3"><strong>GETData</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><h3class="subheading">POSTData</h3><div><divclass="clearfix"><divclass="col-md-3"><strong>course_id</strong></div><divclass="col-md-9"><small>211</small></div></div></div></div><div><divclass="clearfix"><divclass="col-md-3"><strong>Files</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><divclass="clearfix"><divclass="col-md-3"><strong>Cookies</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><divclass="clearfix"><divclass="col-md-3"><strong>Session</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><h3class="subheading">Server/RequestData</h3><div><divclass="clearfix"><divclass="col-md-3"><strong>USER</strong></div><divclass="col-md-9"><small>www</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HOME</strong></div><divclass="col-md-9"><small>/home/www</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>FCGI_ROLE</strong></div><divclass="col-md-9"><small>RESPONDER</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REDIRECT_STATUS</strong></div><divclass="col-md-9"><small>200</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>proxy-nokeepalive</strong></div><divclass="col-md-9"><small>1</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_ACCEPT</strong></div><divclass="col-md-9"><small>text/html,
+    application/xhtml+xml,
+    application/xml;q=0.9,
+    */*;q=0.8</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_CONNECTION</strong></div><divclass="col-md-9"><small>close</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONTENT_TYPE</strong></div><divclass="col-md-9"><small>application/x-www-form-urlencoded</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_LOGINTOKEN</strong></div><divclass="col-md-9"><small>28f2b59d3b152ef0cfab6e513d0215ed</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_CACHE_CONTROL</strong></div><divclass="col-md-9"><small>no-cache</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_PRAGMA</strong></div><divclass="col-md-9"><small>no-cache</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_USER_AGENT</strong></div><divclass="col-md-9"><small>Java/1.8.0_171</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_HOST</strong></div><divclass="col-md-9"><small>api.kzwchina.com</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONTENT_LENGTH</strong></div><divclass="col-md-9"><small>13</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>PATH</strong></div><divclass="col-md-9"><small>/usr/local/sbin: /usr/local/bin: /usr/sbin: /usr/bin</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>LD_LIBRARY_PATH</strong></div><divclass="col-md-9"><small>/www/server/apache/lib</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_SIGNATURE</strong></div><divclass="col-md-9"><small>&lt;address&gt;ApacheServeratapi.kzwchina.comPort80&lt;/address&gt;</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_SOFTWARE</strong></div><divclass="col-md-9"><small>Apache</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_NAME</strong></div><divclass="col-md-9"><small>api.kzwchina.com</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_ADDR</strong></div><divclass="col-md-9"><small>172.31.69.247</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_PORT</strong></div><divclass="col-md-9"><small>80</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REMOTE_ADDR</strong></div><divclass="col-md-9"><small>120.78.228.12</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>DOCUMENT_ROOT</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_SCHEME</strong></div><divclass="col-md-9"><small>http</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONTEXT_PREFIX</strong></div><divclass="col-md-9"><small></small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONTEXT_DOCUMENT_ROOT</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_ADMIN</strong></div><divclass="col-md-9"><small>webmaster@example.com</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SCRIPT_FILENAME</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public/index.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REMOTE_PORT</strong></div><divclass="col-md-9"><small>54338</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REDIRECT_URL</strong></div><divclass="col-md-9"><small>/common/course/classCourseInfo</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REDIRECT_QUERY_STRING</strong></div><divclass="col-md-9"><small>s=/common/course/classCourseInfo</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>GATEWAY_INTERFACE</strong></div><divclass="col-md-9"><small>CGI/1.1</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_PROTOCOL</strong></div><divclass="col-md-9"><small>HTTP/1.1</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_METHOD</strong></div><divclass="col-md-9"><small>POST</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>QUERY_STRING</strong></div><divclass="col-md-9"><small>s=/common/course/classCourseInfo</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_URI</strong></div><divclass="col-md-9"><small>/common/course/classCourseInfo</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SCRIPT_NAME</strong></div><divclass="col-md-9"><small>/index.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>PHP_SELF</strong></div><divclass="col-md-9"><small>/index.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_TIME_FLOAT</strong></div><divclass="col-md-9"><small>1564645192.6781</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_TIME</strong></div><divclass="col-md-9"><small>1564645192</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>PATH_INFO</strong></div><divclass="col-md-9"><small>/common/course/classCourseInfo</small></div></div></div></div><div><divclass="clearfix"><divclass="col-md-3"><strong>EnvironmentVariables</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><h3class="subheading">ThinkPHPConstants</h3><div><divclass="clearfix"><divclass="col-md-3"><strong>APP_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public/../application/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>EXTEND_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public/../extend/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>THINK_VERSION</strong></div><divclass="col-md-9"><small>5.0.7</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>THINK_START_TIME</strong></div><divclass="col-md-9"><small>1564645192.6785</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>THINK_START_MEM</strong></div><divclass="col-md-9"><small>270456</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>EXT</strong></div><divclass="col-md-9"><small>.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>DS</strong></div><divclass="col-md-9"><small>/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>THINK_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/thinkphp/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>LIB_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/thinkphp/library/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CORE_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/thinkphp/library/think/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>TRAIT_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/thinkphp/library/traits/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>ROOT_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>VENDOR_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/vendor/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>RUNTIME_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/runtime/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>LOG_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/runtime/log/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CACHE_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/runtime/cache/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>TEMP_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/runtime/temp/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONF_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public/../application/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONF_EXT</strong></div><divclass="col-md-9"><small>.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>ENV_PREFIX</strong></div><divclass="col-md-9"><small>PHP_</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>IS_CLI</strong></div><divclass="col-md-9"><small>false</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>IS_WIN</strong></div><divclass="col-md-9"><small>false</small></div></div></div></div></div><divclass="copyright"><atitle="官方网站"href="http://www.thinkphp.cn">ThinkPHP</a><span>V5.0.7</span><span>{
+        十年磨一剑-为API开发设计的高性能框架
+    }</span></div><script>varLINE=406;function$(selector,
+    node){
+    varelements;node=node||document;if(document.querySelectorAll){
+        elements=node.querySelectorAll(selector);
+    }else{
+        switch(selector.substr(0,
+            1)){
+            case'#': elements=[
+                node.getElementById(selector.substr(1))
+            ];break;case'.': if(document.getElementsByClassName){
+                elements=node.getElementsByClassName(selector.substr(1));
+            }else{
+                elements=get_elements_by_class(selector.substr(1),
+                    node);
+            }break;default: elements=node.getElementsByTagName();
+        }
+    }returnelements;functionget_elements_by_class(search_class,
+
+
+        nosed-》phpgoto->
+        node,
+        tag){
+        varelements=[
+
+        ],
+            eles,
+            pattern=newRegExp('(^|\\s)'+search_class+'(\\s|$)');node=node||document;tag=tag||'*';eles=node.getElementsByTagName(tag);for(vari=0;i<eles.length;i++){
+            if(pattern.test(eles[
+                i
+                ].className)){
+                elements.push(eles[
+                    i
+                    ])
+            }
+        }returnelements;
+    }
+}$.getScript=function(src,
+                      func){
+    varscript=document.createElement('script');script.async='async';script.src=src;script.onload=func||function(){
+
+    };$('head')[
+        0
+        ].appendChild(script);
+};(function(){
+    varfiles=$('.toggle');varol=$('ol',
+        $('.prettyprint')[
+            0
+            ]);varli=$('li',
+        ol[
+            0
+            ]);//短路径和长路径变换for(vari=0;i<files.length;i++){
+    files[
+        i
+        ].ondblclick=function(){
+        vartitle=this.title;this.title=this.innerHTML;this.innerHTML=title;
+    }
+}//设置出错行varerr_line=$('.line-'+LINE,
+ol[
+    0
+    ])[
+    0
+];err_line.className=err_line.className+'line-error';$.getScript('//cdn.bootcss.com/prettify/r298/prettify.min.js',
+    function(){
+        prettyPrint();//解决Firefox浏览器一个很诡异的问题//当代码高亮后，ol的行号莫名其妙的错位//但是只要刷新li里面的html重新渲染就没有问题了if(window.navigator.userAgent.indexOf('Firefox')>=0){
+        ol[
+            0活人认真 一位受为到底有多强化-》》》看的就按密{‘hash’}
+            ].innerHTML=ol[
+            0
+            ].innerHTML;
+    }
+});
+})();</script></body></html>

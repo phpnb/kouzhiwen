@@ -1,0 +1,3851 @@
+[ 2019-08-27T10:45:17+08:00 ] 127.0.0.1 127.0.0.1 GET /root/index/index.html
+[ log ] admin.study.com/root/index/index.html [运行时间：0.500931s][吞吐率：2.00req/s] [内存消耗：1,576.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:17+08:00 ] 127.0.0.1 127.0.0.1 GET /root/login/login.html
+[ log ] admin.study.com/root/login/login.html [运行时间：0.061994s][吞吐率：16.13req/s] [内存消耗：1,526.07kb] [文件加载：49]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ D:\study\kouzhiwen\application\admin\root\controller\Login.php ]
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.090497s][吞吐率：11.05req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.014532s][吞吐率：68.81req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.015397s][吞吐率：64.95req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:24+08:00 ] 127.0.0.1 127.0.0.1 POST /root/login/login.html
+[ log ] admin.study.com/root/login/login.html [运行时间：0.168382s][吞吐率：5.94req/s] [内存消耗：2,341.16kb] [文件加载：57]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.study.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'yunxi',
+  'password' => 'yuxni',
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ D:\study\kouzhiwen\application\admin\root\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014440s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_admin` [ RunTime:0.047035s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_admin` WHERE  `username` = 'yunxi' LIMIT 1 [ RunTime:0.002340s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:49+08:00 ] 127.0.0.1 127.0.0.1 POST /root/login/login.html
+[ log ] admin.study.com/root/login/login.html [运行时间：0.041600s][吞吐率：24.04req/s] [内存消耗：2,341.16kb] [文件加载：57]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.study.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'yunxi',
+  'password' => 'yuxni',
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ D:\study\kouzhiwen\application\admin\root\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000589s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_admin` [ RunTime:0.018007s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_admin` WHERE  `username` = 'yunxi' LIMIT 1 [ RunTime:0.000431s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:53+08:00 ] 127.0.0.1 127.0.0.1 POST /root/login/login.html
+[ log ] admin.study.com/root/login/login.html [运行时间：0.081401s][吞吐率：12.28req/s] [内存消耗：2,420.89kb] [文件加载：60]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.study.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'yunxi',
+  'password' => 'yunxi',
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ D:\study\kouzhiwen\application\admin\root\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011025s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_admin` [ RunTime:0.016926s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_admin` WHERE  `username` = 'yunxi' LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_enterprise` [ RunTime:0.017290s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000416s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:53+08:00 ] 127.0.0.1 127.0.0.1 GET /root/index/index.html
+[ log ] admin.study.com/root/index/index.html [运行时间：0.192185s][吞吐率：5.20req/s] [内存消耗：2,621.74kb] [文件加载：59]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Index->index[ D:\study\kouzhiwen\application\admin\root\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'menu',
+  2 => 'mc',
+  3 => 'group',
+  4 => 'gid',
+  5 => 'access',
+  6 => 'id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010307s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.026609s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000414s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011388s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_menu` [ RunTime:0.030698s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_menu` WHERE  `module` IN ('admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/course','admin/course','admin/course','admin/course','admin/course','admin/course','admin/course','admin/info','admin/info','admin/info','admin/info','admin/finance','admin/finance','admin/finance','admin/finance','admin/info','admin/info','admin/root','admin/root','admin/root','admin/info')  AND `controller` IN ('AccessGroup','Admin','Banner','Classify','Protocol','Comment','Notice','Information','Log','Course','Coursetype','Paper','Study','Classtype','Classcourse','Questionnaire','Teacher','User','Teachertype','Enterprise','Detailed','Userdetailed','Recharge','Gift','Headmaster','Tasks','Branch','Report','Science','Label') ORDER BY `mcid` ASC,`id` ASC [ RunTime:0.000860s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010480s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_menu_category` [ RunTime:0.034735s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_menu_category` ORDER BY `sort` ASC [ RunTime:0.000349s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:53+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.017244s][吞吐率：57.99req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:54+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014523s][吞吐率：68.86req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:54+08:00 ] 127.0.0.1 127.0.0.1 GET /root/index/welcome/id/23.html
+[ log ] admin.study.com/root/index/welcome/id/23.html [运行时间：0.052342s][吞吐率：19.11req/s] [内存消耗：2,231.08kb] [文件加载：58]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Index->welcome[ D:\study\kouzhiwen\application\admin\root\controller\Index.php ]
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\index\welcome.html [ array (
+  0 => 'id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.016022s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000371s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:54+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.014642s][吞吐率：68.30req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/welcome/id/23.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:45:55+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014377s][吞吐率：69.55req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/welcome/id/23.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:06+08:00 ] 127.0.0.1 127.0.0.1 GET /course/study/index.html
+[ log ] admin.study.com/course/study/index.html [运行时间：0.181230s][吞吐率：5.52req/s] [内存消耗：2,688.48kb] [文件加载：66]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'study',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Study->index[ D:\study\kouzhiwen\application\admin\course\controller\Study.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/course\view\study\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010791s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.011871s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000327s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_type` [ RunTime:0.019093s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class_type` WHERE  `enterprise_id` = 13 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.020823s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_class` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 13 LIMIT 1 [ RunTime:0.005896s ]
+[ sql ] [ SQL ] SELECT `c`.*,t.name as teachername FROM `tpn_class` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 13 ORDER BY c.created_at desc LIMIT 0,10 [ RunTime:0.000381s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:06+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.029597s][吞吐率：33.79req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/study/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:07+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.019358s][吞吐率：51.66req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/study/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:07+08:00 ] 127.0.0.1 127.0.0.1 GET /course/course/index.html
+[ log ] admin.study.com/course/course/index.html [运行时间：0.158907s][吞吐率：6.29req/s] [内存消耗：2,663.77kb] [文件加载：69]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->index[ D:\study\kouzhiwen\application\admin\course\controller\Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/course\view\course\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'type',
+  4 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010364s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.016273s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000332s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010828s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.029728s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 13  AND `c`.`status` = 1 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `c`.*,`t`.`name` FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 13  AND `c`.`status` = 1 ORDER BY c.weight DESC,c.created_at desc LIMIT 0,10 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course_type` [ RunTime:0.020318s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course_type` WHERE  `enterprise_id` = 13 [ RunTime:0.000300s ]
+[ error ] [8]未定义数组索引: type[D:\study\kouzhiwen\application\admin\course\controller\Course.php:37]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:07+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.016517s][吞吐率：60.54req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:07+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.016937s][吞吐率：59.04req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:09+08:00 ] 127.0.0.1 127.0.0.1 GET /course/course/add.html
+[ log ] admin.study.com/course/course/add.html [运行时间：0.374139s][吞吐率：2.67req/s] [内存消耗：2,897.63kb] [文件加载：68]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->add[ D:\study\kouzhiwen\application\admin\course\controller\Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/course\view\course\add.html [ array (
+  0 => 'checkVal',
+  1 => 'enterprise_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000925s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.012231s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000289s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011345s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.012918s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `enterprise_id` IN (13,0)  AND `status` = 1  AND `identity` LIKE '%3%' [ RunTime:0.000508s ]
+[ error ] [8]未定义数组索引: teacher_id[D:\study\kouzhiwen\application\admin\course\controller\Course.php:134]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:09+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.019315s][吞吐率：51.77req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:09+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.020799s][吞吐率：48.08req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:09+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.015432s][吞吐率：64.80req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:09+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014386s][吞吐率：69.51req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:10+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/images/sprite_gj.png
+[ log ] admin.study.com/static/select/images/sprite_gj.png [运行时间：0.016598s][吞吐率：60.25req/s] [内存消耗：1,325.17kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/static/select/css/select_gj.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:11+08:00 ] 127.0.0.1 127.0.0.1 GET /course/course/type_list.html?type=3
+[ log ] admin.study.com/course/course/type_list.html?type=3 [运行时间：0.067044s][吞吐率：14.92req/s] [内存消耗：2,519.52kb] [文件加载：61]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->typeList[ D:\study\kouzhiwen\application\admin\course\controller\Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010228s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.012996s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000353s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010663s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course_type` [ RunTime:0.008880s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course_type` WHERE  `enterprise_id` = 13  AND `type` = 3 [ RunTime:0.000307s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:25+08:00 ] 127.0.0.1 127.0.0.1 POST /root/upload/aliyunoss.html
+[ log ] admin.study.com/root/upload/aliyunoss.html [运行时间：0.555588s][吞吐率：1.80req/s] [内存消耗：1,779.80kb] [文件加载：52]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryvQZTJuNoiInG32rK',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://admin.study.com',
+  'content-length' => '329630',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'WU_FILE_0',
+  'name' => 'Picture.jpg',
+  'type' => 'image/jpeg',
+  'lastModifiedDate' => 'Tue Oct 16 2018 09:22:26 GMT+0800 (中国标准时间)',
+  'size' => '328890',
+)
+[ info ] [ RUN ] app\admin\root\controller\Upload->AliyunOss[ D:\study\kouzhiwen\application\admin\root\controller\Upload.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:36+08:00 ] 127.0.0.1 127.0.0.1 POST /course/course/add.html
+[ log ] admin.study.com/course/course/add.html [运行时间：0.052204s][吞吐率：19.16req/s] [内存消耗：2,433.02kb] [文件加载：58]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.study.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '212',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '3',
+  'teacher_id' => '138',
+  'title' => '1123645',
+  'photo' => 'http://kouzhiwen.oss-cn-qingdao.aliyuncs.com/video/20190827/20194948101534855.jpg',
+  'start' => '2019-08-27 10:46',
+  'url' => '',
+  'url2' => '',
+  'describe' => '3213221',
+  'price' => '0',
+  'weight' => '1',
+  'words' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->add[ D:\study\kouzhiwen\application\admin\course\controller\Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009784s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.017151s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000336s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:39+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.018218s][吞吐率：54.89req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:39+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.014973s][吞吐率：66.79req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:39+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.019998s][吞吐率：50.00req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:39+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.014499s][吞吐率：68.97req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T10:46:41+08:00 ] 127.0.0.1 127.0.0.1 POST /course/course/add.html
+[ log ] admin.study.com/course/course/add.html [运行时间：0.046801s][吞吐率：21.37req/s] [内存消耗：2,433.02kb] [文件加载：58]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/course/add.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.study.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '212',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '3',
+  'teacher_id' => '138',
+  'title' => '1123645',
+  'photo' => 'http://kouzhiwen.oss-cn-qingdao.aliyuncs.com/video/20190827/20194948101534855.jpg',
+  'start' => '2019-08-27 10:46',
+  'url' => '',
+  'url2' => '',
+  'describe' => '3213221',
+  'price' => '0',
+  'weight' => '1',
+  'words' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->add[ D:\study\kouzhiwen\application\admin\course\controller\Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010511s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.012549s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000314s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:34:35+08:00 ] 127.0.0.1 127.0.0.1 GET /root/report/index.html
+[ log ] admin.study.com/root/report/index.html [运行时间：0.512716s][吞吐率：1.95req/s] [内存消耗：2,578.93kb] [文件加载：67]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'report',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Report->index[ D:\study\kouzhiwen\application\admin\root\controller\Report.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\report\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001940s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.022528s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000459s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010624s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_report` [ RunTime:0.029635s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_report` `r` LEFT JOIN `tpn_user` `u` ON `r`.`uid`=`u`.`uid` INNER JOIN `tpn_questions` `q` ON `q`.`id`=`r`.`qid` WHERE  `r`.`enterprise_id` = 13  AND `r`.`status` = 1 LIMIT 1 [ RunTime:0.025057s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_report` `r` LEFT JOIN `tpn_user` `u` ON `r`.`uid`=`u`.`uid` INNER JOIN `tpn_questions` `q` ON `q`.`id`=`r`.`qid` WHERE  `r`.`enterprise_id` = 13  AND `r`.`status` = 1 LIMIT 0,10 [ RunTime:0.000463s ]
+[ error ] [8]未定义变量: type[D:\study\kouzhiwen\runtime\temp\d7e36485a00616b92b270971a184e162.php:40]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:34:36+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.077295s][吞吐率：12.94req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/report/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:34:37+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014087s][吞吐率：70.99req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/report/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:34:37+08:00 ] 127.0.0.1 127.0.0.1 GET /root/report/index.html
+[ log ] admin.study.com/root/report/index.html [运行时间：0.090033s][吞吐率：11.11req/s] [内存消耗：2,578.93kb] [文件加载：67]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'report',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Report->index[ D:\study\kouzhiwen\application\admin\root\controller\Report.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\report\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011488s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.016723s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000358s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010063s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_report` [ RunTime:0.009505s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_report` `r` LEFT JOIN `tpn_user` `u` ON `r`.`uid`=`u`.`uid` INNER JOIN `tpn_questions` `q` ON `q`.`id`=`r`.`qid` WHERE  `r`.`enterprise_id` = 13  AND `r`.`status` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_report` `r` LEFT JOIN `tpn_user` `u` ON `r`.`uid`=`u`.`uid` INNER JOIN `tpn_questions` `q` ON `q`.`id`=`r`.`qid` WHERE  `r`.`enterprise_id` = 13  AND `r`.`status` = 1 LIMIT 0,10 [ RunTime:0.000378s ]
+[ error ] [8]未定义变量: type[D:\study\kouzhiwen\runtime\temp\d7e36485a00616b92b270971a184e162.php:40]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:34:37+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.020996s][吞吐率：47.63req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/report/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:34:38+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.013960s][吞吐率：71.63req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/report/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:35:18+08:00 ] 127.0.0.1 127.0.0.1 GET /root/report/index.html
+[ log ] admin.study.com/root/report/index.html [运行时间：0.079001s][吞吐率：12.66req/s] [内存消耗：2,578.93kb] [文件加载：67]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'report',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Report->index[ D:\study\kouzhiwen\application\admin\root\controller\Report.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\report\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011032s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.017017s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000273s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010775s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_report` [ RunTime:0.014817s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_report` `r` LEFT JOIN `tpn_user` `u` ON `r`.`uid`=`u`.`uid` INNER JOIN `tpn_questions` `q` ON `q`.`id`=`r`.`qid` WHERE  `r`.`enterprise_id` = 13  AND `r`.`status` = 1 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_report` `r` LEFT JOIN `tpn_user` `u` ON `r`.`uid`=`u`.`uid` INNER JOIN `tpn_questions` `q` ON `q`.`id`=`r`.`qid` WHERE  `r`.`enterprise_id` = 13  AND `r`.`status` = 1 LIMIT 0,10 [ RunTime:0.000446s ]
+[ error ] [8]未定义变量: type[D:\study\kouzhiwen\runtime\temp\d7e36485a00616b92b270971a184e162.php:40]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:35:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.016828s][吞吐率：59.42req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/report/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:35:19+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.022507s][吞吐率：44.43req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/report/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:11+08:00 ] 127.0.0.1 127.0.0.1 GET /info/tasks/index.html
+[ log ] admin.study.com/info/tasks/index.html [运行时间：0.145307s][吞吐率：6.88req/s] [内存消耗：2,621.42kb] [文件加载：68]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'info',
+    2 => 'tasks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\info\controller\Tasks->index[ D:\study\kouzhiwen\application\admin\info\controller\Tasks.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/info\view\tasks\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010656s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.012503s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000351s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010460s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_tasks` [ RunTime:0.031520s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_tasks` `t` INNER JOIN `tpn_user` `c` ON `t`.`uid`=`c`.`uid` WHERE  `enterprise_id` = 13  AND `status` = '1' LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `c`.`name`,`c`.`phone`,`c`.`face`,`c`.`uid`,`c`.`enterprise_id`,`t`.* FROM `tpn_tasks` `t` INNER JOIN `tpn_user` `c` ON `t`.`uid`=`c`.`uid` WHERE  `enterprise_id` = 13  AND `status` = '1' ORDER BY t.id desc LIMIT 0,10 [ RunTime:0.000326s ]
+[ error ] [8]未定义变量: type[D:\study\kouzhiwen\runtime\temp\5b6175d8a8efab22e682974e75b7bbda.php:55]
+[ error ] [8]未定义变量: type[D:\study\kouzhiwen\runtime\temp\5b6175d8a8efab22e682974e75b7bbda.php:108]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:11+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.019291s][吞吐率：51.84req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/tasks/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:12+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014260s][吞吐率：70.13req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/tasks/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:13+08:00 ] 127.0.0.1 127.0.0.1 GET /info/label/index.html
+[ log ] admin.study.com/info/label/index.html [运行时间：0.102790s][吞吐率：9.73req/s] [内存消耗：2,582.30kb] [文件加载：65]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'info',
+    2 => 'label',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\info\controller\Label->index[ D:\study\kouzhiwen\application\admin\info\controller\Label.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/info\view\label\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011468s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.012862s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000322s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009836s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_label` [ RunTime:0.016356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_label` WHERE  `enterprise_id` = 13 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_label` WHERE  `enterprise_id` = 13 LIMIT 0,10 [ RunTime:0.000269s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:13+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.016033s][吞吐率：62.37req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/label/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:14+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.013839s][吞吐率：72.26req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/label/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:17+08:00 ] 127.0.0.1 127.0.0.1 GET /info/teacher/index.html
+[ log ] admin.study.com/info/teacher/index.html [运行时间：0.158919s][吞吐率：6.29req/s] [内存消耗：2,680.95kb] [文件加载：69]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'info',
+    2 => 'teacher',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\info\controller\Teacher->index[ D:\study\kouzhiwen\application\admin\info\controller\Teacher.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/info\view\teacher\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'type',
+  4 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.013046s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000382s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010546s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.015906s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_teacher` WHERE  `enterprise_id` = 13  AND `status` > 0  AND `identity` = '1,3' LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `enterprise_id` = 13  AND `status` > 0  AND `identity` = '1,3' ORDER BY created_at desc LIMIT 0,10 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_type` [ RunTime:0.022023s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher_type` WHERE  `enterprise_id` = 13 [ RunTime:0.000293s ]
+[ error ] [8]未定义数组索引: type[D:\study\kouzhiwen\application\admin\info\controller\Teacher.php:43]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:17+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.015594s][吞吐率：64.13req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/teacher/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:18+08:00 ] 127.0.0.1 127.0.0.1 GET /info/user/index.html
+[ log ] admin.study.com/info/user/index.html [运行时间：0.137319s][吞吐率：7.28req/s] [内存消耗：2,716.83kb] [文件加载：68]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'info',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\info\controller\User->index[ D:\study\kouzhiwen\application\admin\info\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/info\view\user\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'allot',
+  3 => 'keywords',
+  4 => 'enterprise_id',
+  5 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011022s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.013043s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000343s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010947s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.012289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user` WHERE  `allot` = 2  AND `status` = 1  AND `enterprise_id` = 13 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `allot` = 2  AND `status` = 1  AND `enterprise_id` = 13 ORDER BY uid desc LIMIT 0,10 [ RunTime:0.000380s ]
+[ error ] [8]未定义数组索引: company_name[D:\study\kouzhiwen\runtime\temp\1356329db8bf72705a25b80eb1f6c349.php:119]
+[ error ] [8]未定义数组索引: company_name[D:\study\kouzhiwen\runtime\temp\1356329db8bf72705a25b80eb1f6c349.php:119]
+[ error ] [8]未定义数组索引: company_name[D:\study\kouzhiwen\runtime\temp\1356329db8bf72705a25b80eb1f6c349.php:119]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.015562s][吞吐率：64.26req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/user/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.013880s][吞吐率：72.05req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/teacher/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:18+08:00 ] 127.0.0.1 127.0.0.1 GET /info/teachertype/index.html
+[ log ] admin.study.com/info/teachertype/index.html [运行时间：0.081023s][吞吐率：12.34req/s] [内存消耗：2,583.23kb] [文件加载：65]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'info',
+    2 => 'teachertype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\info\controller\Teachertype->index[ D:\study\kouzhiwen\application\admin\info\controller\Teachertype.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/info\view\teachertype\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010864s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.006009s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000291s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_type` [ RunTime:0.010071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_teacher_type` WHERE  `enterprise_id` = 13 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher_type` WHERE  `enterprise_id` = 13 LIMIT 0,10 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.014956s][吞吐率：66.86req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/teachertype/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:19+08:00 ] 127.0.0.1 127.0.0.1 GET /uploads/20181229/fb532891ecd611f57d933c713c82a353.jpg
+[ log ] admin.study.com/uploads/20181229/fb532891ecd611f57d933c713c82a353.jpg [运行时间：0.020723s][吞吐率：48.26req/s] [内存消耗：1,325.24kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uploads',
+    2 => '20181229',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/user/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:19+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.018776s][吞吐率：53.26req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/user/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:19+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.013859s][吞吐率：72.16req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/teachertype/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:20+08:00 ] 127.0.0.1 127.0.0.1 GET /info/enterprise/templet.html
+[ log ] admin.study.com/info/enterprise/templet.html [运行时间：0.083936s][吞吐率：11.91req/s] [内存消耗：2,592.53kb] [文件加载：63]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'info',
+    2 => 'enterprise',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\info\controller\Enterprise->templet[ D:\study\kouzhiwen\application\admin\info\controller\Enterprise.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/info\view\enterprise\templet.html [ array (
+  0 => 'data',
+  1 => 'id',
+  2 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000728s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.012505s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000299s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010062s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_enterprise` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `status` = 1  AND `id` NOT IN (13) [ RunTime:0.000366s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:20+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.019837s][吞吐率：50.41req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/enterprise/templet.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:20+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.025393s][吞吐率：39.38req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/enterprise/templet.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:20+08:00 ] 127.0.0.1 127.0.0.1 GET /uploads/20181203/43f768131a016fb3e087c4671680ca56.png
+[ log ] admin.study.com/uploads/20181203/43f768131a016fb3e087c4671680ca56.png [运行时间：0.029754s][吞吐率：33.61req/s] [内存消耗：1,325.26kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uploads',
+    2 => '20181203',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/enterprise/templet.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:20+08:00 ] 127.0.0.1 127.0.0.1 GET /uploads/20181203/43f768131a016fb3e087c4671680ca56.png
+[ log ] admin.study.com/uploads/20181203/43f768131a016fb3e087c4671680ca56.png [运行时间：0.014382s][吞吐率：69.53req/s] [内存消耗：1,325.26kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uploads',
+    2 => '20181203',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/info/enterprise/templet.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:22+08:00 ] 127.0.0.1 127.0.0.1 GET /course/paper/index.html
+[ log ] admin.study.com/course/paper/index.html [运行时间：0.115816s][吞吐率：8.63req/s] [内存消耗：2,674.13kb] [文件加载：69]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'paper',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Paper->index[ D:\study\kouzhiwen\application\admin\course\controller\Paper.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/course\view\paper\index.html [ array (
+  0 => 'type',
+  1 => 'data',
+  2 => 'page',
+  3 => 'keywords',
+  4 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011140s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.012849s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000385s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000493s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.013583s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `enterprise_id` = 13 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_paper` [ RunTime:0.018807s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_paper` `p` INNER JOIN `tpn_class` `c` ON `c`.`id`=`p`.`class_id` WHERE  `c`.`enterprise_id` = 13  AND `p`.`type` = 1 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT `p`.* FROM `tpn_paper` `p` INNER JOIN `tpn_class` `c` ON `c`.`id`=`p`.`class_id` WHERE  `c`.`enterprise_id` = 13  AND `p`.`type` = 1 ORDER BY end_time desc LIMIT 0,10 [ RunTime:0.000243s ]
+[ error ] [8]未定义数组索引: type[D:\study\kouzhiwen\application\admin\course\controller\Paper.php:33]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:22+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.016063s][吞吐率：62.25req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/paper/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+-----------
+[ 2019-08-27T14:37:24+08:00 ] 127.0.0.1 127.0.0.1 GET /course/paper/add.html
+[ log ] admin.study.com/course/paper/add.html [运行时间：0.116530s][吞吐率：8.58req/s] [内存消耗：2,417.24kb] [文件加载：61]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'paper',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/paper/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Paper->add[ D:\study\kouzhiwen\application\admin\course\controller\Paper.php ]
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/course\view\paper\add.html [ array (
+  0 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010491s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.016728s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000520s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:24+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.014745s][吞吐率：67.82req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/paper/add.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:24+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.020700s][吞吐率：48.31req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/paper/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:26+08:00 ] 127.0.0.1 127.0.0.1 GET /course/paper/classlist.html?type=1
+[ log ] admin.study.com/course/paper/classlist.html?type=1 [运行时间：0.086904s][吞吐率：11.51req/s] [内存消耗：2,508.53kb] [文件加载：61]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'paper',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/paper/add.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Paper->classlist[ D:\study\kouzhiwen\application\admin\course\controller\Paper.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010727s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.018611s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000315s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009944s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.023077s ]
+[ sql ] [ SQL ] SELECT `id`,name as title FROM `tpn_class` WHERE  `enterprise_id` = 13 [ RunTime:0.000465s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:40+08:00 ] 127.0.0.1 127.0.0.1 GET /course/paper/index.html
+[ log ] admin.study.com/course/paper/index.html [运行时间：0.085976s][吞吐率：11.63req/s] [内存消耗：2,674.13kb] [文件加载：69]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'paper',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Paper->index[ D:\study\kouzhiwen\application\admin\course\controller\Paper.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/course\view\paper\index.html [ array (
+  0 => 'type',
+  1 => 'data',
+  2 => 'page',
+  3 => 'keywords',
+  4 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010495s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.017356s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000358s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010590s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.009264s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `enterprise_id` = 13 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_paper` [ RunTime:0.009261s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_paper` `p` INNER JOIN `tpn_class` `c` ON `c`.`id`=`p`.`class_id` WHERE  `c`.`enterprise_id` = 13  AND `p`.`type` = 1 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT `p`.* FROM `tpn_paper` `p` INNER JOIN `tpn_class` `c` ON `c`.`id`=`p`.`class_id` WHERE  `c`.`enterprise_id` = 13  AND `p`.`type` = 1 ORDER BY end_time desc LIMIT 0,10 [ RunTime:0.000225s ]
+[ error ] [8]未定义数组索引: type[D:\study\kouzhiwen\application\admin\course\controller\Paper.php:33]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:40+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.016420s][吞吐率：60.90req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/paper/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:40+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.016053s][吞吐率：62.29req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/paper/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:42+08:00 ] 127.0.0.1 127.0.0.1 GET /course/study/index.html
+[ log ] admin.study.com/course/study/index.html [运行时间：0.144235s][吞吐率：6.93req/s] [内存消耗：2,688.48kb] [文件加载：66]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'study',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Study->index[ D:\study\kouzhiwen\application\admin\course\controller\Study.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/course\view\study\index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011430s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.017034s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000331s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011223s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_type` [ RunTime:0.015253s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class_type` WHERE  `enterprise_id` = 13 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.009265s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_class` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 13 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT `c`.*,t.name as teachername FROM `tpn_class` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 13 ORDER BY c.created_at desc LIMIT 0,10 [ RunTime:0.000369s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:42+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.016007s][吞吐率：62.47req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/study/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:42+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.015678s][吞吐率：63.78req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/study/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:51+08:00 ] 127.0.0.1 127.0.0.1 GET /course/study/edit/id/46.html
+[ log ] admin.study.com/course/study/edit/id/46.html [运行时间：0.316861s][吞吐率：3.16req/s] [内存消耗：2,927.41kb] [文件加载：67]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'study',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/study/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '46',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Study->edit[ D:\study\kouzhiwen\application\admin\course\controller\Study.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/course\view\study\edit.html [ array (
+  0 => 'data',
+  1 => 'id',
+  2 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.016304s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000327s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010924s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_type` [ RunTime:0.009743s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class_type` WHERE  `enterprise_id` = 13 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.009862s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `enterprise_id` IN (13,0)  AND `identity` LIKE '%2%' [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.009100s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.000354s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:51+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.018709s][吞吐率：53.45req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/study/edit/id/46.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T14:37:51+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.020622s][吞吐率：48.49req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/course/study/edit/id/46.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:26+08:00 ] 127.0.0.1 127.0.0.1 GET /root/access_group/index.html
+[ log ] admin.study.com/root/access_group/index.html [运行时间：0.105167s][吞吐率：9.51req/s] [内存消耗：2,558.98kb] [文件加载：63]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'access_group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\AccessGroup->index[ D:\study\kouzhiwen\application\admin\root\controller\AccessGroup.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\access_group\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002201s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.020222s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000497s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000842s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `enterprise_id` = 13  AND `is_show` = 1 [ RunTime:0.000465s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:26+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.019897s][吞吐率：50.26req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:27+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.015061s][吞吐率：66.40req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:28+08:00 ] 127.0.0.1 127.0.0.1 GET /root/admin/index.html
+[ log ] admin.study.com/root/admin/index.html [运行时间：0.093673s][吞吐率：10.68req/s] [内存消耗：2,411.55kb] [文件加载：59]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Admin->index[ D:\study\kouzhiwen\application\admin\root\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\admin\index.html [ array (
+  0 => 'data',
+  1 => 'keywords',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011198s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.013822s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000398s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000708s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_admin` [ RunTime:0.015567s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_admin` WHERE  `enterprise_id` = 13 [ RunTime:0.000411s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `name` FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT `name` FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000268s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:28+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.028518s][吞吐率：35.07req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:29+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014443s][吞吐率：69.24req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:48+08:00 ] 127.0.0.1 127.0.0.1 GET /root/admin/add.html
+[ log ] admin.study.com/root/admin/add.html [运行时间：0.281982s][吞吐率：3.55req/s] [内存消耗：2,295.82kb] [文件加载：58]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Admin->add[ D:\study\kouzhiwen\application\admin\root\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.247669s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000384s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009803s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_access_group` WHERE  `enterprise_id` = 13 [ RunTime:0.000305s ]
+[ error ] [8]未定义数组索引: module[D:\study\kouzhiwen\application\admin\root\controller\Admin.php:73]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:52+08:00 ] 127.0.0.1 127.0.0.1 GET /root/access_group/index.html
+[ log ] admin.study.com/root/access_group/index.html [运行时间：0.068908s][吞吐率：14.51req/s] [内存消耗：2,558.98kb] [文件加载：63]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'access_group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\AccessGroup->index[ D:\study\kouzhiwen\application\admin\root\controller\AccessGroup.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\access_group\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009668s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.018064s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000353s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010013s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `enterprise_id` = 13  AND `is_show` = 1 [ RunTime:0.000360s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:52+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.019740s][吞吐率：50.66req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:53+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014495s][吞吐率：68.99req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:54+08:00 ] 127.0.0.1 127.0.0.1 GET /root/access_group/add.html
+[ log ] admin.study.com/root/access_group/add.html [运行时间：0.126671s][吞吐率：7.89req/s] [内存消耗：2,529.01kb] [文件加载：58]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'access_group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\AccessGroup->add[ D:\study\kouzhiwen\application\admin\root\controller\AccessGroup.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\access_group\add.html [ array (
+  0 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000554s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.025587s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000336s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011387s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_menu` [ RunTime:0.010754s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_menu` WHERE  `platform` IN (1,3) ORDER BY `id` ASC [ RunTime:0.000637s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010313s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_menu_category` [ RunTime:0.017272s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_menu_category` ORDER BY `sort` ASC [ RunTime:0.000385s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:54+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.018432s][吞吐率：54.25req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/add.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:06:55+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.015521s][吞吐率：64.43req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:14+08:00 ] 127.0.0.1 127.0.0.1 GET /root/access_group/index.html
+[ log ] admin.study.com/root/access_group/index.html [运行时间：0.066478s][吞吐率：15.04req/s] [内存消耗：2,558.98kb] [文件加载：63]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'access_group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\AccessGroup->index[ D:\study\kouzhiwen\application\admin\root\controller\AccessGroup.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\access_group\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010453s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.018858s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000325s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010890s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `enterprise_id` = 13  AND `is_show` = 1 [ RunTime:0.000369s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:14+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.017647s][吞吐率：56.67req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:15+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014653s][吞吐率：68.24req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:16+08:00 ] 127.0.0.1 127.0.0.1 GET /root/access_group/add.html
+[ log ] admin.study.com/root/access_group/add.html [运行时间：0.101650s][吞吐率：9.84req/s] [内存消耗：2,529.01kb] [文件加载：58]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'access_group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\AccessGroup->add[ D:\study\kouzhiwen\application\admin\root\controller\AccessGroup.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\access_group\add.html [ array (
+  0 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010904s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.014724s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000363s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009763s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_menu` [ RunTime:0.010964s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_menu` WHERE  `platform` IN (1,3) ORDER BY `id` ASC [ RunTime:0.000585s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010354s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_menu_category` [ RunTime:0.019329s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_menu_category` ORDER BY `sort` ASC [ RunTime:0.000327s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:16+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.018300s][吞吐率：54.65req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/add.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:17+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.015024s][吞吐率：66.56req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/access_group/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:32+08:00 ] 127.0.0.1 127.0.0.1 GET /root/admin/index.html
+[ log ] admin.study.com/root/admin/index.html [运行时间：0.085800s][吞吐率：11.66req/s] [内存消耗：2,411.55kb] [文件加载：59]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Admin->index[ D:\study\kouzhiwen\application\admin\root\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\admin\index.html [ array (
+  0 => 'data',
+  1 => 'keywords',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011426s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.018861s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000343s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011216s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_admin` [ RunTime:0.009339s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_admin` WHERE  `enterprise_id` = 13 [ RunTime:0.000346s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010318s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `name` FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT `name` FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000296s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:32+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.024068s][吞吐率：41.55req/s] [内存消耗：1,325.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:33+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014573s][吞吐率：68.62req/s] [内存消耗：1,325.67kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:37+08:00 ] 127.0.0.1 127.0.0.1 GET /root/admin/edit/aid/30.html
+[ log ] admin.study.com/root/admin/edit/aid/30.html [运行时间：0.111561s][吞吐率：8.96req/s] [内存消耗：2,367.33kb] [文件加载：58]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '30',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Admin->edit[ D:\study\kouzhiwen\application\admin\root\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\admin\edit.html [ array (
+  0 => 'oldData',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010326s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.018164s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000491s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010889s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_admin` [ RunTime:0.011843s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_admin` WHERE  `aid` = 30 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011205s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_access_group` [ RunTime:0.000292s ]
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:37+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.016196s][吞吐率：61.74req/s] [内存消耗：1,325.65kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/edit/aid/30.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:38+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.014810s][吞吐率：67.52req/s] [内存消耗：1,325.69kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/edit/aid/30.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-08-27T16:07:48+08:00 ] 127.0.0.1 127.0.0.1 GET /root/admin/add.html
+[ log ] admin.study.com/root/admin/add.html [运行时间：0.081303s][吞吐率：12.30req/s] [内存消耗：2,295.82kb] [文件加载：58]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rv0o0n1n4juohf90j8vb4llhjj',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/admin/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Admin->add[ D:\study\kouzhiwen\application\admin\root\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010106s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.018238s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (23) [ RunTime:0.000364s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010465s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_access_group` WHERE  `enterprise_id` = 13 [ RunTime:0.000319s ]
+[ error ] [8]未定义数组索引: module[D:\study\kouzhiwen\application\admin\root\controller\Admin.php:73]
+
+---------------------------------------------------------------

@@ -1,0 +1,45 @@
+{include file="admin/root/common/header"}
+<div class="look">
+    {foreach $data AS $v}
+    <tr>
+        <td>{$v.contents}</td>
+    </tr>
+    {/foreach}
+</div>
+<hr>
+<form action="" method="post" class="verify-form rform" go="">
+
+    <div>评语：</div> <textarea name="comment" style="width:800px;height:400px;" datatype="*">{foreach $data AS $k }{$k.comment}{/foreach}</textarea><br>
+    <label class="checkbox-inline" style="margin-left: 30px;">
+        点评:
+        <input type="radio" name="lookeva" value="1"{foreach $data AS $k }{if($k.lookeva ==1)}
+               checked
+               {/if}{/foreach}>差
+        <input type="radio" name="lookeva" value="2"{foreach $data AS $k }{if($k.lookeva ==2)}
+               checked
+               {/if}{/foreach}>合格
+        <input type="radio" name="lookeva" value="3"{foreach $data AS $k }{if($k.lookeva ==3)}
+               checked
+               {/if}{/foreach}>良
+        <input type="radio" name="lookeva" value="4"{foreach $data AS $k }{if($k.lookeva ==4)}
+               checked
+               {/if}{/foreach}>优
+    </label><br>
+    <label class="checkbox-inline" style="margin-left: 30px;">
+        是否查看:
+        <input type="radio" name="alook" value="1"{foreach $data AS $k }{if($k.alook ==1)}
+               checked
+               {/if}{/foreach}>是
+        <input type="radio" name="alook" value="2"{foreach $data AS $k }{if($k.alook ==2)}
+               checked
+               {/if}{/foreach}>否
+    </label><br>
+    <button type="submit" class="btn btn-success ml100 mb20">保 存</button>
+</form>
+{include file="teacher/root/common/webuploader"}
+{include file="teacher/root/common/ueditor"}
+{include file="teacher/root/common/dateplugin"}
+<script>
+
+</script>
+{include file="admin/root/common/footer"}

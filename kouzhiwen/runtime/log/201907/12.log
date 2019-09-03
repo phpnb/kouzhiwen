@@ -1,0 +1,163 @@
+[ 2019-07-12T11:19:02+08:00 ] 127.0.0.1 127.0.0.1 GET /root/index/index.html
+[ log ] admin.study.com/root/index/index.html [运行时间：0.051475s][吞吐率：19.43req/s] [内存消耗：1,462.66kb] [文件加载：48]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-07-12T11:19:02+08:00 ] 127.0.0.1 127.0.0.1 GET /root/login/login.html
+[ log ] admin.study.com/root/login/login.html [运行时间：0.036820s][吞吐率：27.16req/s] [内存消耗：1,413.15kb] [文件加载：49]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5v5e11r7dr3cc5sqqbsaf16lj0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ D:\study\kouzhiwen\application\admin\root\controller\Login.php ]
+[ info ] [ VIEW ] D:\study\kouzhiwen\public/../application/admin/root\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-07-12T11:19:02+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/css/min/reset.css
+[ log ] admin.study.com/static/select/css/min/reset.css [运行时间：0.035293s][吞吐率：28.33req/s] [内存消耗：1,195.99kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5v5e11r7dr3cc5sqqbsaf16lj0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-07-12T11:19:03+08:00 ] 127.0.0.1 127.0.0.1 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.study.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.019704s][吞吐率：50.75req/s] [内存消耗：1,195.88kb] [文件加载：43]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5v5e11r7dr3cc5sqqbsaf16lj0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-07-12T11:19:10+08:00 ] 127.0.0.1 127.0.0.1 POST /root/login/login.html
+[ log ] admin.study.com/root/login/login.html [运行时间：0.073741s][吞吐率：13.56req/s] [内存消耗：2,222.55kb] [文件加载：57]
+[ info ] [ LANG ] D:\study\kouzhiwen\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5v5e11r7dr3cc5sqqbsaf16lj0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.study.com/root/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.study.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '33',
+  'connection' => 'close',
+  'host' => 'admin.study.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'yanglao',
+  'password' => '1232456',
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ D:\study\kouzhiwen\application\admin\root\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008216s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_admin` [ RunTime:0.014431s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_admin` WHERE  `username` = 'yanglao' LIMIT 1 [ RunTime:0.000999s ]
+
+---------------------------------------------------------------

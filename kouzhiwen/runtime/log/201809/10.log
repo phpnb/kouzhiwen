@@ -1,0 +1,199 @@
+[ 2018-09-10T10:29:57+08:00 ] 127.0.0.1 127.0.0.1 GET /common/home/search?type=home&keyword=%E5%AD%A6
+[ log ] kouzhiwenapi.zpftech.com/common/home/search?type=home&keyword=%E5%AD%A6 [运行时间：2.196178s][吞吐率：0.46req/s] [内存消耗：2,286.27kb] [文件加载：57]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.3.0',
+  'postman-token' => 'cc8a86ad-94ce-4763-a028-54ddf712ab42',
+  'cache-control' => 'no-cache',
+  'logintoken' => '45e962c846c8b50beebb2012b448c870',
+)
+[ info ] [ PARAM ] array (
+  '/common/home/search' => '',
+  'type' => 'home',
+  'keyword' => '学',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141976s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.082837s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '45e962c846c8b50beebb2012b448c870' LIMIT 1 [ RunTime:0.076918s ]
+
+---------------------------------------------------------------
+[ 2018-09-10T10:30:25+08:00 ] 127.0.0.1 127.0.0.1 GET /common/home/search?type=home&keyword=%E5%AD%A6
+[ log ] kouzhiwenapi.zpftech.com/common/home/search?type=home&keyword=%E5%AD%A6 [运行时间：1.384203s][吞吐率：0.72req/s] [内存消耗：2,506.58kb] [文件加载：66]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.3.0',
+  'postman-token' => 'e444e7d5-0fac-4f15-b362-eb073045d1b8',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'cecc644f4676358e91f694e9535f7a1b',
+)
+[ info ] [ PARAM ] array (
+  '/common/home/search' => '',
+  'type' => 'home',
+  'keyword' => '学',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Home->search[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\common\controller\Home.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122998s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.078623s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'cecc644f4676358e91f694e9535f7a1b' LIMIT 1 [ RunTime:0.075375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.074755s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`photo`,`look_num`,`price` FROM `tpn_course` WHERE  `title` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.073001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.083005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`brief`,`photo`,`consult_num` FROM `tpn_teacher` WHERE  `name` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.080334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_information` [ RunTime:0.075788s ]
+[ sql ] [ SQL ] SELECT `id`,`cover_img`,`name`,`add_time`,`comment_num`,`pv` FROM `tpn_information` WHERE  `name` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.072039s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_article` [ RunTime:0.072594s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`cover_img`,`a`.`name`,`a`.`add_time`,`a`.`comment_num` FROM `tpn_teacher_article` `a` LEFT JOIN `tpn_teacher` `t` ON `a`.`teacher_id`=`t`.`id` WHERE  `a`.`name` LIKE '%学%'  AND `t`.`enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.073769s ]
+
+---------------------------------------------------------------
+[ 2018-09-10T10:30:49+08:00 ] 127.0.0.1 127.0.0.1 GET /common/home/search?type=home&keyword=%E5%AD%A6
+[ log ] kouzhiwenapi.zpftech.com/common/home/search?type=home&keyword=%E5%AD%A6 [运行时间：0.957178s][吞吐率：1.04req/s] [内存消耗：2,506.58kb] [文件加载：66]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.3.0',
+  'postman-token' => '76079371-655b-4bfc-bc00-fe174f8d18b4',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'cecc644f4676358e91f694e9535f7a1b',
+)
+[ info ] [ PARAM ] array (
+  '/common/home/search' => '',
+  'type' => 'home',
+  'keyword' => '学',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Home->search[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\common\controller\Home.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119664s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.081257s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'cecc644f4676358e91f694e9535f7a1b' LIMIT 1 [ RunTime:0.077348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.076756s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`photo`,`look_num`,`price` FROM `tpn_course` WHERE  `title` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.077200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.081757s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`brief`,`photo`,`consult_num` FROM `tpn_teacher` WHERE  `name` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.076142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_information` [ RunTime:0.076519s ]
+[ sql ] [ SQL ] SELECT `id`,`cover_img`,`name`,`add_time`,`comment_num`,`pv` FROM `tpn_information` WHERE  `name` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.075648s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_article` [ RunTime:0.075792s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`cover_img`,`a`.`name`,`a`.`add_time`,`a`.`comment_num` FROM `tpn_teacher_article` `a` LEFT JOIN `tpn_teacher` `t` ON `a`.`teacher_id`=`t`.`id` WHERE  `a`.`name` LIKE '%学%'  AND `t`.`enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.080095s ]
+
+---------------------------------------------------------------
+[ 2018-09-10T10:31:22+08:00 ] 127.0.0.1 127.0.0.1 GET /common/home/search?type=home&keyword=%E5%AD%A6
+[ log ] kouzhiwenapi.zpftech.com/common/home/search?type=home&keyword=%E5%AD%A6 [运行时间：0.990600s][吞吐率：1.01req/s] [内存消耗：2,506.60kb] [文件加载：66]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.3.0',
+  'postman-token' => '5408f90b-0a01-41e9-829d-38a5d6d89cb9',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'cecc644f4676358e91f694e9535f7a1b',
+)
+[ info ] [ PARAM ] array (
+  '/common/home/search' => '',
+  'type' => 'home',
+  'keyword' => '学',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Home->search[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\common\controller\Home.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.140313s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.091688s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'cecc644f4676358e91f694e9535f7a1b' LIMIT 1 [ RunTime:0.078546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.078716s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`photo`,`look_num`,`price`,`type` FROM `tpn_course` WHERE  `title` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.074430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.079654s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`brief`,`photo`,`consult_num` FROM `tpn_teacher` WHERE  `name` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.074513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_information` [ RunTime:0.083049s ]
+[ sql ] [ SQL ] SELECT `id`,`cover_img`,`name`,`add_time`,`comment_num`,`pv` FROM `tpn_information` WHERE  `name` LIKE '%学%'  AND `enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.084270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_article` [ RunTime:0.079906s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`cover_img`,`a`.`name`,`a`.`add_time`,`a`.`comment_num` FROM `tpn_teacher_article` `a` LEFT JOIN `tpn_teacher` `t` ON `a`.`teacher_id`=`t`.`id` WHERE  `a`.`name` LIKE '%学%'  AND `t`.`enterprise_id` = 1 LIMIT 0,2 [ RunTime:0.074534s ]
+
+---------------------------------------------------------------

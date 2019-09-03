@@ -1,0 +1,44 @@
+{include file="admin/root/common/header"}
+<style>
+    #right_content table tr td,#right_content table tr th{
+        border: solid #f1f1f1 1px;
+    }
+    #right_content form table th{
+        text-align: left; padding-left:30px;
+    }
+</style>
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td>{$data.name}</td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">图片</th>
+                <td>
+                    <img src="{$data.cover_img}" width="200">
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">内容</th>
+                <td>
+                    {$data.contents}
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <!--<button type="submit" class="btn btn-success">保存</button>-->
+                    {if($data.status==0)}
+                    <a class="btn btn-success glyphicon glyphicon-ok"
+                       onclick="ajax_post('{:url('research_examine')}',{'id':{$data['id']},'status':1});" title="审核成功"></a>
+                    <a class="btn btn-success glyphicon glyphicon-remove"
+                       onclick="ajax_post('{:url('research_examine')}',{'id':{$data['id']},'status':2});" title="审核失败"></a>
+                    {/if}
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/footer"}

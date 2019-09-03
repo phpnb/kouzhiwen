@@ -1,0 +1,141 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        教师管理
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="#" class="this">数据列表</a></li>
+        <li>
+            <a
+                href="{:url('add')}" target="frame_dispose"
+                onclick="open_frame('添加', 100, 100, true);">
+                添加数据
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+                <button type="button" class="btn btn-danger btn-sm"
+                onclick="all_operation('{:url('del')}','id[]');">
+                    删除<i class="glyphicon glyphicon-trash ml5"></i>
+                </button>
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="姓名/称呼/手机号">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th width="20">
+                    <input onclick="check_all('id[]');" name="check_all" type="checkbox" value="">
+                </th>
+                <th>ID</th>
+                <th>企业名称</th>
+                <th>平台分类</th>
+                <th>教师分类</th>
+                <th>学术指导成员</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>姓名</th>
+                <th>称呼</th>
+                <th>头像</th>
+                <th>手机号</th>
+                <th>登录时间</th>
+                <th>登录IP</th>
+                <th>所属组</th>
+                <th>所属模块</th>
+                <th>身份</th>
+                <th>金额</th>
+                <th>咨询数量</th>
+                <th>简介</th>
+                <th>状态（1启用 2、停用</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+
+                <th width="100">操作</th>
+            </tr>
+            {if (!empty($data))}
+            {foreach $data AS $v}
+                <tr>
+                    <td>
+                        <input name="id[]" type="checkbox" value="{$v.id}">
+                    </td>
+                    <td>{$v.id}</td>
+                    <td>{$v.enterprise_id}</td>
+                    <td>
+                        {if (!empty($checkVal['classify_idVal'][$v['classify_id']]))}
+                            {$checkVal['classify_idVal'][$v['classify_id']]}
+                        {/if}
+                    </td>
+                    <td>
+                        {if (!empty($checkVal['teacher_typeVal'][$v['teacher_type']]))}
+                            {$checkVal['teacher_typeVal'][$v['teacher_type']]}
+                        {/if}
+                    </td>
+                    <td>
+                        {if (!empty($checkVal['is_xszdVal'][$v['is_xszd']]))}
+                            {$checkVal['is_xszdVal'][$v['is_xszd']]}
+                        {/if}
+                    </td>
+                    <td>{$v.username}</td>
+                    <td>{$v.password}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.title}</td>
+                    <td><img src='{$v.photo}' style='max-width:100px;'></td>
+                    <td>{$v.phone}</td>
+                    <td>{$v.logintime}</td>
+                    <td>{$v.loginip}</td>
+                    <td>{$v.group_id}</td>
+                    <td>
+                        {if (!empty($checkVal['moduleVal'][$v['module']]))}
+                            {$checkVal['moduleVal'][$v['module']]}
+                        {/if}
+                    </td>
+                    <td>
+                        {foreach $v['identity'] AS $val}
+                            {if (!empty($checkVal['identityVal'][$val]))}
+                            {$checkVal['identityVal'][$val]},
+                            {/if}
+                        {/foreach}
+                        </td>
+                    <td>{$v.money}</td>
+                    <td>{$v.consult_num}</td>
+                    <td>{$v.brief}</td>
+                    <td>
+                        {if (!empty($checkVal['statusVal'][$v['status']]))}
+                            {$checkVal['statusVal'][$v['status']]}
+                        {/if}
+                    </td>
+                    <td>{$v.created_at ? date('Y-m-d H:i:s', $v.created_at) : '----'}</td>
+                    <td>{$v.updated_at ? date('Y-m-d H:i:s', $v.updated_at) : '----'}</td>
+
+                    <td class="operation">
+                        <a href="{:url('edit',['id'=>$v['id']])}" target="frame_dispose"
+                        onclick="open_frame('修改数据', 100, 100, true)"
+                        class="glyphicon glyphicon-edit" title="编辑"></a>
+<a class="glyphicon glyphicon-trash"
+                        onclick="ajax_post('{:url('del')}',{'id':{$v['id']}});" title="删除"></a>
+
+                    </td>
+                </tr>
+            {/foreach}
+            {/if}
+        </table>
+        <div>{$page}</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="admin/root/common/footer"}

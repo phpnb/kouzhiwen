@@ -1,0 +1,62 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">关联id</th>
+                <td><input name="pid" value="{$data.pid}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">跳转位置</th>
+                <td><input name="mold" value="{$data.mold}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">banner位置</th>
+                <td><input name="type" value="{$data.type}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">图片</th>
+                <td>
+                    <div id="filePicker">上传图片</div>
+                    <div id="fileList" class="uploader-list" datnum="all">
+                        <div class="upload-ts">
+                            <input type="hidden" name="img_url" value="{$data.img_url}" datatype="*" nullmsg="请上传图片">
+                            <img src="{$data.img_url}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input name="id" type="hidden" value="{$data.id}">
+                </td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+<script type="text/javascript"  src="/static/admin/js/plugin.js"></script>
+<script>
+    $(function(){
+        FloatNumber(".floatNumber",2);
+        inputIntNumber(".intNumber");
+        file_upload({
+            pick        : '#filePicker',
+            container   : '#fileList',
+            server      : '{:url("admin/root/upload/AliyunOss")}',
+            mulit       : false,
+            inputname   : 'img_url',
+            len:6
+        });
+
+    })
+</script>
+{include file="admin/root/common/footer"}

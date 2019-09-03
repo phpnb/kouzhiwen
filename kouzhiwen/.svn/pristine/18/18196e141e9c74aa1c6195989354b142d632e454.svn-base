@@ -1,0 +1,31 @@
+{include file="root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        修改密码
+    </div>
+
+    <form action="" class="verify-form pt20 pb10">
+        <input type="password" style="position:absolute; z-index: -1;">
+        <table class="table">
+            <tr>
+                <th width="150" class="msg">旧密码</th>
+                <td><input type="password" name="old_pwd" class="form-control w300" datatype="*"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">新密码</th>
+                <td><input type="password" name="new_pwd" class="form-control w300" datatype="*"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">Save Change</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="root/common/footer"}

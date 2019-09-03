@@ -1,0 +1,159 @@
+{include file="admin/root/common/header"}
+<script type="text/javascript" src="/static/admin/js/jquery.zclip.js"></script>
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        直播管理
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="{:url('',['type'=>1])}" {if ($type==1)}class="this"{/if}>班级直播</a></li>
+        <li><a href="{:url('',['type'=>2])}" {if ($type==2)}class="this"{/if}>课程直播</a></li>
+        <li>
+            <a
+                    href="{:url('add')}" target="frame_dispose"
+                    onclick="open_frame('创建直播', 100, 100, true);">
+                创建直播
+            </a>
+        </li>
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+                    <a href="https://help.aliyun.com/document_detail/45212.html" target="_blank" class="cl-gre">如何直播 &gt;&gt;</a>
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="课程名称">
+                <input type="hidden" value="{$type}" name="type" />
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            {if($type==1)}
+            <tr>
+                <th>ID</th>
+                <th>班级</th>
+                <th>课程名</th>
+                <th>图片</th>
+                <th>状态</th>
+                <th>开始时间</th>
+                <th width="100">操作</th>
+            </tr>
+            {else /}
+            <tr>
+                <th>ID</th>
+                <th>课程名</th>
+                <th>图片</th>
+                <th>阅读量</th>
+                <th>单价</th>
+                <th>学习量</th>
+                <th>评论数量</th>
+                <th>状态</th>
+                <th>开始时间</th>
+                <th width="100">操作</th>
+            </tr>
+            {/if}
+            {if (!empty($data))}
+            {if($type==1)}
+            {foreach $data AS $v}
+                <tr>
+                    <td>{$v.id}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.title}</td>
+                    <td><img src='{$v.photo}' style='max-width:100px;'></td>
+                    <td>
+                        {if($v.status==1)}
+                        <span class="label label-info f12">预习</span>
+                        {elseif($v.status==2) /}
+                        <span class="label label-primary f12">直播</span>
+                        {else /}
+                        <span class="label label-success f12">复习</span>
+                        {/if}
+                    </td>
+                    <td>{$v.start ? date('Y-m-d H:i:s', $v.start) : '----'}</td>
+
+                    <td class="operation">
+                        <!--<a href="http://kouzhiwenteacher.zpftech.com/web_live/liveroom.html?id={$v['id']}&type=1" target="frame_dispose"-->
+                           <!--onclick="open_frame('开播', 100, 100, true)"-->
+                           <!--class="glyphicon glyphicon-edit" title="开播"></a>-->
+                        <a href="" target="frame_dispose" data-id="{$v['id']}" data-start="{$v['start']}" data-push="{$v['aliyun_push']}" class="glyphicon glyphicon-paperclip" title="复制"></a>
+
+                    </td>
+                </tr>
+            {/foreach}
+            {else /}
+            {foreach $data AS $v}
+            <tr>
+                <td>{$v.id}</td>
+                <td>{$v.title}</td>
+                <td><img src='{$v.photo}' style='max-width:100px;'></td>
+                <td>{$v.reading}</td>
+                <td>{$v.price}</td>
+                <td>{$v.look_num}</td>
+                <td>{$v.comment_num}</td>
+                <td>
+                    {if($v.scene==1)}
+                    <span class="label label-info f12">正在直播</span>
+                    {elseif($v.scene==0)}
+                    <span class="label label-danger f12">待直播</span>
+                    {else}
+                    <span class="label label-success f12">已直播</span>
+                    {/if}
+                </td>
+                <td>{$v.start ? date('Y-m-d H:i:s', $v.start) : '----'}</td>
+
+                <td class="operation">
+                    <!--<a href="http://kouzhiwenteacher.zpftech.com/web_live/liveroom.html?id={$v['id']}&type=2" target="frame_dispose"-->
+                       <!--onclick="open_frame('开播', 100, 100, true)"-->
+                       <!--class="glyphicon glyphicon-edit" title="开播"></a>-->
+                    <a href="" target="frame_dispose" data-id="{$v['id']}" data-start="{$v['start']}" data-push="{$v['aliyun_push']}" class="glyphicon glyphicon-paperclip" title="复制"></a>
+
+                 </td>
+             </tr>
+             {/foreach}
+             {/if}
+             {else /}
+             {/if}
+         </table>
+         <div>{$page}</div>
+     </div>
+ </div>
+<script type="text/javascript">
+    $(function(){
+        var time={$time};
+        var url="{:url('web',['type'=>$type])}";
+        var data="";
+        $('.glyphicon-paperclip').zclip({        　 //copy_input表示 按钮
+            path: '/static/admin/js/ZeroClipboard.swf',
+            copy: function(){
+                // $.ajax({
+                //     url : url,
+                //     type: 'post',
+                //     dataType: 'json',
+                //     data: {id:$(this).data('id')},
+                //     success:function(ret){
+                //         // 是否自定义了回调函数
+                //         data= ret.data;
+                //         console.log('data');
+                //         console.log(data);
+                //     }
+                // });
+                if($(this).data('start')>time){
+                    layer.msg('此直播还未到开始时间', {time:1000});
+                    return '';
+                }
+
+                return $(this).data('push');  　 //mytext表示 内容
+            },
+            afterCopy: function(){ //复制成功
+                // $("<span id='msg'/>").insertAfter($('#copy_input')).text('复制成功');
+            }
+        });
+    });
+</script>
+ {include file="admin/root/common/footer"}

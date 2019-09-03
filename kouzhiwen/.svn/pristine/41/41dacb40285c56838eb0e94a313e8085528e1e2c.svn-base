@@ -1,0 +1,253 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        教师管理
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="{:url('index',['type'=>1])}" {if($type==1)}class="this"{/if}>数据列表</a></li>
+        <li><a href="{:url('index',['type'=>2])}" {if($type==2)}class="this"{/if}>信息审核</a></li>
+        <li><a href="{:url('research_examine',['type'=>1])}">动态审核</a></li>
+        <li><a href="{:url('research_examine',['type'=>2])}">研究动态</a></li>
+        <li>
+            <a
+                href="{:url('add')}" target="frame_dispose"
+                onclick="open_frame('添加', 100, 100, true);">
+                添加数据
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+                {if($type==2)}
+                <button type="button" class="btn btn-info btn-sm"
+                        onclick="all_operation('{:url('del')}','id[]');">
+                    审核<i class="glyphicon glyphicon-ok ml5"></i>
+                </button>
+                {else}
+                <button type="button" class="btn btn-danger btn-sm"
+                onclick="all_operation('{:url('del')}','id[]');">
+                    删除<i class="glyphicon glyphicon-trash ml5"></i>
+                </button>
+                {/if}
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="姓名/称呼/手机号">
+                <input type="hidden" value="{$type}" name="type" >
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th width="20">
+                    <input onclick="check_all('id[]');" name="check_all" type="checkbox" value="">
+                </th>
+                <th>ID</th>
+                <th>分类</th>
+                <th>用户名</th>
+                <th>姓名</th>
+                <th>昵称</th>
+                <th>性别</th>
+                <th>头像</th>
+                <th>手机号</th>
+                <th>身份</th>
+                <th>余额</th>
+                <th>咨询价格</th>
+                <th>咨询数量</th>
+                <th>状态</th>
+                {neq name="$checkVal['enterprise_id']" value="0"}
+                    <th>是否推荐</th>
+                {/neq}
+                <th>创建时间</th>
+                <th width="100">操作</th>
+            </tr>
+            {if (!empty($data))}
+            {foreach $data AS $v}
+                <tr>
+                    <td>
+                        <input name="id[]" type="checkbox" value="{$v.id}">
+                    </td>
+                    <td>{$v.id}</td>
+                    <td>
+                        {neq name="$checkVal['enterprise_id']" value="0"}
+                            {if (!empty($checkVal['teacher_typeVal'][$v['teacher_type']]))}
+                            {$checkVal['teacher_typeVal'][$v['teacher_type']]}
+                            {/if}
+                        {else /}
+                            {if (!empty($checkVal['classify_idVal'][$v['classify_id']]))}
+                            {$checkVal['classify_idVal'][$v['classify_id']]}
+                            {/if}
+                        {/neq}
+
+                    </td>
+
+                    <td>{$v.username}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.nickname}</td>
+                    <td>
+                        {if (!empty($checkVal['sexVal'][$v['sex']]))}
+                        {$checkVal['sexVal'][$v['sex']]}
+                        {/if}
+                    </td>
+                    <td><img src='{$v.photo}' style='max-width:100px;'></td>
+                    <td>{$v.phone}</td>
+                    <td>
+                        {if($v['is_xszd']==1)}
+                            {if($v['is_zdwy']==1)}
+                            <span class="label label-success f12">学术指导委员</span>
+                            {else}
+                            <span class="label label-success f12">学术指导成员</span>
+                            {/if}
+                        {else}
+                        {foreach $v['identity'] AS $val}
+                            {if (!empty($checkVal['identityVal'][$val]))}
+                        <span class="label label-success f12">{$checkVal['identityVal'][$val]}</span>
+                            {/if}
+                        {/foreach}
+                        {/if}
+                        </td>
+                    <td>{$v.money}</td>
+                    <td>{$v.price}</td>
+                    <td>{$v.consult_num}</td>
+                    <td>
+                        {if($v['status']==0)}
+                        <span class="label label-danger f12">已删除</span>
+                        {elseif($v['status']==1)}
+                        <span class="label label-success f12">正常</span>
+                        {elseif($v['status']==2)}
+                        <span class="label label-info f12">待审核</span>
+                        {elseif($v['status']==3)}
+                        <span class="label label-warning f12">审核失败</span>
+                        {/if}
+                    </td>
+                    {neq name="$checkVal['enterprise_id']" value="0"}
+                    <td>
+
+
+                        {if($v['is_recommend']==0)}
+                        <span class="label label-info f12">否</span>
+                        {else}
+                        <span class="label label-success f12">是</span>
+                        {/if}
+                    </td>
+                    {/neq}
+                    <td>{$v.created_at ? date('Y-m-d H:i:s', $v.created_at) : '----'}</td>
+
+                    <td class="operation">
+                        <a href="{:url('edit',['id'=>$v['id']])}" target="frame_dispose"
+                           onclick="open_frame('修改数据', 100, 100, true)"
+                           class="glyphicon glyphicon-edit" title="编辑"></a>
+                        {if($type==2)}
+                        <a class="glyphicon glyphicon-ok"
+                           onclick="ajax_post('{:url('del')}',{$v['id']});" title="审核"></a>
+                        {else}
+                        <a href="{:url('quiz',['id'=>$v['id']])}" target="frame_dispose"
+                           onclick="open_frame('老师评价', 100, 100, true)"
+                           class="glyphicon glyphicon-thumbs-up" title="老师评价"></a>
+                        <a href="{:url('research',['id'=>$v['id']])}" target="frame_dispose"
+                           onclick="open_frame('研究动态', 100, 100, true)"
+                           class="glyphicon glyphicon-list-alt" title="研究动态"></a>
+<a class="glyphicon glyphicon-trash"
+                        onclick="ajax_post('{:url('del')}',{'id':{$v['id']},'status':0});" title="删除"></a>
+                        {/if}
+                    </td>
+                </tr>
+            {/foreach}
+            {/if}
+        </table>
+        <div>{$page}</div>
+    </div>
+</div>
+{if($type==2)}
+<script type="text/javascript">
+
+    function ajax_post(url, id, fn){
+        layer.confirm('确定操作吗？', {
+            btn: ['审核成功','审核失败', '取消']
+        }, function(){
+            loding = layer.load(2, {
+                shade: [0.1,'#fff']
+            });
+            $.ajax({
+                url : url,
+                type: 'post',
+                dataType: 'json',
+                data: {id:id,status:1},
+                success:function(ret){
+                    layer.close(loding);
+                    // 是否自定义了回调函数
+                    if (is_function(fn)) {
+                        fn(ret);
+                        return;
+                    }
+
+                    layer.msg(ret.msg,{'time':1000});
+                    if (ret.status == 1) {
+                        setTimeout(function(){
+                            location.reload();
+                        }, 500);
+                    }
+                }
+            })
+        }, function(){
+            loding = layer.load(2, {
+                shade: [0.1,'#fff']
+            });
+            $.ajax({
+                url : url,
+                type: 'post',
+                dataType: 'json',
+                data: {id:id,status:3},
+                success:function(ret){
+                    layer.close(loding);
+                    // 是否自定义了回调函数
+                    if (is_function(fn)) {
+                        fn(ret);
+                        return;
+                    }
+
+                    layer.msg(ret.msg,{'time':1000});
+                    if (ret.status == 1) {
+                        setTimeout(function(){
+                            location.reload();
+                        }, 500);
+                    }
+                }
+            })
+        }, function(){
+
+        });
+    }
+    /**
+     * [all_operation 批量操作]
+     */
+    function all_operation(url, inputName, data, fn){
+        if (!is_var(data)) {
+            data = {};
+        }
+        // 组合批量操作的ID
+        var id = '';
+        var d  = '';
+
+        $.each($('input[name="'+inputName+'"]:checked'), function(index, val) {
+            id += d + $(this).val();
+            d = ',';
+        });
+        if (id == '') {
+            layer.msg('请选择要操作的内容', {time:1000});
+            return;
+        }
+        // post 请求
+        ajax_post(url, id, fn);
+    }
+</script>
+{/if}
+{include file="admin/root/common/footer"}

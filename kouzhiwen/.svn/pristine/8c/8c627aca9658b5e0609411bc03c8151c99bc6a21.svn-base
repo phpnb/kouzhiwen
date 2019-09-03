@@ -1,0 +1,34 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <input type="password" style="position:absolute; z-index:-1;">
+            <tr>
+                <th width="150" class="msg">用户名</th>
+                <td><input type="text" name="username" class="form-control w300" datatype="*"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">密码</th>
+                <td><input type="password" name="password" class="form-control w300" datatype="*"></td>
+            </tr>
+
+            <tr style="display: none;">
+                <th width="150" class="msg">所属模块</th>
+                <td>
+                    <input type="text" name="module" value="admin/{$mname}" class="form-control w300" readonly>
+                </td>
+            </tr>
+
+            <input type="hidden" name="enterprise_id" value="{$id}" />
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保 存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="admin/root/common/footer"}

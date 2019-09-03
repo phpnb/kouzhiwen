@@ -1,0 +1,82 @@
+{include file="teacher/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="msg">收款方式</th>
+                <td>
+                    <select name="pay_type" class="form-control w426" datatype="*">
+                        <option value="1">微信</option>
+                        <option value="2">支付宝</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">收款账号</th>
+                <td><input name="account_num" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">提现金额</th>
+                <td><input name="account" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">手续费</th>
+                <td><input type="text" value="{$data.content}%" class="form-control w400" disabled="disabled"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">余额</th>
+                <td><input type="text" value="{$user.money}" class="form-control w400" disabled="disabled"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">提现最大金额</th>
+                <td><input type="text" value="{$money}" class="form-control w400" disabled="disabled"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="teacher/root/common/webuploader"}
+{include file="teacher/root/common/ueditor"}
+{include file="teacher/root/common/dateplugin"}
+
+<script>
+$(function(){
+    file_upload({
+    pick        : '#photo-picker',
+    container   : '#photo-list',
+    server      : '{:url("teacher/root/upload/AliyunOss")}',
+    mulit       : false,
+    inputname   : 'cover_img'
+});
+
+$('#time-start').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:'zh-CN',
+    minView:2,
+    autoclose:true
+});
+
+$('#time-end').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:'zh-CN',
+    minView:2,
+    autoclose:true
+});
+
+setTimeout(function(){
+        UE.getEditor('describeEditor', {
+            autoHeight: false,
+        });
+    },500);
+
+
+})
+</script>
+{include file="teacher/root/common/footer"}

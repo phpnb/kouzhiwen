@@ -1,0 +1,101 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="msg">分类</th>
+                <td>
+                    <select name="classify_id" class="form-control w426" datatype="*">
+                        {foreach $checkVal['classify_idVal'] as $v=>$k}
+                        <option value="{$v}" {if ($v==$data['classify_id'])}selected{/if}>{$k}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class='msg'>封面图</th>
+                <td>
+                    <div id="cover_img-picker">上传图片</div>
+                    <div id="cover_img-list" class="uploader-list">
+                        <div class="upimg-box upload-ts">
+                            <span class="glyphicon glyphicon-remove-sign remove-img"></span>
+                            <input type="hidden" name="cover_img" value="{$data.cover_img}" datatype="*" nullmsg="请上传图片">
+                            <img src="{$data.cover_img}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td><input name="name" value="{$data.name}" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">作者</th>
+                <td><input name="author" value="{$data.author}" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th class='msg'>内容</th>
+                <td>
+                    <textarea name="contents" style="width:600px;height:300px;" datatype="/^.*?$/" id="contentsEditor">{$data.contents}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">是否推荐</th>
+                <td>
+                    {foreach $checkVal['is_recommend'] as $v=>$k}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="is_recommend" {if ($data.is_recommend==$v)}checked{/if}  value="{$v}">
+                        &nbsp;&nbsp;{$k}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            {if($enterprise_id>0)}
+            <tr>
+                <th class="msg">权限</th>
+                <td>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="power" value="0" {eq name="$data.power" value="0"}checked{/eq}>查看
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="power" value="1" {eq name="$data.power" value="1"}checked{/eq}>禁止
+                    </label>
+
+                </td>
+            </tr>
+            {/if}
+            <tr>
+                <td>
+                    <input name="id" type="hidden" value="{$data.id}">
+                </td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+{include file="admin/root/common/ueditor"}
+
+<script>
+file_upload({
+    pick        : '#cover_img-picker',
+    container   : '#cover_img-list',
+    server      : '{:url("admin/root/upload/AliyunOss")}',
+    mulit       : false,
+    inputname   : 'cover_img'
+});
+
+setTimeout(function(){
+        UE.getEditor('contentsEditor', {
+            autoHeight: false,
+        });
+    },500);
+
+
+</script>
+{include file="admin/root/common/footer"}

@@ -1,0 +1,111 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            {if($type==2)}
+            <tr>
+                <th class="msg">班级</th>
+                <td>
+                    <select name="class_id" class="form-control w426" datatype="*">
+                        {foreach $checkVal['class_idVal'] as $v}
+                        <option value="{$v.id}" {eq name="$data.class_id" value="$v.id" }selected{/eq}>{$v.name}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">作者</th>
+                <td>
+                    <input name="phone" type="text" class="form-control w400" value="{$data.phone}" maxlength="11" datatype="/^.*?$/" nullmsg="请填写关联学员手机号">
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">关联学员账号</th>
+                <td>
+                    <input name="tel" type="text" class="form-control w400" value="{$data.phone}" maxlength="11" datatype="/^.*?$/" nullmsg="请填写关联学员手机号">
+                </td>
+            </tr>
+            {/if}
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td><input name="name" type="text" value="{$data.name}" class="form-control w400" datatype="*"></td>
+            </tr>
+            {if($type==1)}
+            <tr>
+                <th class='msg'>图片</th>
+                <td>
+                    <div id="photo-picker">上传图片</div>
+                    <div id="photo-list" class="uploader-list">
+                        <div class="upimg-box upload-ts">
+                            <span class="glyphicon glyphicon-remove-sign remove-img"></span>
+                            <input type="hidden" name="cover_img" value="{$data.cover_img}" datatype="*" nullmsg="请上传图片">
+                            <img src="{$data.cover_img}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="plo">
+                <th class='msg'>视频或音频地址</th>
+                <td><input name="url" type="text" class="form-control w400" value="{$data.url}"></td>
+                <td>
+                <td>
+                    <div id="url-list" class="uploader-list_video" >
+                        <div class="upimg-box">
+
+                            <notempty name="video">
+                                <video src="{$data.url}" controls="controls"  height="300"></video>
+                            </notempty>
+                        </div>
+                    </div>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">金额</th>
+                <td><input name="pic" type="text" class="form-control w400" datatype="*" value="{$data.pic}"></td>
+            </tr>
+            {/if}
+
+            <tr>
+                <th class='msg'>内容</th>
+                <td>
+                    <textarea name="contents" style="width:800px;height:400px;" datatype="*" id="describeEditor">
+                        {$data.contents}
+                    </textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="hidden" name="type" value="{$type}" />
+                    <input name="id" type="hidden" value="{$data.id}">
+                 <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="teacher/root/common/webuploader"}
+{include file="teacher/root/common/ueditor"}
+{include file="teacher/root/common/dateplugin"}
+<script>
+    $(function(){
+        file_upload({
+            pick        : '#photo-picker',
+            container   : '#photo-list',
+            server      : '{:url("teacher/root/upload/AliyunOss")}',
+            mulit       : false,
+            inputname   : 'cover_img'
+        });
+        setTimeout(function(){
+            UE.getEditor('describeEditor', {
+                autoHeight: false,
+            });
+        },500);
+    })
+</script>
+{include file="admin/root/common/footer"}

@@ -1,0 +1,1319 @@
+[ 2018-12-02T10:00:01+08:00 ] 172.31.69.247 47.105.58.152 GET /root/Task/index.html?type=2
+[ log ] admin.kzwchina.com/root/Task/index.html?type=2 [运行时间：0.016966s][吞吐率：58.94req/s] [内存消耗：2,428.85kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'Task',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'curl/7.29.0',
+  'host' => 'admin.kzwchina.com',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-12-02T10:38:19+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/my_info
+[ log ] api.kzwchina.com/common/user/my_info [运行时间：0.116480s][吞吐率：8.59req/s] [内存消耗：5,106.23kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->myInfo[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_regions` [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_regions` [ RunTime:0.002921s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T10:38:24+08:00 ] 172.31.69.247 117.136.38.161 GET /common/home/index?enterprise_id=13
+[ log ] api.kzwchina.com/common/home/index?enterprise_id=13 [运行时间：0.045633s][吞吐率：21.91req/s] [内存消耗：4,179.29kb] [文件加载：66]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'enterprise_id' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Home->index[ /www/wwwroot/kouzhiwen/application/api/common/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_enterprise` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_banner` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT `pid`,`mold`,`type`,`img_url` FROM `tpn_banner` WHERE  `enterprise_id` = 13  AND `type` = 1  AND `status` = 1 ORDER BY add_time desc LIMIT 0,4 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`photo`,`c`.`reading`,`c`.`look_num`,`t`.`name`,`c`.`price` FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `c`.`enterprise_id` = '13'  AND `c`.`type` = 3  AND `c`.`scene` = 1 ORDER BY c.is_recommend desc,c.created_at desc LIMIT 0,4 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`photo` FROM `tpn_teacher` WHERE  `enterprise_id` = 13  AND `status` = 1  AND `is_xszd` = 0  AND `identity` LIKE '%3%' ORDER BY is_recommend desc,updated_at desc LIMIT 0,4 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_information` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT `id`,`cover_img`,`name`,`add_time`,`comment_num`,`pv` FROM `tpn_information` WHERE  `enterprise_id` = 13 ORDER BY `is_recommend`  desc,`add_time`  desc LIMIT 0,2 [ RunTime:0.000304s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T10:38:24+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/notice_count
+[ log ] api.kzwchina.com/common/user/notice_count [运行时间：0.041026s][吞吐率：24.37req/s] [内存消耗：3,928.36kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->NoticeCount[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_notice` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_notice` WHERE  `uid` = 70  AND `reading` = 0 LIMIT 1 [ RunTime:0.000222s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T14:34:43+08:00 ] 172.31.69.247 47.97.215.92 GET /
+[ log ] api.kzwchina.com/ [运行时间：0.016707s][吞吐率：59.86req/s] [内存消耗：1,971.04kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'api.kzwchina.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-12-02T15:00:01+08:00 ] 172.31.69.247 47.105.58.152 GET /root/Task/index.html?type=1
+[ log ] admin.kzwchina.com/root/Task/index.html?type=1 [运行时间：0.017994s][吞吐率：55.57req/s] [内存消耗：2,428.86kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'Task',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'curl/7.29.0',
+  'host' => 'admin.kzwchina.com',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-12-02T17:58:44+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/my_info
+[ log ] api.kzwchina.com/common/user/my_info [运行时间：0.111571s][吞吐率：8.96req/s] [内存消耗：5,106.23kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->myInfo[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_regions` [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_regions` [ RunTime:0.002932s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:58:49+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/notice_count
+[ log ] api.kzwchina.com/common/user/notice_count [运行时间：0.044461s][吞吐率：22.49req/s] [内存消耗：3,928.36kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->NoticeCount[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000302s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_notice` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_notice` WHERE  `uid` = 70  AND `reading` = 0 LIMIT 1 [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:58:49+08:00 ] 172.31.69.247 117.136.38.161 GET /common/home/index?enterprise_id=13
+[ log ] api.kzwchina.com/common/home/index?enterprise_id=13 [运行时间：0.052917s][吞吐率：18.90req/s] [内存消耗：4,179.29kb] [文件加载：66]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'enterprise_id' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Home->index[ /www/wwwroot/kouzhiwen/application/api/common/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001205s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_enterprise` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_banner` [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT `pid`,`mold`,`type`,`img_url` FROM `tpn_banner` WHERE  `enterprise_id` = 13  AND `type` = 1  AND `status` = 1 ORDER BY add_time desc LIMIT 0,4 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`photo`,`c`.`reading`,`c`.`look_num`,`t`.`name`,`c`.`price` FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `c`.`enterprise_id` = '13'  AND `c`.`type` = 3  AND `c`.`scene` = 1 ORDER BY c.is_recommend desc,c.created_at desc LIMIT 0,4 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`photo` FROM `tpn_teacher` WHERE  `enterprise_id` = 13  AND `status` = 1  AND `is_xszd` = 0  AND `identity` LIKE '%3%' ORDER BY is_recommend desc,updated_at desc LIMIT 0,4 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_information` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`cover_img`,`name`,`add_time`,`comment_num`,`pv` FROM `tpn_information` WHERE  `enterprise_id` = 13 ORDER BY `is_recommend`  desc,`add_time`  desc LIMIT 0,2 [ RunTime:0.000231s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:06+08:00 ] 172.31.69.247 117.136.38.161 POST /discover/comment/datalist
+[ log ] api.kzwchina.com/discover/comment/datalist [运行时间：0.045869s][吞吐率：21.80req/s] [内存消耗：3,927.32kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '24',
+)
+[ info ] [ PARAM ] array (
+  'type' => '4',
+  'type_id' => '20',
+  'page' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Comment->datalist[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Comment.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_comment` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_comment` `a` INNER JOIN `tpn_user` `u` ON `u`.`uid`=`a`.`uid` WHERE  `a`.`pid` = 0  AND `a`.`status` = 1  AND `a`.`type` = '4'  AND `a`.`type_id` = '20' ORDER BY id desc LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`type`,`a`.`type_id`,`a`.`contents`,`a`.`add_time`,`a`.`like_num`,`a`.`comment_num`,`u`.`nickname`,`u`.`face`,(select if(count(*)>0,1,0) from `tpn_comment_like` where `comment_id`=a.id and `uid`='70') is_like FROM `tpn_comment` `a` INNER JOIN `tpn_user` `u` ON `u`.`uid`=`a`.`uid` WHERE  `a`.`pid` = 0  AND `a`.`status` = 1  AND `a`.`type` = '4'  AND `a`.`type_id` = '20' ORDER BY id desc LIMIT 0,10 [ RunTime:0.000469s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:06+08:00 ] 172.31.69.247 117.136.38.161 POST /discover/article/details
+[ log ] api.kzwchina.com/discover/article/details [运行时间：0.053755s][吞吐率：18.60req/s] [内存消耗：4,098.36kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '5',
+)
+[ info ] [ PARAM ] array (
+  'id' => '20',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Article->details[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Article.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_information` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_information` WHERE  `id` = 20  AND `status` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_collect` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user_collect` WHERE  `type` = 3  AND `uid` = 70  AND `type_id` = 20 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] UPDATE `tpn_information`  SET `pv`=pv+1  WHERE  `id` = 20 [ RunTime:0.005947s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:12+08:00 ] 172.31.69.247 117.136.38.161 GET /common/study/datalist?enterprise_id=13&page=1
+[ log ] api.kzwchina.com/common/study/datalist?enterprise_id=13&page=1 [运行时间：0.033210s][吞吐率：30.11req/s] [内存消耗：4,087.06kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'study',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'enterprise_id' => '13',
+  'page' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Study->datalist[ /www/wwwroot/kouzhiwen/application/api/common/controller/Study.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,count(`u`.`uid`) as count FROM `tpn_class` `a` LEFT JOIN `tpn_class_user` `u` ON `a`.`id`=`u`.`class_id` WHERE  `a`.`enterprise_id` = '13'  AND `a`.`end` > 1543744752 GROUP BY u.class_id ORDER BY count desc LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_class` `a` WHERE  `a`.`enterprise_id` = '13'  AND `a`.`end` > 1543744752 ORDER BY id<>43,a.start desc LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,count(`u`.`uid`) as count FROM `tpn_class` `a` LEFT JOIN `tpn_class_user` `u` ON `a`.`id`=`u`.`class_id` WHERE  `a`.`enterprise_id` = '13'  AND `a`.`end` > 1543744752 GROUP BY u.class_id ORDER BY count desc LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`enterprise_id`,`a`.`name`,`a`.`photo`,`a`.`start`,`a`.`end`,`a`.`price`,(select count(*) from tpn_class_user where `class_id`=a.id) apply_num,(select if(count(*)>0,1,0) from tpn_class_user where `class_id`=a.id and `uid`=70) is_apply FROM `tpn_class` `a` WHERE  `a`.`enterprise_id` = '13'  AND `a`.`end` > 1543744752 ORDER BY id<>43,a.start desc LIMIT 0,10 [ RunTime:0.000366s ]
+[ error ] [8]未定义数组索引: classify_id[/www/wwwroot/kouzhiwen/application/common/model/Studys.php:30]
+[ error ] [8]未定义数组索引: class_type_id[/www/wwwroot/kouzhiwen/application/common/model/Studys.php:34]
+[ error ] [8]未定义数组索引: power[/www/wwwroot/kouzhiwen/application/common/model/Studys.php:42]
+[ error ] [8]未定义数组索引: classify_id[/www/wwwroot/kouzhiwen/application/common/model/Studys.php:30]
+[ error ] [8]未定义数组索引: class_type_id[/www/wwwroot/kouzhiwen/application/common/model/Studys.php:34]
+[ error ] [8]未定义数组索引: power[/www/wwwroot/kouzhiwen/application/common/model/Studys.php:42]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:14+08:00 ] 172.31.69.247 117.136.38.161 GET /common/study/class_course_list?id=43
+[ log ] api.kzwchina.com/common/study/class_course_list?id=43 [运行时间：0.041731s][吞吐率：23.96req/s] [内存消耗：4,376.24kb] [文件加载：69]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'study',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '43',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Study->ClassCourseList[ /www/wwwroot/kouzhiwen/application/api/common/controller/Study.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_user` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class_user` WHERE  `class_id` = 43  AND `uid` = 70 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_sign` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_sign` WHERE  `class_id` = 43  AND `uid` = 70  AND `date` = '2018-12-02' LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_sign` WHERE  `class_id` = 43  AND `date` = '2018-12-02' LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_course` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`photo`,`c`.`reading`,`c`.`status`,`c`.`type` FROM `tpn_class_course` `c` WHERE  `c`.`class_id` = '43' ORDER BY `c`.`start` [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_article` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`cover_img` FROM `tpn_teacher_article` WHERE  `class_id` = 43  AND `status` = 1 ORDER BY add_time desc LIMIT 0,4 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT `u`.`uid`,`u`.`face`,(select SUM(blue+purple+green+orange+red) from `tpn_user_ranking` `r` where `date`='2018' and `r`.`uid`=`c`.`uid`) ranking_num FROM `tpn_class_user` `c` LEFT JOIN `tpn_user` `u` ON `u`.`uid`=`c`.`uid` WHERE  `c`.`class_id` = '43' ORDER BY ranking_num desc LIMIT 0,10 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_ranking` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `blue`,`purple`,`green`,`orange`,`red` FROM `tpn_user_ranking` WHERE  `uid` = 70 ORDER BY date desc [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT `blue`,`purple`,`green`,`orange`,`red` FROM `tpn_user_ranking` WHERE  `uid` = 68 ORDER BY date desc [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT `blue`,`purple`,`green`,`orange`,`red` FROM `tpn_user_ranking` WHERE  `uid` = 69 ORDER BY date desc [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT `blue`,`purple`,`green`,`orange`,`red` FROM `tpn_user_ranking` WHERE  `uid` = 72 ORDER BY date desc [ RunTime:0.000178s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:14+08:00 ] 172.31.69.247 117.136.38.161 GET /
+[ log ] api.kzwchina.com/ [运行时间：0.016823s][吞吐率：59.44req/s] [内存消耗：1,970.95kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; BTV-DL09 Build/HUAWEIBEETHOVEN-DL09)',
+  'host' => 'api.kzwchina.com',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:14+08:00 ] 172.31.69.247 117.136.38.161 GET /
+[ log ] api.kzwchina.com/ [运行时间：0.016725s][吞吐率：59.79req/s] [内存消耗：1,970.95kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; BTV-DL09 Build/HUAWEIBEETHOVEN-DL09)',
+  'host' => 'api.kzwchina.com',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:16+08:00 ] 172.31.69.247 117.136.38.161 POST /discover/course/class_course_info
+[ log ] api.kzwchina.com/discover/course/class_course_info [运行时间：0.038240s][吞吐率：26.15req/s] [内存消耗：4,086.59kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '12',
+)
+[ info ] [ PARAM ] array (
+  'course_id' => '53',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Course->classCourseInfo[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Course.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_course` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] UPDATE `tpn_class_course`  SET `reading`=reading+1  WHERE  `id` = 53 [ RunTime:0.003380s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class_course` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_record` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user_record` WHERE  `uid` = 70  AND `type` = 3  AND `type_id` = 53 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:16+08:00 ] 172.31.69.247 117.136.38.161 POST /discover/comment/datalist
+[ log ] api.kzwchina.com/discover/comment/datalist [运行时间：0.031447s][吞吐率：31.80req/s] [内存消耗：3,925.63kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '24',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'type_id' => '53',
+  'page' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Comment->datalist[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Comment.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000403s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_comment` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_comment` `a` INNER JOIN `tpn_user` `u` ON `u`.`uid`=`a`.`uid` WHERE  `a`.`pid` = 0  AND `a`.`status` = 1  AND `a`.`type` = '2'  AND `a`.`type_id` = '53' ORDER BY id desc LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`type`,`a`.`type_id`,`a`.`contents`,`a`.`add_time`,`a`.`like_num`,`a`.`comment_num`,`u`.`nickname`,`u`.`face`,(select if(count(*)>0,1,0) from `tpn_comment_like` where `comment_id`=a.id and `uid`='70') is_like FROM `tpn_comment` `a` INNER JOIN `tpn_user` `u` ON `u`.`uid`=`a`.`uid` WHERE  `a`.`pid` = 0  AND `a`.`status` = 1  AND `a`.`type` = '2'  AND `a`.`type_id` = '53' ORDER BY id desc LIMIT 0,10 [ RunTime:0.000382s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:39+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/notice_count
+[ log ] api.kzwchina.com/common/user/notice_count [运行时间：0.043832s][吞吐率：22.81req/s] [内存消耗：3,928.36kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->NoticeCount[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000348s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_notice` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_notice` WHERE  `uid` = 70  AND `reading` = 0 LIMIT 1 [ RunTime:0.000280s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:39+08:00 ] 172.31.69.247 117.136.38.161 GET /common/home/index?enterprise_id=13
+[ log ] api.kzwchina.com/common/home/index?enterprise_id=13 [运行时间：0.051116s][吞吐率：19.56req/s] [内存消耗：4,179.29kb] [文件加载：66]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'enterprise_id' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Home->index[ /www/wwwroot/kouzhiwen/application/api/common/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000483s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_enterprise` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_banner` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT `pid`,`mold`,`type`,`img_url` FROM `tpn_banner` WHERE  `enterprise_id` = 13  AND `type` = 1  AND `status` = 1 ORDER BY add_time desc LIMIT 0,4 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`photo`,`c`.`reading`,`c`.`look_num`,`t`.`name`,`c`.`price` FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `c`.`enterprise_id` = '13'  AND `c`.`type` = 3  AND `c`.`scene` = 1 ORDER BY c.is_recommend desc,c.created_at desc LIMIT 0,4 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`photo` FROM `tpn_teacher` WHERE  `enterprise_id` = 13  AND `status` = 1  AND `is_xszd` = 0  AND `identity` LIKE '%3%' ORDER BY is_recommend desc,updated_at desc LIMIT 0,4 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_information` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT `id`,`cover_img`,`name`,`add_time`,`comment_num`,`pv` FROM `tpn_information` WHERE  `enterprise_id` = 13 ORDER BY `is_recommend`  desc,`add_time`  desc LIMIT 0,2 [ RunTime:0.000297s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:41+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/notice_count
+[ log ] api.kzwchina.com/common/user/notice_count [运行时间：0.043818s][吞吐率：22.82req/s] [内存消耗：3,928.36kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->NoticeCount[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_notice` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_notice` WHERE  `uid` = 70  AND `reading` = 0 LIMIT 1 [ RunTime:0.000288s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:41+08:00 ] 172.31.69.247 117.136.38.161 GET /discover/article/classify
+[ log ] api.kzwchina.com/discover/article/classify [运行时间：0.044334s][吞吐率：22.56req/s] [内存消耗：3,961.48kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Article->classify[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Article.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify_user` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`name` FROM `tpn_classify_user` `u` INNER JOIN `tpn_classify` `c` ON `c`.`id`=`u`.`classify_id` WHERE  `u`.`uid` = 70 ORDER BY u.weight ASC [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0  AND `id` NOT IN (29,31,32,33,30,35,36,37,38,39,34) [ RunTime:0.000408s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:42+08:00 ] 172.31.69.247 117.136.38.161 POST /discover/article/advertisements
+[ log ] api.kzwchina.com/discover/article/advertisements [运行时间：0.030582s][吞吐率：32.70req/s] [内存消耗：3,903.18kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Article->advertisements[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Article.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_advertisements` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_advertisements` [ RunTime:0.000190s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:42+08:00 ] 172.31.69.247 117.136.38.161 POST /discover/introduce/article_list
+[ log ] api.kzwchina.com/discover/introduce/article_list [运行时间：0.031056s][吞吐率：32.20req/s] [内存消耗：3,863.70kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'introduce',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '13',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Introduce->articleList[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Introduce.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000410s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000283s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_introduce` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_introduce` WHERE  `type` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_introduce` WHERE  `type` = 1  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000318s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:45+08:00 ] 172.31.69.247 117.136.38.161 POST /discover/article/advertisements
+[ log ] api.kzwchina.com/discover/article/advertisements [运行时间：0.030662s][吞吐率：32.61req/s] [内存消耗：3,903.18kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Article->advertisements[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Article.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_advertisements` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_advertisements` [ RunTime:0.000188s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:45+08:00 ] 172.31.69.247 117.136.38.161 POST /discover/introduce/article_list
+[ log ] api.kzwchina.com/discover/introduce/article_list [运行时间：0.031458s][吞吐率：31.79req/s] [内存消耗：3,863.70kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'introduce',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '13',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'page' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Introduce->articleList[ /www/wwwroot/kouzhiwen/application/api/discover/controller/Introduce.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_introduce` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_introduce` WHERE  `type` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_introduce` WHERE  `type` = 1  AND `status` = 1 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000315s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:48+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/notice_count
+[ log ] api.kzwchina.com/common/user/notice_count [运行时间：0.042135s][吞吐率：23.73req/s] [内存消耗：3,928.36kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->NoticeCount[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_notice` [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_notice` WHERE  `uid` = 70  AND `reading` = 0 LIMIT 1 [ RunTime:0.000309s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:48+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/my_info
+[ log ] api.kzwchina.com/common/user/my_info [运行时间：0.123247s][吞吐率：8.11req/s] [内存消耗：5,106.23kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->myInfo[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000332s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_regions` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_regions` [ RunTime:0.002919s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:48+08:00 ] 172.31.69.247 117.136.38.161 GET /
+[ log ] api.kzwchina.com/ [运行时间：0.017138s][吞吐率：58.35req/s] [内存消耗：1,970.95kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; BTV-DL09 Build/HUAWEIBEETHOVEN-DL09)',
+  'host' => 'api.kzwchina.com',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-12-02T17:59:48+08:00 ] 172.31.69.247 117.136.38.161 GET /
+[ log ] api.kzwchina.com/ [运行时间：0.017043s][吞吐率：58.68req/s] [内存消耗：1,970.95kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; BTV-DL09 Build/HUAWEIBEETHOVEN-DL09)',
+  'host' => 'api.kzwchina.com',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-12-02T18:00:13+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/my_info
+[ log ] api.kzwchina.com/common/user/my_info [运行时间：0.116238s][吞吐率：8.60req/s] [内存消耗：5,106.23kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->myInfo[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_regions` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_regions` [ RunTime:0.002942s ]
+
+---------------------------------------------------------------
+[ 2018-12-02T18:00:26+08:00 ] 172.31.69.247 117.136.38.161 POST /common/user/recharge
+[ log ] api.kzwchina.com/common/user/recharge [运行时间：0.036100s][吞吐率：27.70req/s] [内存消耗：4,267.88kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '22',
+)
+[ info ] [ PARAM ] array (
+  'pay_type' => '1',
+  'money' => '10000',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->recharge[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_order` [ RunTime:0.000556s ]
+[ error ] [10501]SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'price' at row 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/db/Connection.php:457]
+
+---------------------------------------------------------------
+[ 2018-12-02T18:00:29+08:00 ] 172.31.69.247 117.136.38.161 GET /common/user/my_info
+[ log ] api.kzwchina.com/common/user/my_info [运行时间：0.119618s][吞吐率：8.36req/s] [内存消耗：5,106.23kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '49d155001787121db42d75b757491523',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->myInfo[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '49d155001787121db42d75b757491523' LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_regions` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_regions` [ RunTime:0.002964s ]
+
+---------------------------------------------------------------

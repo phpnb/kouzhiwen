@@ -1,0 +1,65 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td><input name="title" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th class='msg'>内容</th>
+                <td>
+                    <textarea name="content" style="width:800px;height:400px;" datatype="*" id="contentEditor"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th class='msg'>图片</th>
+                <td>
+                    <div id="img-picker">上传图片</div>
+                    <div id="img-list" class="uploader-list">
+                        <div class="upload-ts">
+                            <input type="hidden" name="img" value="" datatype="*" nullmsg="请上传图片">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">单价</th>
+                <td><input name="price" type="text" class="form-control w400" datatype="/^(\d{1,8}|\d{1,8}\.\d{1,2})$/"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+{include file="admin/root/common/ueditor"}
+
+<script>
+$(function(){
+    setTimeout(function(){
+        UE.getEditor('contentEditor', {
+            autoHeight: false,
+        });
+    },500);
+
+file_upload({
+    pick        : '#img-picker',
+    container   : '#img-list',
+    server      : '{:url("admin/root/upload/AliyunOss")}',
+    mulit       : false,
+    inputname   : 'img'
+});
+
+
+})
+</script>
+{include file="admin/root/common/footer"}

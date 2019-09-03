@@ -1,0 +1,47 @@
+2018-12-15 22:41:38  {"product_code":"FAST_INSTANT_TRADE_PAY","body":null,"subject":"学员充值","total_amount":"0.01","out_trade_no":"20185051102401918"}
+2018-12-15 22:41:38  response: '<form id=\'alipaysubmit\' target=\'_blank\' name=\'alipaysubmit\' action=\'https://openapi.alipay.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"product_code":"FAST_INSTANT_TRADE_PAY","body":null,"subject":"学员充值","total_amount":"0.01","out_trade_no":"20185051102401918"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2018062860465258\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.page.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-12-15 22:41:38\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://api.kzwchina.com/common/alipay/notify\'/><input type=\'hidden\' name=\'return_url\' value=\'http://api.kzwchina.com/common/alipay/notify\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'FD8MYXP6XAtUAU2++KnuV8QAFDkL+WowAjtuMUyjS1mCEKyZT/iLACqra5FBYPccVXtD/pNPxYixnbffVQK6AoZCC9IxIMHNuOst8hqrxqnHU8b7OLdtvNjNw8hMOufby3rs0z1woLB7mT9akm7zpn7MWiO5J4TlA+O0NXtCuEvecZ5zwm59xtMpkzeXjUuqyt55j/xKNhsnMzmskhr0eaGSczn0PcjbTsl2918XrP8uUgoiLxGdEkMSQAAUUc1xeiM6OJ3W6A4/ke5XaZX2YN1HUZANOG+NS/odU6hxjeTN2GkJsrON/KB0dKUmmDsAMNp+Wu3eOT+hjW9avXWZ9g==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'
+2018-12-15 22:42:06  {"product_code":"FAST_INSTANT_TRADE_PAY","body":null,"subject":"学员充值","total_amount":"0.01","out_trade_no":"20181011001031651"}
+2018-12-15 22:42:06  response: '<form id=\'alipaysubmit\' target=\'_blank\' name=\'alipaysubmit\' action=\'https://openapi.alipay.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"product_code":"FAST_INSTANT_TRADE_PAY","body":null,"subject":"学员充值","total_amount":"0.01","out_trade_no":"20181011001031651"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2018062860465258\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.page.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-12-15 22:42:06\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://api.kzwchina.com/common/alipay/notify\'/><input type=\'hidden\' name=\'return_url\' value=\'http://api.kzwchina.com/common/alipay/notify\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'BsEBsOj+ZlI+vy7K1PcwkYmMhYgSRRd+r6rg12+aOEVhlElL9FvnhlqY1/Mkt7/rdvPI2P1RlAxyMVsFNtu1aXIg/qfq1HlDTRXqrSIc0TRi68OPLOHnMvDXqre3dWt6rYopAXrdW4oJcaGG3huRCY0APWMDOzdeZLnpQLJ1PEBmVA0KqS9sYS+zR7WaG3+T47o6yWKp532OYOyzIMMKxvKt9A1NEU2Y1cfFWW9ldkNtpVemSl14PXmn52RZeKMqYm5+6qbndNAPnLO3CCf4QsOj1tqW48WKITDWafxhuWaEbvbCcHKsihu3dppbyGl9iHYckkkP12aLH+FtXFX3qQ==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'
+2018-12-15 22:42:58  所有数据array (
+  's' => '/common/alipay/notify',
+  'gmt_create' => '2018-12-15 22:42:44',
+  'charset' => 'UTF-8',
+  'gmt_payment' => '2018-12-15 22:42:57',
+  'notify_time' => '2018-12-15 22:42:58',
+  'subject' => '学员充值',
+  'sign' => 'f8V70gux2B+4ogIRC0L7Oqo/4L90SwxVbyQH++tjzWZxFttpPR9+rxDAxrla/zn6DUrTaV8EJEXAsjEa7w1GuVSD16METRfTbFbHd34t53l2MCJEy+cy25K6DBmt2yVKokK3F/szAjJBdKrJM/NGE20hVIgfJhXmI05dnOtdGgAu+cmrnX4BTxmguej0SfLJrPbHo1bBurNuB/uAlRNiM/XzQxzqjmdXdt6h+nGGucxAm/6ZFUjtSPkixlRp/IMpzmoyIeNBa0m9k0OaAYiCEcsalO0Tig/RElG6K4IPLtsBk7pJpFtqgFPD/Z2WE/bmMmVjTTHRX7mc1ONR3LAQaw==',
+  'buyer_id' => '2088422850811641',
+  'invoice_amount' => '0.01',
+  'version' => '1.0',
+  'notify_id' => '2018121500222224257011640584987568',
+  'fund_bill_list' => '[{"amount":"0.01","fundChannel":"ALIPAYACCOUNT"}]',
+  'notify_type' => 'trade_status_sync',
+  'out_trade_no' => '20181011001031651',
+  'total_amount' => '0.01',
+  'trade_status' => 'TRADE_SUCCESS',
+  'trade_no' => '2018121522001411640541886383',
+  'auth_app_id' => '2018062860465258',
+  'receipt_amount' => '0.01',
+  'point_amount' => '0.00',
+  'app_id' => '2018062860465258',
+  'buyer_pay_amount' => '0.01',
+  'sign_type' => 'RSA2',
+  'seller_id' => '2088131733764131',
+)
+2018-12-15 22:42:58  返回结果success
+2018-12-15 22:43:12  所有数据array (
+  's' => '/common/alipay/notify',
+  'charset' => 'UTF-8',
+  'out_trade_no' => '20181011001031651',
+  'method' => 'alipay.trade.page.pay.return',
+  'total_amount' => '0.01',
+  'sign' => 'C6tLJcY7kfbNz4GCZ/Sf2TzI6GFHso48VZnltvZrYOiWQq6N6GK86aL/FGiLBVqXZEywaKrIA/UM2avbYPMHHKYHEpxrCGCXmIkqNJu2Roxv6QtX81ZFPy4bNEO4O8bFJM+dH/45y7zS4Uptb26ULUrstTRV6VcjGfxZIr8Pz8YoacAqHXFu5gJi2iUCmjgFAAIRlsxDu062hkhFCtJY5SelMuOw6wreruJeQR6p2ehe3WIziSK99nkKtflxTJQz5h1Iu8zadhoWs6L/35b4V4i1qHk86OPSine3vuxhjtA/+aZcDk3MoSAgK+zWctJcjy9NR/IAZdNLiaizHOTU9g==',
+  'trade_no' => '2018121522001411640541886383',
+  'auth_app_id' => '2018062860465258',
+  'version' => '1.0',
+  'app_id' => '2018062860465258',
+  'sign_type' => 'RSA2',
+  'seller_id' => '2088131733764131',
+  'timestamp' => '2018-12-15 22:43:08',
+)
+2018-12-15 22:43:12  订单已支付

@@ -1,0 +1,96 @@
+{include file="admin/root/common/header"}
+{if($type==1)}
+<link rel="stylesheet" href="/static/admin/css/reset.css?v=2" type="text/css">
+<link rel="stylesheet" href="/static/admin/css/index.css?v=2" type="text/css">
+<script src="/static/admin/js/require.js?v=1" type="text/javascript" data-main="/static/admin/js/edit_main"></script>
+{/if}
+<div id="right_content">
+    <ul class="clearfix menu">
+        <li><a href="{:url('',['id'=>$id,'type'=>1])}" {if ($type==1)}class="this"{/if}>添加试题</a></li>
+        <li><a href="{:url('',['id'=>$id,'type'=>2])}" {if ($type==2)}class="this"{/if}>导入试题</a></li>
+    </ul>
+    {if($type==2)}
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class='msg'>模板</th>
+                <td>
+                    <div><a href="/templet/questionnaire.xlsx" >下载模板</a></div>
+                </td>
+            </tr>
+            <tr>
+                <th class='msg'>文件</th>
+                <td>
+                    <div id="import">上传文件</div>
+                    <div id="import-list" class="uploader-list">
+                        <div class="upload-ts">
+                            <input type="hidden" name="file" value="" datatype="*" nullmsg="请上传文件">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    {else}
+<div id="edit">
+    <div id="edit_title">
+        <label >问卷提交</label>
+    </div>
+    <div id="edit_body">
+        <div id="edit_body_list"></div>
+        <div id="edit_body_se">
+            <div id="edit_select">
+                <input type="button" value="单选" id="single">
+                <input type="button" value="文本" id="text">
+            </div>
+            <div id="edit_add">+&nbsp&nbsp添加问题</div>
+        </div>
+    </div>
+    <div id="edit_footer">
+        <div id="edit_footer_right" data-url="{:url('',['id'=>$id,'type'=>1])}"><button >发布问卷</button></div>
+    </div>
+</div>
+    {/if}
+</div>
+
+{if($type==2)}
+{include file="admin/root/common/webuploader"}
+
+<script>
+
+        $(function(){
+            file_upload({
+                pick        : '#import',
+                container   : '#import-list',
+                server      : "{:url('',['id'=>$id,'type'=>2])}",
+                mulit       : true,
+                inputname   : 'file',
+                accept: {
+                    title: 'Images',
+                    extensions: 'xls,xlsx',
+                    mimeTypes: 'application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+                },
+                callback:function(ret){
+                    layer.msg(ret.msg);
+                    if (ret.status == 1) {
+                        setTimeout(function(){
+                            location.reload();
+                        }, 500);
+                    }
+                }
+            });
+        })
+</script>
+{else}
+<script type="text/javascript">
+    var paper={$data.data};
+    var paper_type='q';
+</script>
+{/if}
+{include file="admin/root/common/footer"}

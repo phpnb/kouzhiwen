@@ -1,0 +1,93 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">资讯分类</th>
+                <td>
+                    <select name="type" class="form-control w400" style="width: 425px;">
+                        {foreach $checkVal['type'] as $v=>$k}
+                        <option value="{$v}">{$k}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>封面图</th>
+                <td>
+                    <div id="filePicker">上传图片</div>
+                    <div id="fileList" class="uploader-list" datnum="all">
+                        <div class="upload-ts">
+                            <input type="hidden" name="cover_img" value="" datatype="*" nullmsg="请上传图片">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td><input name="name" type="text" class="form-control w400" maxlength="50" datatype="*"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">作者</th>
+                <td><input name="author" type="text" class="form-control w400"maxlength="20" datatype="*"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">关联学员账号</th>
+                <td>
+                    <input name="phone" type="text" class="form-control w400" maxlength="11" datatype="/^.*?$/" nullmsg="请填写关联学员手机号">
+
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">内容</th>
+                <td>
+                    <textarea name="contents" style="width:600px;height:300px;" datatype="*" id="contentsEditor"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <th width="150" class="msg">是否推荐</th>
+                <td>
+                    {foreach $checkVal['is_recommend'] as $v=>$k}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="is_recommend" checked value="{$v}">
+                        &nbsp;&nbsp;{$k}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保 存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+{include file="admin/root/common/ueditor"}
+<script>
+    file_upload({
+        pick        : '#filePicker',
+        container   : '#fileList',
+        server      : '{:url("admin/root/upload/AliyunOss")}',
+        mulit       : false,
+        inputname   : 'cover_img'
+    });
+
+    setTimeout(function(){
+        UE.getEditor('contentsEditor', {
+            autoHeight: false,
+        });
+    },500);
+
+
+</script>
+{include file="admin/root/common/footer"}

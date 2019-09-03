@@ -1,0 +1,98 @@
+{include file="teacher/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="msg">班级</th>
+                <td>
+                    <select name="class_id" class="form-control w426" datatype="*">
+                        <option value="{$data.class_id}"><?php if($data['class_id'] == 0){echo '研究动态';}else{echo $data['class'];} ?></option>
+                        <?php if($data['class_id'] != 0){ ?>
+                        <option value="0">研究动态</option>
+                        <?php } ?>
+                        {foreach $checkVal as $v}
+                        <option value="{$v.id}">{$v.name}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <input type="hidden" name="id" value="{$data.id}">
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td><input name="name" type="text" value="{$data.name}" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th class='msg'>图片</th>
+                <td>
+                    <div id="photo-picker">上传图片</div>
+                    <div id="photo-list" class="uploader-list">
+                        <div class="upload-ts">
+                            <input type="hidden" name="cover_img" value="{$data.cover_img}" datatype="*" nullmsg="请上传图片">
+                            <img src="{$data.cover_img}" alt="" style="width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- <tr>
+                <th class='msg'>描述</th>
+                <td>
+                    <textarea name="describe" style="width:400px;height:100px;" datatype="*" ></textarea>
+                </td>
+            </tr> -->
+            <tr>
+                <th class='msg'>内容</th>
+                <td>
+                    <textarea name="contents" style="width:800px;height:400px;" datatype="*" id="describeEditor">{$data.contents}</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="teacher/root/common/webuploader"}
+{include file="teacher/root/common/ueditor"}
+{include file="teacher/root/common/dateplugin"}
+
+<script>
+$(function(){
+    file_upload({
+    pick        : '#photo-picker',
+    container   : '#photo-list',
+    server      : '{:url("teacher/root/upload/AliyunOss")}',
+    mulit       : false,
+    inputname   : 'cover_img'
+});
+
+$('#time-start').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:'zh-CN',
+    minView:2,
+    autoclose:true
+});
+
+$('#time-end').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:'zh-CN',
+    minView:2,
+    autoclose:true
+});
+
+setTimeout(function(){
+        UE.getEditor('describeEditor', {
+            autoHeight: false,
+        });
+    },500);
+
+
+})
+</script>
+{include file="teacher/root/common/footer"}

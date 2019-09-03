@@ -1,0 +1,172 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+        <table class="table">
+            {if (!empty($data))}
+            {foreach $data AS $v}
+            <div>
+                <tr>
+                    <td width="150"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th width="150" class="msg">内容:</th>
+                    <td>
+                        {$v.contents}
+                    </td>
+                </tr>
+                <tr>
+                    <th width="150" class="msg">作者:</th>
+                    <td>
+                        {$v.name}
+                    </td>
+                </tr>
+            </div>
+        </table>
+    {if($v.type==2)}
+            <div>
+                <tr>
+                    <div id="url-list" class="uploader-list_video" >
+                        <div class="upimg-box">
+                            <notempty name="video">
+                                <video src="{$v.url}" controls="controls"  height="300"></video>
+                            </notempty>
+                        </div>
+                    </div>
+                </tr>
+            </div>
+
+    {/if}
+    {if($v.type==3)}
+    <div>
+        <tr>
+
+                <div class="upimg-box">
+                        <img src="{$v.url}" height="300"></img>
+                </div>
+        </tr>
+    </div>
+
+    {/if}
+    {if($v.type==3)}
+    <div>
+        <tr>
+
+            <div class="upimg-box">
+                <img src="{$v.url}" height="300"></img>
+            </div>
+        </tr>
+    </div>
+
+    {/if}
+    {if($v.type==4)}
+    <div>
+            <tr>
+                <a href="" download="{$v.url}">下载</a>
+            </tr>
+    </div>
+
+    {/if}
+    {/foreach}
+    {/if}
+</div>
+{include file="admin/root/common/webuploader"}
+
+<script type="text/javascript">
+    $(function(){
+        $("input[name='is_xszd']").click(function(){
+            xszdtype(this.value);
+        });
+        $("input[name='is_zdwy']").click(function(){
+            zdwytype(this.value);
+        });
+        $("input[name='identity[]']").click(function(){
+            identity(this.value);
+        });
+        xszdtype({$data['is_xszd']});
+        zdwytype({$data['is_zdwy']});
+    })
+
+    function xszdtype(type) {
+        if(type==0){
+            $("#classify_id").show();
+            $("#teacher_type").hide();
+            $("#is_zdwy").hide();
+            $("#identity").show();
+
+        }else{
+            $("#classify_id").hide();
+            $("#teacher_type").show();
+            $("#is_zdwy").show();
+            $("#identity").hide();
+            $("input[name='identity[]']").prop({'checked':false}).attr({'checked':false});
+        }
+    }
+
+    function zdwytype(type) {
+        if(type==0){
+            $("#teacher_type").show();
+        }else{
+            $("#teacher_type").hide();
+        }
+    }
+
+    function identity(val) {
+        if($("#identity2").is(':checked') && val==2){
+            $("#identity1").prop({'checked':false}).attr({'checked':false});
+            $("#identity3").prop({'checked':false}).attr({'checked':false});
+        }else{
+            $("#identity2").prop({'checked':false}).attr({'checked':false});
+        }
+    }
+
+file_upload({
+    pick        : '#photo-picker',
+    container   : '#photo-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'photo'
+});
+file_upload({
+    pick        : '#synopsis_img-picker',
+    container   : '#synopsis_img-list',
+    server      : '{:url("admin/root/upload/AliyunOss")}',
+    mulit       : false,
+    inputname   : 'synopsis_img'
+});
+file_upload({
+    pick        : '#synopsis-picker',
+    container   : '#synopsis-list',
+    server      : '{:url("admin/root/upload/AliyunOss")}',
+    mulit       : false,
+    inputname   : 'synopsis',
+    accept: {
+        title: 'Images',
+        extensions: 'mp4,avi,dat,mkv,flv,vob,m4v,mov,3gp,mpg,mpeg,mpe,wmv,asf,asx,mp3',
+        mimeTypes: 'video/mp4,video/avi,video/dat,video/mkv,video/flv,video/vob,video/m4v,video/mov,video/3gp,video/mpg,video/mpeg,video/mpe,video/wmv,video/asf,video/asx,audio/mpeg'
+    },
+    callback:function(ret){
+        var matching =/\.(gif|jpg|jpeg|bmp|png)/i;
+        if(matching.test(ret.data.path)){
+            $('#synopsis-list').removeClass('uploader-list_video');
+            $('#synopsis-list').addClass='ploader-list';
+            var info = '<div class="upimg-box">\
+                                <span class="glyphicon glyphicon-remove-sign remove-img"></span>\
+                                <input type="hidden" name="synopsis" value="'+ret.data.path+'">\
+                                <img src="'+ret.data.path+'" alt=""  style="width:200px;">\
+                            </div>';
+        }else{
+            $('#synopsis-list').removeClass('uploader-list');
+            $('#synopsis-list').addClass='ploader-list_video';
+            var info = '<div class="upimg-box">\
+                <input type="hidden" name="synopsis" value="'+ret.data.path+'">\
+                 <notempty name="video">\
+	                <video src="'+ret.data.path+'" controls="controls"  height="300"></video>\
+	             </notempty>\
+             </div>';
+        }
+        $('#synopsis-list').html(info);
+    }
+
+});
+</script>
+{include file="admin/root/common/footer"}

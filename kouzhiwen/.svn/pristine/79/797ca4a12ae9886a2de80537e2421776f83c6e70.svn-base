@@ -1,0 +1,331 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <th width="150" class="msg">用户名</th>
+                <td><input name="username" value="{$data.username}" type="text" class="form-control w400" datatype="s"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">密码</th>
+                <td><input name="password" value="" type="password" class="form-control w400"  ></td>
+            </tr>
+            {eq name="$checkVal['enterprise_id']" value="0"}
+
+            <!--<tr id="classify_id">-->
+                <!--<th class="msg">频道</th>-->
+                <!--<td>-->
+
+                    <!--<select name="classify_id" class="form-control w426" datatype="n">-->
+                        <!--{foreach $checkVal['classify_idVal'] as $v}-->
+                        <!--<option value="{$v.id}" {eq name="$data.classify_id" value="$v.id" }selected{/eq}>{$v.name}</option>-->
+                        <!--{/foreach}-->
+                    <!--</select>-->
+
+
+                <!--</td>-->
+            <!--</tr>-->
+
+            <tr id="classify_id">
+                <th class="msg">频道</th>
+                <td>
+                    <div class="clearfix mt5">
+                        {foreach $checkVal['classify_idVal'] as $k=>$v}
+                        <label class="checkbox-inline">
+                            <!--{// foreach $pp as $j=>$m}-->
+                            <input type="checkbox" name="classify_id[]" value="{$v.id}" {foreach $pp as $j}    {if $v.id == $j} checked="checked" {/if}   {/foreach} > {$v.name}
+                            <!--{// /foreach}-->
+                        </label>
+                        {/foreach}
+                    </div>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <th class="msg">是否叩之问学会</th>
+                <td>
+                    {foreach $checkVal['is_xszdVal'] as $k=>$v}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="is_xszd" value="{$k}" {if ($data['is_xszd'] == $k)} checked="checked"{/if}> {$v}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            <tr id="teacher_type">
+                <th class="msg">分类</th>
+                <td>
+                    <select name="teacher_type" class="form-control w426" datatype="n">
+                        {foreach $checkVal['teacher_typeVal'] as $v}
+                        <option value="{$v.id}" {eq name="$data.teacher_type" value="$v.id" }selected{/eq}>{$v.name}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr id="is_zdwy">
+                <th class="msg">是否学术指导委员</th>
+                <td>
+                    {foreach $checkVal['is_zdwyVal'] as $k=>$v}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="is_zdwy" value="{$k}" {if ($data['is_zdwy'] == $k)} checked="checked"{/if}> {$v}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+
+
+
+            {/eq}
+            <tr>
+                <th width="150" class="msg">姓名</th>
+                <td><input name="name" value="{$data.name}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">昵称</th>
+                <td><input name="nickname" type="text" value="{$data.nickname}" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">称呼</th>
+                <td><input name="title" value="{$data.title}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">邮箱</th>
+                <td><input name="email" type="text" value="{$data.email}" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th class='msg'>头像</th>
+                <td>
+                    <div id="photo-picker">上传图片</div>
+                    <div id="photo-list" class="uploader-list">
+                        <div class="upimg-box upload-ts">
+                            <span class="glyphicon glyphicon-remove-sign remove-img"></span>
+                            <input type="hidden" name="photo" value="{$data.photo}" datatype="/^.*?$/" nullmsg="请上传图片">
+                            <img src="{$data.photo}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">手机号</th>
+                <td><input name="phone" value="{$data.phone}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th class="msg">性别</th>
+                <td>
+                    {foreach $checkVal['sexVal'] as $k=>$v}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="sex" value="{$k}" {if ($data['sex'] == $k)} checked="checked"{/if}> {$v}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            <!--<tr>-->
+                <!--<th width="150" class="msg">所属组</th>-->
+                <!--<td>-->
+                    <!--<select name="group_id" class="form-control w426" datatype="n">-->
+                        <!--{foreach $checkVal['group_idVal'] as $v}-->
+                        <!--<option value="{$v.id}" {eq name="$data.group_id" value="$v.id" }selected{/eq}>{$v.name}</option>-->
+                        <!--{/foreach}-->
+                    <!--</select>-->
+                <!--</td>-->
+            <!--</tr>-->
+
+            <tr id="url1">
+                <th class='msg'>视频或音频地址</th>
+                <td><input name="synopsis" value="{$data.synopsis}" type="text" class="form-control w400"></td>
+            </tr>
+            <tr>
+                <th class='msg'></th>
+                <td>
+                    <div id="synopsis-list" class="uploader-list_video" datnum="one" >
+                        <div class="upimg-box">
+                            <input type="hidden"  value="{$data.synopsis}" datatype="/^.*?$/" nullmsg="请上传视频">
+                            <notempty name="video">
+                                <video src="{$data.synopsis}" controls="controls"  height="300"></video>
+                            </notempty>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <th class='msg'>视频简介图片</th>
+                <td>
+                    <div id="synopsis_img-picker">上传图片</div>
+                    <div id="synopsis_img-list" class="uploader-list">
+                        <div class="upimg-box upload-ts">
+                            <span class="glyphicon glyphicon-remove-sign remove-img"></span>
+                            <input type="hidden" name="synopsis_img" value="{$data.synopsis_img}" datatype="/^.*?$/" nullmsg="请上传图片">
+                            <img src="{$data.synopsis_img}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">公司职位</th>
+                <td><input name="unit_title" type="text" value="{$data.unit_title}" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">公司名称</th>
+                <td><input name="company_name" type="text" value="{$data.company_name}"  class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th class="msg">简介</th>
+                <td><textarea name="brief" datatype="/^.*?$/">{$data.brief}</textarea></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">咨询价格</th>
+                <td><input name="price" type="text" class="form-control w400" value="{$data.price}" datatype="/^.*?$/" nullmsg="请填写咨询价格！(0 为免费"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">助理邮箱</th>
+                <td><input name="assistant_email" type="text" value="{$data.assistant_email}" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">助理手机</th>
+                <td><input name="assistant_phone" type="text" value="{$data.assistant_phone}" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">助理电话</th>
+                <td><input name="assistant_tel" type="text" value="{$data.assistant_tel}" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+
+            {neq name="$checkVal['enterprise_id']" value="0"}
+            <tr>
+                <th class="msg">是否推荐</th>
+                <td>
+                    {foreach $checkVal['is_recommendVal'] as $k=>$v}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="is_recommend" value="{$k}" {if ($data['is_recommend'] == $k)} checked="checked"{/if}> {$v}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            {/neq}
+            <tr>
+                <td>
+                    <input name="id" type="hidden" value="{$data.id}">
+                </td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+
+<script type="text/javascript">
+    $(function(){
+        $("input[name='is_xszd']").click(function(){
+            xszdtype(this.value);
+        });
+        $("input[name='is_zdwy']").click(function(){
+            zdwytype(this.value);
+        });
+        $("input[name='identity[]']").click(function(){
+            identity(this.value);
+        });
+        xszdtype({$data['is_xszd']});
+        zdwytype({$data['is_zdwy']});
+    })
+
+    function xszdtype(type) {
+        if(type==0){
+            $("#teacher_type").hide();
+        }else{
+
+            $("#teacher_type").show();
+        }}
+
+    // function xszdtype(type) {
+    //     if(type==0){
+    //         $("#classify_id").show();
+    //         $("#teacher_type").hide();
+    //         $("#is_zdwy").hide();
+    //         $("#identity").show();
+    //
+    //     }else{
+    //         $("#classify_id").hide();
+    //         $("#teacher_type").show();
+    //         $("#is_zdwy").show();
+    //         $("#identity").hide();
+    //         $("input[name='identity[]']").prop({'checked':false}).attr({'checked':false});
+    //     }
+    // }
+
+    // function zdwytype(type) {
+    //     if(type==0){
+    //         $("#teacher_type").show();
+    //     }else{
+    //         $("#teacher_type").hide();
+    //     }
+    // }
+
+    function identity(val) {
+        if($("#identity2").is(':checked') && val==2){
+            $("#identity1").prop({'checked':false}).attr({'checked':false});
+            $("#identity3").prop({'checked':false}).attr({'checked':false});
+        }else{
+            $("#identity2").prop({'checked':false}).attr({'checked':false});
+        }
+    }
+
+file_upload({
+    pick        : '#photo-picker',
+    container   : '#photo-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'photo'
+});
+file_upload({
+    pick        : '#synopsis_img-picker',
+    container   : '#synopsis_img-list',
+    server      : '{:url("admin/root/upload/AliyunOss")}',
+    mulit       : false,
+    inputname   : 'synopsis_img'
+});
+file_upload({
+    pick        : '#synopsis-picker',
+    container   : '#synopsis-list',
+    server      : '{:url("admin/root/upload/AliyunOss")}',
+    mulit       : false,
+    inputname   : 'synopsis',
+    accept: {
+        title: 'Images',
+        extensions: 'mp4,avi,dat,mkv,flv,vob,m4v,mov,3gp,mpg,mpeg,mpe,wmv,asf,asx,mp3',
+        mimeTypes: 'video/mp4,video/avi,video/dat,video/mkv,video/flv,video/vob,video/m4v,video/mov,video/3gp,video/mpg,video/mpeg,video/mpe,video/wmv,video/asf,video/asx,audio/mpeg'
+    },
+    callback:function(ret){
+        var matching =/\.(gif|jpg|jpeg|bmp|png)/i;
+        if(matching.test(ret.data.path)){
+            $('#synopsis-list').removeClass('uploader-list_video');
+            $('#synopsis-list').addClass='ploader-list';
+            var info = '<div class="upimg-box">\
+                                <span class="glyphicon glyphicon-remove-sign remove-img"></span>\
+                                <input type="hidden" name="synopsis" value="'+ret.data.path+'">\
+                                <img src="'+ret.data.path+'" alt=""  style="width:200px;">\
+                            </div>';
+        }else{
+            $('#synopsis-list').removeClass('uploader-list');
+            $('#synopsis-list').addClass='ploader-list_video';
+            var info = '<div class="upimg-box">\
+                <input type="hidden" name="synopsis" value="'+ret.data.path+'">\
+                 <notempty name="video">\
+	                <video src="'+ret.data.path+'" controls="controls"  height="300"></video>\
+	             </notempty>\
+             </div>';
+        }
+        $('#synopsis-list').html(info);
+    }
+
+});
+</script>
+{include file="admin/root/common/footer"}

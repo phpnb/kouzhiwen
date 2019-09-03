@@ -1,0 +1,3234 @@
+[ 2019-01-31T05:41:41+08:00 ] 172.31.69.247 34.192.116.178 GET /
+[ log ] admin.kzwchina.com/ [运行时间：0.018607s][吞吐率：53.74req/s] [内存消耗：2,478.81kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; +http://www.similartech.com/smtbot)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:42+08:00 ] 172.31.69.247 34.192.116.178 GET /
+[ log ] admin.kzwchina.com/ [运行时间：0.018831s][吞吐率：53.10req/s] [内存消耗：2,478.82kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko)                 Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; SMTBot/1.0; +http://www.similartech.com/smtbot)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:42+08:00 ] 172.31.69.247 34.192.116.178 GET /
+[ log ] admin.kzwchina.com/ [运行时间：0.019040s][吞吐率：52.52req/s] [内存消耗：2,478.71kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; http://www.similartech.com/smtbot)',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:43+08:00 ] 172.31.69.247 34.192.116.178 GET /root/login/login.html
+[ log ] admin.kzwchina.com/root/login/login.html [运行时间：0.017808s][吞吐率：56.15req/s] [内存消耗：2,305.40kb] [文件加载：49]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; http://www.similartech.com/smtbot)',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uc9aq7g1n27pqg46jdp8g0d016',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ /www/wwwroot/kouzhiwen/application/admin/root/controller/Login.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/root/view/login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:43+08:00 ] 172.31.69.247 34.192.116.178 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.016707s][吞吐率：59.86req/s] [内存消耗：1,966.16kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; http://www.similartech.com/smtbot)',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/root/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uc9aq7g1n27pqg46jdp8g0d016',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:44+08:00 ] 172.31.69.247 34.192.116.178 GET /
+[ log ] admin.kzwchina.com/ [运行时间：0.021667s][吞吐率：46.15req/s] [内存消耗：2,478.67kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; http://www.similartech.com/smtbot)',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uc9aq7g1n27pqg46jdp8g0d016',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:44+08:00 ] 172.31.69.247 34.192.116.178 GET /root/login/login.html
+[ log ] admin.kzwchina.com/root/login/login.html [运行时间：0.017211s][吞吐率：58.10req/s] [内存消耗：2,305.40kb] [文件加载：49]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; http://www.similartech.com/smtbot)',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uc9aq7g1n27pqg46jdp8g0d016',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ /www/wwwroot/kouzhiwen/application/admin/root/controller/Login.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/root/view/login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:45+08:00 ] 172.31.69.247 34.192.116.178 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.018158s][吞吐率：55.07req/s] [内存消耗：1,966.16kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; http://www.similartech.com/smtbot)',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/root/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uc9aq7g1n27pqg46jdp8g0d016',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:45+08:00 ] 172.31.69.247 34.192.116.178 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.018903s][吞吐率：52.90req/s] [内存消耗：1,966.42kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; http://www.similartech.com/smtbot)',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/root/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uc9aq7g1n27pqg46jdp8g0d016',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T05:41:45+08:00 ] 172.31.69.247 34.192.116.178 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.016689s][吞吐率：59.92req/s] [内存消耗：1,966.16kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36 (compatible; SMTBot/1.0; http://www.similartech.com/smtbot)',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/root/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uc9aq7g1n27pqg46jdp8g0d016',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T09:30:52+08:00 ] 172.31.69.247 123.122.148.162 GET /common/user/my_info
+[ log ] api.kzwchina.com/common/user/my_info [运行时间：0.116717s][吞吐率：8.57req/s] [内存消耗：5,123.21kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '2f9384efb1bf590005c4c7981c62eb22',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->myInfo[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '2f9384efb1bf590005c4c7981c62eb22' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_regions` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_regions` [ RunTime:0.002961s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T09:30:55+08:00 ] 172.31.69.247 123.122.148.162 GET /common/user/notice_count
+[ log ] api.kzwchina.com/common/user/notice_count [运行时间：0.042559s][吞吐率：23.50req/s] [内存消耗：3,945.84kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '2f9384efb1bf590005c4c7981c62eb22',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->NoticeCount[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000349s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '2f9384efb1bf590005c4c7981c62eb22' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_notice` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_notice` WHERE  `uid` = 144  AND `reading` = 0 LIMIT 1 [ RunTime:0.000340s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T09:30:55+08:00 ] 172.31.69.247 123.122.148.162 GET /common/home/index?enterprise_id=13
+[ log ] api.kzwchina.com/common/home/index?enterprise_id=13 [运行时间：0.055716s][吞吐率：17.95req/s] [内存消耗：4,388.36kb] [文件加载：70]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '2f9384efb1bf590005c4c7981c62eb22',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'enterprise_id' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\Home->index[ /www/wwwroot/kouzhiwen/application/api/common/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '2f9384efb1bf590005c4c7981c62eb22' LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_enterprise` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 20  AND `status` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_banner` [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT `pid`,`mold`,`type`,`img_url` FROM `tpn_banner` WHERE  `enterprise_id` = 13  AND `type` = 1  AND `status` = 1 ORDER BY add_time desc LIMIT 0,4 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `id` = 43 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_user` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class_user` WHERE  `uid` = 144  AND `class_id` = 43 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`photo`,`c`.`reading`,`c`.`look_num`,`t`.`name`,`c`.`price` FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `c`.`enterprise_id` = '13'  AND `c`.`type` = 3  AND `c`.`scene` = 1 ORDER BY c.is_recommend desc,c.created_at desc LIMIT 0,4 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`photo` FROM `tpn_teacher` WHERE  `enterprise_id` = 13  AND `status` = 1  AND `is_xszd` = 0  AND `identity` LIKE '%3%' ORDER BY is_recommend desc,updated_at desc LIMIT 0,4 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_information` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `id`,`cover_img`,`name`,`add_time`,`comment_num`,`pv` FROM `tpn_information` WHERE  `enterprise_id` = 13 ORDER BY `is_recommend`  desc,`add_time`  desc LIMIT 0,2 [ RunTime:0.000247s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:00:02+08:00 ] 172.31.69.247 47.105.58.152 GET /root/Task/index.html?type=2
+[ log ] admin.kzwchina.com/root/Task/index.html?type=2 [运行时间：0.018107s][吞吐率：55.23req/s] [内存消耗：2,440.63kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'Task',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'curl/7.29.0',
+  'host' => 'admin.kzwchina.com',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:36+08:00 ] 172.31.69.247 123.122.148.162 GET /root/index/index.html
+[ log ] admin.kzwchina.com/root/index/index.html [运行时间：0.017218s][吞吐率：58.08req/s] [内存消耗：2,407.37kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:36+08:00 ] 172.31.69.247 123.122.148.162 GET /root/login/login.html
+[ log ] admin.kzwchina.com/root/login/login.html [运行时间：0.017324s][吞吐率：57.72req/s] [内存消耗：2,305.52kb] [文件加载：49]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ /www/wwwroot/kouzhiwen/application/admin/root/controller/Login.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/root/view/login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:36+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.022435s][吞吐率：44.57req/s] [内存消耗：1,966.51kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/root/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:36+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.018020s][吞吐率：55.49req/s] [内存消耗：1,966.68kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/root/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:50+08:00 ] 172.31.69.247 123.122.148.162 POST /root/login/login.html
+[ log ] admin.kzwchina.com/root/login/login.html [运行时间：0.027221s][吞吐率：36.74req/s] [内存消耗：3,716.10kb] [文件加载：58]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://admin.kzwchina.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'referer' => 'http://admin.kzwchina.com/root/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'Account_For_Admin',
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ /www/wwwroot/kouzhiwen/application/admin/root/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000394s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_admin` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:51+08:00 ] 172.31.69.247 123.122.148.162 GET /root/index/index.html
+[ log ] admin.kzwchina.com/root/index/index.html [运行时间：0.035897s][吞吐率：27.86req/s] [内存消耗：3,885.89kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Index->index[ /www/wwwroot/kouzhiwen/application/admin/root/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/root/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'menu',
+  2 => 'mc',
+  3 => 'group',
+  4 => 'gid',
+  5 => 'access',
+  6 => 'id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000384s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000403s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000278s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_menu` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_menu` WHERE  `module` IN ('admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/root','admin/course','admin/course','admin/course','admin/course','admin/course','admin/course','admin/course','admin/info','admin/info','admin/info','admin/info','admin/finance','admin/finance','admin/finance','admin/finance','admin/finance','admin/finance','admin/info')  AND `controller` IN ('AccessGroup','Admin','Menu','Banner','Classify','Introduce','Protocol','Advertisements','Comment','Notice','Information','Log','Version','Feedback','Contact','Keyword','Course','Coursetype','Paper','Study','Classtype','Classcourse','Questionnaire','Teacher','Enterprise','User','Teachertype','Detailed','Userdetailed','Recharge','Procedures','Pay','Gift','Headmaster') ORDER BY `mcid` ASC,`id` ASC [ RunTime:0.001071s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000266s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_menu_category` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_menu_category` ORDER BY `sort` ASC [ RunTime:0.000250s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:51+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.015962s][吞吐率：62.65req/s] [内存消耗：1,966.51kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:51+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.015726s][吞吐率：63.59req/s] [内存消耗：1,966.68kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:51+08:00 ] 172.31.69.247 123.122.148.162 GET /root/index/welcome/id/1.html
+[ log ] admin.kzwchina.com/root/index/welcome/id/1.html [运行时间：0.025523s][吞吐率：39.18req/s] [内存消耗：3,385.69kb] [文件加载：58]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Index->welcome[ /www/wwwroot/kouzhiwen/application/admin/root/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/root/view/index/welcome.html [ array (
+  0 => 'id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:51+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024251s][吞吐率：41.24req/s] [内存消耗：1,966.52kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/root/index/welcome/id/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:51+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.024324s][吞吐率：41.11req/s] [内存消耗：1,966.57kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/root/index/welcome/id/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:56+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/index.html
+[ log ] admin.kzwchina.com/course/course/index.html [运行时间：0.037379s][吞吐率：26.75req/s] [内存消耗：4,237.92kb] [文件加载：69]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->index[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/course/index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'type',
+  4 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000443s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000359s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000328s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 0  AND `c`.`status` = 1 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `c`.*,`t`.`name` FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 0  AND `c`.`status` = 1 ORDER BY c.weight DESC,c.created_at desc LIMIT 0,10 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000244s ]
+[ error ] [8]未定义数组索引: type[/www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php:37]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:56+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.024523s][吞吐率：40.78req/s] [内存消耗：1,966.60kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/course/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:06:56+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024523s][吞吐率：40.78req/s] [内存消耗：1,966.45kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/course/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:09:42+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/edit/id/177.html
+[ log ] admin.kzwchina.com/course/course/edit/id/177.html [运行时间：0.078040s][吞吐率：12.81req/s] [内存消耗：5,910.01kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/course/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'id' => '177',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->edit[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/course/edit.html [ array (
+  0 => 'data',
+  1 => 'id',
+  2 => 'enterprise_id',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000360s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000336s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course` WHERE  `id` = 177 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `identity` LIKE '%3%'  AND `status` = 1 [ RunTime:0.001992s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000605s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:09:42+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.023784s][吞吐率：42.05req/s] [内存消耗：1,966.49kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:09:42+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.023661s][吞吐率：42.26req/s] [内存消耗：1,966.55kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:09:42+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/type_list.html?type=1
+[ log ] admin.kzwchina.com/course/course/type_list.html?type=1 [运行时间：0.029325s][吞吐率：34.10req/s] [内存消耗：3,891.79kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->typeList[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000508s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000431s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000335s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course_type` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course_type` WHERE  `enterprise_id` = 0  AND `type` = 1 [ RunTime:0.000325s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:09:42+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/images/sprite_gj.png
+[ log ] admin.kzwchina.com/static/select/images/sprite_gj.png [运行时间：0.015706s][吞吐率：63.67req/s] [内存消耗：1,966.42kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/static/select/css/select_gj.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:28:35+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/add.html
+[ log ] admin.kzwchina.com/course/course/add.html [运行时间：0.072694s][吞吐率：13.76req/s] [内存消耗：6,687.60kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/course/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->add[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/course/add.html [ array (
+  0 => 'checkVal',
+  1 => 'enterprise_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000357s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `identity` LIKE '%3%'  AND `status` = 1 [ RunTime:0.002019s ]
+[ error ] [8]未定义数组索引: teacher_id[/www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php:132]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:28:35+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.023869s][吞吐率：41.90req/s] [内存消耗：1,966.50kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/course/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:28:35+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.023907s][吞吐率：41.83req/s] [内存消耗：1,966.58kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/course/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:28:35+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.016182s][吞吐率：61.80req/s] [内存消耗：1,966.50kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/course/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:28:35+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.015800s][吞吐率：63.29req/s] [内存消耗：1,966.58kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/course/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:28:35+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/images/sprite_gj.png
+[ log ] admin.kzwchina.com/static/select/images/sprite_gj.png [运行时间：0.015771s][吞吐率：63.41req/s] [内存消耗：1,966.42kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/static/select/css/select_gj.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:29:31+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/edit/id/177.html
+[ log ] admin.kzwchina.com/course/course/edit/id/177.html [运行时间：0.076590s][吞吐率：13.06req/s] [内存消耗：5,910.01kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/course/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'id' => '177',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->edit[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/course/edit.html [ array (
+  0 => 'data',
+  1 => 'id',
+  2 => 'enterprise_id',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000368s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course` WHERE  `id` = 177 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `identity` LIKE '%3%'  AND `status` = 1 [ RunTime:0.002012s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000328s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:29:31+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.023465s][吞吐率：42.62req/s] [内存消耗：1,966.49kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:29:31+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.023369s][吞吐率：42.79req/s] [内存消耗：1,966.55kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:29:31+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/type_list.html?type=1
+[ log ] admin.kzwchina.com/course/course/type_list.html?type=1 [运行时间：0.029146s][吞吐率：34.31req/s] [内存消耗：3,891.79kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->typeList[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000386s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000300s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course_type` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course_type` WHERE  `enterprise_id` = 0  AND `type` = 1 [ RunTime:0.000275s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:29:31+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/images/sprite_gj.png
+[ log ] admin.kzwchina.com/static/select/images/sprite_gj.png [运行时间：0.015686s][吞吐率：63.75req/s] [内存消耗：1,966.42kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/static/select/css/select_gj.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:30:20+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/edit/id/177.html
+[ log ] admin.kzwchina.com/course/course/edit/id/177.html [运行时间：0.075468s][吞吐率：13.25req/s] [内存消耗：5,910.01kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/course/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'id' => '177',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->edit[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/course/edit.html [ array (
+  0 => 'data',
+  1 => 'id',
+  2 => 'enterprise_id',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000420s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000356s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course` WHERE  `id` = 177 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `identity` LIKE '%3%'  AND `status` = 1 [ RunTime:0.001980s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000314s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:30:20+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.016876s][吞吐率：59.26req/s] [内存消耗：1,966.49kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:30:20+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.016004s][吞吐率：62.48req/s] [内存消耗：1,966.55kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T10:30:20+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/type_list.html?type=1
+[ log ] admin.kzwchina.com/course/course/type_list.html?type=1 [运行时间：0.029785s][吞吐率：33.57req/s] [内存消耗：3,891.79kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'referer' => 'http://admin.kzwchina.com/course/course/edit/id/177.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->typeList[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000379s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000362s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course_type` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course_type` WHERE  `enterprise_id` = 0  AND `type` = 1 [ RunTime:0.000271s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T10:30:20+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/images/sprite_gj.png
+[ log ] admin.kzwchina.com/static/select/images/sprite_gj.png [运行时间：0.015723s][吞吐率：63.60req/s] [内存消耗：1,966.42kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/static/select/css/select_gj.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:19:16+08:00 ] 172.31.69.247 123.122.148.162 GET /course/study/index.html
+[ log ] admin.kzwchina.com/course/study/index.html [运行时间：0.035789s][吞吐率：27.94req/s] [内存消耗：4,170.01kb] [文件加载：66]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'study',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Study->index[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Study.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/study/index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000432s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000369s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000317s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_class` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 0 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `c`.*,t.name as teachername FROM `tpn_class` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 0 ORDER BY c.created_at desc LIMIT 0,10 [ RunTime:0.000479s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:19:17+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.022894s][吞吐率：43.68req/s] [内存消耗：1,966.50kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/study/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:19:17+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.023185s][吞吐率：43.13req/s] [内存消耗：1,966.58kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/study/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:50:23+08:00 ] 172.31.69.247 123.122.148.162 GET /course/study/add.html
+[ log ] admin.kzwchina.com/course/study/add.html [运行时间：0.034782s][吞吐率：28.75req/s] [内存消耗：4,123.69kb] [文件加载：64]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'study',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/study/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Study->add[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Study.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/study/add.html [ array (
+  0 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000403s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000379s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `enterprise_id` = 0  AND `identity` LIKE '%2%' [ RunTime:0.001037s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:50:23+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.024627s][吞吐率：40.61req/s] [内存消耗：1,966.68kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/study/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:50:23+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024423s][吞吐率：40.94req/s] [内存消耗：1,966.51kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/study/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:25+08:00 ] 172.31.69.247 123.122.148.162 GET /course/classtype/index.html
+[ log ] admin.kzwchina.com/course/classtype/index.html [运行时间：0.033620s][吞吐率：29.74req/s] [内存消耗：4,041.32kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'classtype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Classtype->index[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Classtype.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/classtype/index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000447s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000381s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000328s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_type` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class_type` WHERE  `enterprise_id` = 0  AND `up` = 0 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_class_type` WHERE  `enterprise_id` = 0 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class_type` WHERE  `enterprise_id` = 0 LIMIT 0,10 [ RunTime:0.000233s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:25+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.022722s][吞吐率：44.01req/s] [内存消耗：1,966.54kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/classtype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:25+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.022979s][吞吐率：43.52req/s] [内存消耗：1,966.59kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/classtype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:28+08:00 ] 172.31.69.247 123.122.148.162 GET /course/classcourse/index.html
+[ log ] admin.kzwchina.com/course/classcourse/index.html [运行时间：0.076280s][吞吐率：13.11req/s] [内存消耗：4,266.17kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'classcourse',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Classcourse->index[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Classcourse.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/classcourse/index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000495s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000427s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000320s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_teacher` WHERE  `identity` = '1,3' [ RunTime:0.002036s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `enterprise_id` = 0 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class_course` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_class_course` `c` LEFT JOIN `tpn_class` `s` ON `s`.`id`=`c`.`class_id` WHERE  `s`.`enterprise_id` = 0 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`type`,`c`.`teacher_id`,`c`.`photo`,`c`.`url`,`c`.`reading`,`c`.`start`,`c`.`status`,`c`.`updated_at`,`s`.`name` FROM `tpn_class_course` `c` LEFT JOIN `tpn_class` `s` ON `s`.`id`=`c`.`class_id` WHERE  `s`.`enterprise_id` = 0 ORDER BY c.id desc LIMIT 0,10 [ RunTime:0.000629s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:28+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024491s][吞吐率：40.83req/s] [内存消耗：1,966.52kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/classcourse/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:28+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.024171s][吞吐率：41.37req/s] [内存消耗：1,966.57kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/classcourse/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:34+08:00 ] 172.31.69.247 123.122.148.162 GET /course/questionnaire/index.html
+[ log ] admin.kzwchina.com/course/questionnaire/index.html [运行时间：0.033736s][吞吐率：29.64req/s] [内存消耗：4,120.86kb] [文件加载：66]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'questionnaire',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Questionnaire->index[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Questionnaire.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/questionnaire/index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000415s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000434s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `enterprise_id` = 0 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_questionnaire` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_questionnaire` `q` LEFT JOIN `tpn_class` `c` ON `c`.`id`=`q`.`class_id` WHERE  `c`.`enterprise_id` = 0 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `q`.*,`c`.`name` FROM `tpn_questionnaire` `q` LEFT JOIN `tpn_class` `c` ON `c`.`id`=`q`.`class_id` WHERE  `c`.`enterprise_id` = 0 ORDER BY q.id desc LIMIT 0,10 [ RunTime:0.000231s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:34+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024633s][吞吐率：40.60req/s] [内存消耗：1,966.48kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/questionnaire/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:34+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.023938s][吞吐率：41.77req/s] [内存消耗：1,966.55kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/questionnaire/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:38+08:00 ] 172.31.69.247 123.122.148.162 GET /course/questionnaire/add.html
+[ log ] admin.kzwchina.com/course/questionnaire/add.html [运行时间：0.034981s][吞吐率：28.59req/s] [内存消耗：4,174.40kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'questionnaire',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/questionnaire/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Questionnaire->add[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Questionnaire.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/questionnaire/add.html [ array (
+  0 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000368s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_class` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_class` WHERE  `enterprise_id` = 0 [ RunTime:0.000414s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:38+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024510s][吞吐率：40.80req/s] [内存消耗：1,966.52kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/questionnaire/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:38+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.023950s][吞吐率：41.75req/s] [内存消耗：1,966.57kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/questionnaire/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:52+08:00 ] 172.31.69.247 123.122.148.162 GET /course/course/index.html
+[ log ] admin.kzwchina.com/course/course/index.html [运行时间：0.037285s][吞吐率：26.82req/s] [内存消耗：4,237.92kb] [文件加载：69]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Course->index[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/course/index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'type',
+  4 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000391s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 0  AND `c`.`status` = 1 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT `c`.*,`t`.`name` FROM `tpn_course` `c` LEFT JOIN `tpn_teacher` `t` ON `t`.`id`=`c`.`teacher_id` WHERE  `c`.`enterprise_id` = 0  AND `c`.`status` = 1 ORDER BY c.weight DESC,c.created_at desc LIMIT 0,10 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_classify` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_classify` WHERE  `enterprise_id` = 0 [ RunTime:0.000248s ]
+[ error ] [8]未定义数组索引: type[/www/wwwroot/kouzhiwen/application/admin/course/controller/Course.php:37]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:52+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.024119s][吞吐率：41.46req/s] [内存消耗：1,966.60kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/course/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:51:52+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024404s][吞吐率：40.98req/s] [内存消耗：1,966.48kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/course/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:11+08:00 ] 172.31.69.247 123.122.148.162 GET /course/coursetype/index.html
+[ log ] admin.kzwchina.com/course/coursetype/index.html [运行时间：0.031808s][吞吐率：31.44req/s] [内存消耗：4,038.42kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'coursetype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Coursetype->index[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Coursetype.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/coursetype/index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000414s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_course_type` [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_course_type` WHERE  `enterprise_id` = 0 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_course_type` WHERE  `enterprise_id` = 0 LIMIT 0,10 [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:12+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.023972s][吞吐率：41.72req/s] [内存消耗：1,966.57kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:12+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024356s][吞吐率：41.06req/s] [内存消耗：1,966.52kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:13+08:00 ] 172.31.69.247 123.122.148.162 GET /course/coursetype/add.html
+[ log ] admin.kzwchina.com/course/coursetype/add.html [运行时间：0.028656s][吞吐率：34.90req/s] [内存消耗：3,573.83kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'coursetype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Coursetype->add[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Coursetype.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/coursetype/add.html [ array (
+  0 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:13+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.022845s][吞吐率：43.77req/s] [内存消耗：1,966.54kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:13+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.022819s][吞吐率：43.82req/s] [内存消耗：1,966.59kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:58+08:00 ] 172.31.69.247 123.122.148.162 GET /course/coursetype/add.html
+[ log ] admin.kzwchina.com/course/coursetype/add.html [运行时间：0.026315s][吞吐率：38.00req/s] [内存消耗：3,384.16kb] [文件加载：58]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'coursetype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Coursetype->add[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Coursetype.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/coursetype/add.html [ array (
+  0 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000359s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:58+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024341s][吞吐率：41.08req/s] [内存消耗：1,966.54kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:52:58+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.024166s][吞吐率：41.38req/s] [内存消耗：1,966.59kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:53:22+08:00 ] 172.31.69.247 123.122.148.162 GET /course/coursetype/add.html
+[ log ] admin.kzwchina.com/course/coursetype/add.html [运行时间：0.026217s][吞吐率：38.14req/s] [内存消耗：3,384.16kb] [文件加载：58]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'course',
+    2 => 'coursetype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\course\controller\Coursetype->add[ /www/wwwroot/kouzhiwen/application/admin/course/controller/Coursetype.php ]
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/course/view/coursetype/add.html [ array (
+  0 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000337s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:53:22+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024480s][吞吐率：40.85req/s] [内存消耗：1,966.54kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:53:22+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.024265s][吞吐率：41.21req/s] [内存消耗：1,966.59kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/course/coursetype/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:58:10+08:00 ] 172.31.69.247 123.122.148.162 GET /root/advertisements/index.html
+[ log ] admin.kzwchina.com/root/advertisements/index.html [运行时间：0.032063s][吞吐率：31.19req/s] [内存消耗：4,044.52kb] [文件加载：65]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'advertisements',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://admin.kzwchina.com/root/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\root\controller\Advertisements->index[ /www/wwwroot/kouzhiwen/application/admin/root/controller/Advertisements.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/kouzhiwen/public/../application/admin/root/view/advertisements/index.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'keywords',
+  3 => 'checkVal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_access_group` [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_access_group` WHERE  `id` IN (1) [ RunTime:0.000366s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_advertisements` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_advertisements` LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_advertisements` LIMIT 0,10 [ RunTime:0.000198s ]
+
+---------------------------------------------------------------
+[ 2019-01-31T11:58:10+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/css/min/reset.css
+[ log ] admin.kzwchina.com/static/select/css/min/reset.css [运行时间：0.024850s][吞吐率：40.24req/s] [内存消耗：1,966.49kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://admin.kzwchina.com/root/advertisements/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'reset.css',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T11:58:10+08:00 ] 172.31.69.247 123.122.148.162 GET /static/select/js/min/jquery-1.7.2.min.js
+[ log ] admin.kzwchina.com/static/select/js/min/jquery-1.7.2.min.js [运行时间：0.024297s][吞吐率：41.16req/s] [内存消耗：1,966.55kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'select',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'admin.kzwchina.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://admin.kzwchina.com/root/advertisements/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=854ov0m3kucoresgga9co6dkn2',
+)
+[ info ] [ PARAM ] array (
+  'min' => 'jquery-1.7.2.min.js',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T15:00:01+08:00 ] 172.31.69.247 47.105.58.152 GET /root/Task/index.html?type=1
+[ log ] admin.kzwchina.com/root/Task/index.html?type=1 [运行时间：0.017366s][吞吐率：57.58req/s] [内存消耗：2,440.63kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'Task',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'curl/7.29.0',
+  'host' => 'admin.kzwchina.com',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-31T15:10:32+08:00 ] 172.31.69.247 101.198.186.223 GET /
+[ log ] admin.kzwchina.com/ [运行时间：0.017776s][吞吐率：56.26req/s] [内存消耗：2,478.47kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'curl/7.29.0',
+  'host' => 'admin.kzwchina.com',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2019-01-31T16:40:52+08:00 ] 172.31.69.247 101.132.102.45 GET /
+[ log ] admin.kzwchina.com/ [运行时间：0.018039s][吞吐率：55.44req/s] [内存消耗：2,478.80kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'host' => 'admin.kzwchina.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:328]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:380]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:382]
+[ error ] [8]未定义数组下标: 2[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:386]
+[ error ] [8]未定义数组下标: 3[/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php:387]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[/www/wwwroot/kouzhiwen/thinkphp/library/think/Request.php:1408]
+
+---------------------------------------------------------------
+[ 2019-01-31T20:35:18+08:00 ] 172.31.69.247 223.104.101.59 GET /common/user/my_info
+[ log ] api.kzwchina.com/common/user/my_info [运行时间：0.112514s][吞吐率：8.89req/s] [内存消耗：5,123.21kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'user-agent' => 'Android',
+  'logintoken' => '2f9384efb1bf590005c4c7981c62eb22',
+  'host' => 'api.kzwchina.com',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\common\controller\User->myInfo[ /www/wwwroot/kouzhiwen/application/api/common/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000477s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = '2f9384efb1bf590005c4c7981c62eb22' LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_regions` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_regions` [ RunTime:0.002946s ]
+
+---------------------------------------------------------------

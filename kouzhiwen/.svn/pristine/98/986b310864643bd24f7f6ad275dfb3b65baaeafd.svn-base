@@ -1,0 +1,37 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="msg">用户</th>
+                <td>
+                    <select name="uid" class="form-control w426" datatype="n">
+                        {foreach $checkVal['uid_Val'] as $v}
+                        <option value="{$v.uid}">{$v.nickname}/{$v.phone}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="msg">获取内容</th>
+                <td><textarea name="contents" datatype="*"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script>
+$(function(){
+    
+})
+</script>
+{include file="admin/root/common/footer"}

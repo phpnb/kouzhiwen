@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZPF Framework doc</title>
+    <link rel="stylesheet" href="/static/common/bootstrap/css/bootstrap.css?1=1">
+    <link rel="stylesheet" href="/static/common/css/base.css">
+    <link rel="stylesheet" href="/static/common/css/Validform.css">
+    <link rel="stylesheet" href="/static/admin/css/main.css?1=3">
+    <link rel="stylesheet" href="/static/doc/main.css?1=3">
+</head>
+<body>
+<div id="right_content">
+    <h1 class="cl-blue">后台常用函数</h1>
+
+    <h2 class="cl-gre">返回json数据</h2>
+    <pre class="mt20">
+        <code>
+        // $msg     消息 string
+        // $status  状态 int      默认 1
+        // $data    数据 array    默认 []
+        return ajax($msg, $status, $data);
+        </code>
+    </pre>
+    
+    <h2 class="cl-gre">获取请求数据</h2>
+    <pre class="mt20">
+        <code>
+        // post
+        input(post.);
+
+        // get 
+        input(get.);
+        
+        注意 input(get.); 只能获取 ?a=1&b=2 这样的get数据
+        a/1/b/2.html 这样的数据 需要用 $this -> param 来获取 需要继承 Common 控制器
+
+        $this -> param 是 GET 和 POST 的集合
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">后台数据分页</h2>
+    <pre class="mt20">
+        <code>
+        $model      模型
+        $where      where条件
+        $orderby    排序规则
+        $field      字段
+        $size       每页数量
+
+        $data = admin_page($model, $where = '', $orderby = '', $field = '', $size = 10);
+
+        返回的数据
+        $data = [
+            'data'  => $data, // 数据列表
+            'page'  => $page  // 这个是模板显示的分页，直接分配到模板中去就可以了
+        ];
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">api 数据分页</h2>
+    <pre class="mt20">
+        <code>
+        $model      模型
+        $where      where条件
+        $orderby    排序规则
+        $field      字段
+
+        $data = api_page($model, $where = '', $orderby = '', $field = '');
+        
+        前端需传 page 页码(默认 1 ) page_size 每页数量 (默认 10 )
+
+        返回的数据
+        $data = [
+            'total'    => $total, // 总数
+            'page'     => $page, // 当前请求的页码
+            'page_size'=> $page_size, // 每页数量
+            'all_page' => $all_page, // 总页数
+            'data'     => $data, // 数据列表
+        ];
+        </code>
+    </pre>
+</div>
+</body>
+</html>

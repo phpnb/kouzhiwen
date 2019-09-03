@@ -1,0 +1,88 @@
+{include file="common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        后台管理员
+    </div>
+    
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li>
+            <a href="#" class="this">数据列表</a>
+        </li>
+        <li>
+            <a 
+                href="{:url('add')}" 
+                target="frame_dispose" 
+                onclick="open_frame('添加', 100, 100, true);">
+                添加数据
+            </a>
+        </li>
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="账号">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+        <table class="table">
+            <tr>
+                <th width="20">#</th>
+                <th width="200">用户名</th>
+                <th width="200">是否锁定</th>
+                <!--<th width="200">模块</th>-->
+                <th>所属角色</th>
+                <th width="100">操作</th>
+            </tr>
+       <!-- </table>-->
+        {if (!empty($data))}
+        {foreach $data AS $key => $val}
+        <!--<h2 class="tableshow">{$key}</h2>-->
+           <!-- <table class="table">-->
+                {foreach $val AS $v}
+                <tr>
+                    <td width="20"></td>
+                    <td width="200">{$v.username}</td>
+                    <td width="200">
+                        {if condition="$v['islock'] eq 0"}
+                        <span class="label label-info f12">否</span>
+                        {else}
+                        <span class="label label-danger f12">是</span>
+                        {/if}
+                    </td>
+                    <!--<td width="200">{$v.module}</td>-->
+                    <td>
+                        {foreach $v.name AS $val}
+                            {$val.name} ,
+                        {/foreach}
+                    </td>
+                    <td width="100" class="operation">
+                        <a href="{:url('edit',['aid'=>$v['aid']])}" target="frame_dispose"
+                        onclick="open_frame('编辑', 100, 100, true)"
+                        class="glyphicon glyphicon-edit" title="编辑"></a>
+                        {if $v.aid!=1}
+                        <a class="glyphicon glyphicon-trash"
+                        onclick="ajax_post('{:url('del')}',{'aid':{$v['aid']}});" title="删除"></a>
+                        {/if}
+                    </td>
+                </tr>
+                {/foreach}
+
+            </table>
+        {/foreach}
+        {else}
+        <tr>
+            <td align="center" colspan="20">暂无数据！</td>
+        </tr>
+        {/if}
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="common/footer"}

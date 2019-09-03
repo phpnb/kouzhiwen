@@ -1,0 +1,19 @@
+.oz-status-text{
+    font-weight: bold;
+}
+
+.oz-color-normal{
+    color: #72cb6f;
+}
+.oz-color-forbidden{
+    color: #eddc49;
+}
+.oz-color-delete{
+    color: #f5675d;
+}
+.oz-color-no-checked{
+    color: #5fbdb7;
+}
+.oz-color-draft{
+    color: #6984e3;
+}

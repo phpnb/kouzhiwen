@@ -1,0 +1,131 @@
+[ 2018-11-05T09:36:53+08:00 ] 127.0.0.1 127.0.0.1 POST /common/login/login.html
+[ log ] kouzhiwenapi.zpftech.com/common/login/login.html [运行时间：8.688685s][吞吐率：0.12req/s] [内存消耗：2,586.57kb] [文件加载：73]
+[ info ] [ LANG ] E:\PHP\phpStudy\PHPTutorial\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '619',
+  'content-type' => 'multipart/form-data; boundary=--------------------------214271159249156630505236',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.3.0',
+  'postman-token' => 'd252143c-78b4-4776-92fd-99647f2e7556',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/common/login/login_html' => '',
+  'login_type' => 'phone',
+  'phone' => '18210238775',
+  'password' => '123456',
+  'code' => '1234',
+  'deviceToken' => 'wwww',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->login[ E:\PHP\phpStudy\PHPTutorial\WWW\zpf-pro2\application\api\common\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.742006s ] mysql:dbname=kouzhiwen;host=39.104.143.40;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:1.109556s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '18210238775'  AND `status` = 1 LIMIT 1 [ RunTime:0.476914s ]
+[ sql ] [ SQL ] UPDATE `tpn_user`  SET `logintoken`='03f08905705e5f4e2807719358b4026f',`deviceToken`='wwww'  WHERE  `uid` = 65 [ RunTime:0.534082s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_enterprise` [ RunTime:0.503410s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.543368s ]
+
+---------------------------------------------------------------
+[ 2018-11-05T09:38:34+08:00 ] 127.0.0.1 127.0.0.1 POST /common/login/login.html
+[ log ] kouzhiwenapi.zpftech.com/common/login/login.html [运行时间：1.268005s][吞吐率：0.79req/s] [内存消耗：2,416.55kb] [文件加载：63]
+[ info ] [ LANG ] E:\PHP\phpStudy\PHPTutorial\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '619',
+  'content-type' => 'multipart/form-data; boundary=--------------------------810052202350304916162208',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.3.0',
+  'postman-token' => 'f2aa367e-d61c-4a8c-b730-77c9c8d7ee2a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/common/login/login_html' => '',
+  'login_type' => 'phone',
+  'phone' => '18210238775',
+  'password' => '123456',
+  'code' => '1234',
+  'deviceToken' => 'wwww',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->login[ E:\PHP\phpStudy\PHPTutorial\WWW\zpf-pro2\application\api\common\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.255880s ] mysql:dbname=kouzhiwen;host=39.104.143.40;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.175309s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '18210238775'  AND `status` = 1 LIMIT 1 [ RunTime:0.196923s ]
+[ sql ] [ SQL ] UPDATE `tpn_user`  SET `logintoken`='6256a57531c0c3f9ef0f8f7b19325402',`deviceToken`='wwww'  WHERE  `uid` = 65 [ RunTime:0.172896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_enterprise` [ RunTime:0.166965s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_enterprise` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.165008s ]
+
+---------------------------------------------------------------
+[ 2018-11-05T14:00:39+08:00 ] 127.0.0.1 127.0.0.1 POST /common/login/send_code.html
+[ log ] kouzhiwenapi.zpftech.com/common/login/send_code.html [运行时间：14.002741s][吞吐率：0.07req/s] [内存消耗：3,044.88kb] [文件加载：83]
+[ info ] [ LANG ] E:\PHP\phpStudy\PHPTutorial\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '278',
+  'content-type' => 'multipart/form-data; boundary=--------------------------122638272749754949941759',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.3.0',
+  'postman-token' => 'bf156a5b-1518-4b6a-9a63-18eb1fc8874d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/common/login/send_code_html' => '',
+  'phone' => '15994828071',
+  'type' => 'user',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->sendCode[ E:\PHP\phpStudy\PHPTutorial\WWW\zpf-pro2\application\api\common\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.232170s ] mysql:dbname=kouzhiwen;host=39.104.143.40;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.156480s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '15994828071'  AND `status` = 1 LIMIT 1 [ RunTime:0.152539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.152030s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '15994828071' LIMIT 1 [ RunTime:0.151584s ]
+[ sql ] [ SQL ] INSERT INTO `tpn_code` (`phone` ,`code` ,`time` ) VALUES ("15994828071","9191","1541397629") ON DUPLICATE KEY UPDATE `phone`="15994828071",`code`="9191",`time`="1541397629" [ RunTime:0.154666s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZPF Framework doc</title>
+    <link rel="stylesheet" href="/static/common/bootstrap/css/bootstrap.css?1=1">
+    <link rel="stylesheet" href="/static/common/css/base.css">
+    <link rel="stylesheet" href="/static/common/css/Validform.css">
+    <link rel="stylesheet" href="/static/admin/css/main.css?1=3">
+    <link rel="stylesheet" href="/static/doc/main.css?1=3">
+</head>
+<body>
+<div id="right_content">
+    <h1 class="cl-blue">控制器开发须知</h1>
+    <h2 class="cl-gre">控制器位于 /application/模块/controller/控制器名称.php</h2>
+    <p class="cl-red">
+        后台控制器统一继承 Common <br>
+        Api控制器统一继承 Api <br>
+        控制器与方法名统一驼峰命名，访问时路由为全小写 + 下划线 <br>
+        例如：http://localhost/index/user_info/my_info <br>
+        该路径访问的是 index 模块的 UserInfo 控制器的 myInfo 方法
+    </p>
+    <pre class="mt20">
+        <code>
+        namespace app\admin\controller;
+
+        class Index extends Common{
+
+            public function index(){
+                
+            }
+        }
+        </code>
+    </pre>
+
+    <pre class="mt20">
+        <code>
+        namespace app\api\controller;
+
+        class Index extends Api{
+
+            public function index(){
+                
+            }
+        }
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">载入模板，分配变量</h2>
+    <pre>
+        <code>
+        // 默认载入控制器和方法对应的模板，也可以自定义
+        return view('', [
+            'data'  => $data
+        ])
+
+        return view('common/index', [
+            'data'  => $data
+        ])
+        </code>
+    </pre>
+</div>
+</body>
+</html>

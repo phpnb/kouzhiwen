@@ -1,0 +1,33 @@
+{include file="common/header" /}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        应用中心
+    </div>
+    <ul class="clearfix menu">
+        <li>
+            <a href="#" class="this">卸载应用</a>
+        </li>
+        <li>
+            <a href="http://appcenter.zpftech.com?web={$web}">下载应用</a>
+        </li>
+    </ul>
+
+    <form action="{:url('uninstall')}" class="pt20 pb20 mt10 verify-form">
+        <table class="table">
+            <tr>
+                <th class="msg" width="150">模块名称</th>
+                <td>
+                    <input type="text" name="module" datatype="*" class="form-control w300">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">卸载</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+{include file="common/footer"}

@@ -1,0 +1,1091 @@
+[ 2018-08-14T13:51:04+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenapi.zpftech.com/ [运行时间：0.883490s][吞吐率：1.13req/s] [内存消耗：1,274.77kb] [文件加载：50]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwenapi.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T13:51:20+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.038706s][吞吐率：25.84req/s] [内存消耗：1,274.81kb] [文件加载：50]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T13:52:35+08:00 ] 127.0.0.1 127.0.0.1 GET /root
+[ log ] kouzhiwenteacher.zpftech.com/root [运行时间：0.027792s][吞吐率：35.98req/s] [内存消耗：1,277.18kb] [文件加载：50]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => 'root',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+  '/root' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:17:40+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.099284s][吞吐率：10.07req/s] [内存消耗：1,274.97kb] [文件加载：50]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:21:54+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.973370s][吞吐率：1.03req/s] [内存消耗：1,364.07kb] [文件加载：55]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:22:17+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwen.zpftech.com/ [运行时间：0.318025s][吞吐率：3.14req/s] [内存消耗：1,498.96kb] [文件加载：51]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:22:17+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwen.zpftech.com/ [运行时间：0.062260s][吞吐率：16.06req/s] [内存消耗：1,498.96kb] [文件加载：51]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:22:17+08:00 ] 127.0.0.1 127.0.0.1 GET /root/login/login.html
+[ log ] kouzhiwen.zpftech.com/root/login/login.html [运行时间：0.117787s][吞吐率：8.49req/s] [内存消耗：1,499.40kb] [文件加载：54]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=36iq417nimik3659l5hi6tt7q5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kouzhiwen.zpftech.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+  '/root/login/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\root\controller\Login->login[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\admin\root\controller\Login.php ]
+[ info ] [ VIEW ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\public/../application/admin/root\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-14T14:22:43+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.038526s][吞吐率：25.96req/s] [内存消耗：1,364.07kb] [文件加载：55]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:22:44+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.032350s][吞吐率：30.91req/s] [内存消耗：1,364.07kb] [文件加载：55]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:22:44+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.034135s][吞吐率：29.30req/s] [内存消耗：1,364.07kb] [文件加载：55]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:26:38+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.027509s][吞吐率：36.35req/s] [内存消耗：1,142.40kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:27:01+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.067137s][吞吐率：14.89req/s] [内存消耗：1,141.29kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:27:41+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.033484s][吞吐率：29.87req/s] [内存消耗：1,142.99kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:28:03+08:00 ] 127.0.0.1 127.0.0.1 GET /root/login/login.html
+[ log ] kouzhiwen.zpftech.com/root/login/login.html [运行时间：0.027161s][吞吐率：36.82req/s] [内存消耗：1,100.96kb] [文件加载：38]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=36iq417nimik3659l5hi6tt7q5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kouzhiwen.zpftech.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+  '/root/login/login_html' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-14T14:28:05+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwen.zpftech.com/ [运行时间：0.022179s][吞吐率：45.09req/s] [内存消耗：1,142.75kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=36iq417nimik3659l5hi6tt7q5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:31:28+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.050565s][吞吐率：19.78req/s] [内存消耗：1,364.07kb] [文件加载：55]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:32:02+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.041771s][吞吐率：23.94req/s] [内存消耗：1,364.07kb] [文件加载：55]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:32:41+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.031474s][吞吐率：31.77req/s] [内存消耗：1,232.00kb] [文件加载：46]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:32:44+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwen.zpftech.com/ [运行时间：0.038270s][吞吐率：26.13req/s] [内存消耗：1,499.27kb] [文件加载：51]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=36iq417nimik3659l5hi6tt7q5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:32:44+08:00 ] 127.0.0.1 127.0.0.1 GET /root/login/login.html
+[ log ] kouzhiwen.zpftech.com/root/login/login.html [运行时间：0.026977s][吞吐率：37.07req/s] [内存消耗：1,334.34kb] [文件加载：45]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=36iq417nimik3659l5hi6tt7q5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kouzhiwen.zpftech.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+  '/root/login/login_html' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-14T14:33:12+08:00 ] 127.0.0.1 127.0.0.1 GET /root/login/login.html
+[ log ] kouzhiwen.zpftech.com/root/login/login.html [运行时间：0.024778s][吞吐率：40.36req/s] [内存消耗：1,100.96kb] [文件加载：38]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'root',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=36iq417nimik3659l5hi6tt7q5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kouzhiwen.zpftech.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+  '/root/login/login_html' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-08-14T14:33:15+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.033897s][吞吐率：29.50req/s] [内存消耗：1,142.99kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:33:19+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwen.zpftech.com/ [运行时间：0.025492s][吞吐率：39.23req/s] [内存消耗：1,142.75kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=36iq417nimik3659l5hi6tt7q5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:33:53+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.047652s][吞吐率：20.99req/s] [内存消耗：1,364.26kb] [文件加载：55]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:33:56+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwen.zpftech.com/ [运行时间：0.022404s][吞吐率：44.63req/s] [内存消耗：1,226.90kb] [文件加载：45]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=36iq417nimik3659l5hi6tt7q5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwen.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:34:38+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.032058s][吞吐率：31.19req/s] [内存消耗：1,364.26kb] [文件加载：55]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:36:14+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenapi.zpftech.com/ [运行时间：0.045377s][吞吐率：22.04req/s] [内存消耗：1,142.78kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'kouzhiwenapi.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T14:37:50+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenteacher.zpftech.com/ [运行时间：0.034769s][吞吐率：28.76req/s] [内存消耗：1,142.99kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'teacher'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'teacher',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenteacher.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------
+[ 2018-08-14T15:01:08+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] kouzhiwenapi.zpftech.com/ [运行时间：0.027374s][吞吐率：36.53req/s] [内存消耗：1,142.95kb] [文件加载：41]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'kouzhiwenapi.zpftech.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Route.php:1548]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:327]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+[ error ] [8]未定义数组下标: 1[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:378]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:380]
+[ error ] [8]未定义数组下标: 2[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:384]
+[ error ] [8]未定义数组下标: 3[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\App.php:385]
+[ error ] [8]未定义数组索引: PATH_INFO[E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\library\think\Request.php:1408]
+
+---------------------------------------------------------------

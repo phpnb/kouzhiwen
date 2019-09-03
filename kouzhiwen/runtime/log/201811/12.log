@@ -1,0 +1,41 @@
+[ 2018-11-12T15:37:48+08:00 ] 127.0.0.1 127.0.0.1 POST /common/login/send_code.html
+[ log ] kouzhiwenapi.zpftech.com/common/login/send_code.html [运行时间：4.083222s][吞吐率：0.24req/s] [内存消耗：3,044.70kb] [文件加载：83]
+[ info ] [ LANG ] E:\PHP\phpStudy\PHPTutorial\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '278',
+  'content-type' => 'multipart/form-data; boundary=--------------------------055348725789663717457341',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.4.0',
+  'postman-token' => '92e5115f-147e-4c81-b2be-60c276a5c96b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/common/login/send_code_html' => '',
+  'phone' => '15994828071',
+  'type' => 'user',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->sendCode[ E:\PHP\phpStudy\PHPTutorial\WWW\zpf-pro2\application\api\common\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.243632s ] mysql:dbname=kouzhiwen;host=39.104.143.40;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.162410s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '15994828071'  AND `status` = 1 LIMIT 1 [ RunTime:0.159466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.155209s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '15994828071' LIMIT 1 [ RunTime:0.154291s ]
+[ sql ] [ SQL ] INSERT INTO `tpn_code` (`phone` ,`code` ,`time` ) VALUES ("15994828071","1538","1542008268") ON DUPLICATE KEY UPDATE `phone`="15994828071",`code`="1538",`time`="1542008268" [ RunTime:0.165624s ]
+
+---------------------------------------------------------------

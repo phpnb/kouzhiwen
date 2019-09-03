@@ -1,0 +1,43 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+
+                {if (!empty($data))}
+                {foreach $data AS $v}
+
+                <div style="font-size: 20px">
+                    <p style="color: red;font-size: 20px">举报人：</p>{$v.name}
+                </div>
+        <br>
+
+                <div style="font-size: 20px">
+                    <p style="font-size: 20px;color: red">问题内容：</p>{$v.contents}
+                </div>
+        <br>
+                <div style="font-size: 20px">
+                    <p style="font-size: 20px;color: red">举报说明：</p>{$v.content}
+                </div>
+
+        <br>
+        {if ($v.type!=3)}
+        <div class="upimg-box">
+            <input type="hidden" name="url[]" value="{$v}" datatype="*" >
+            <notempty name="video">
+                <video src="{$v.url}" controls="controls"  height="300"></video>
+            </notempty>
+        </div>
+
+        {/if}
+            {/foreach}
+            {/if}
+
+
+    </form>
+</div>
+
+<script>
+    $(function(){
+
+    })
+</script>
+{include file="admin/root/common/footer"}

@@ -1,0 +1,112 @@
+{include file="common/header"}
+<style>
+    .top-module{
+        font-size: 18px;
+        height: 50px; line-height: 50px;
+        text-align: center;
+    }
+</style>
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        菜单列表
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li>
+            <a href="#" class="this">数据列表</a>
+        </li>
+        <li>
+            <a 
+                href="{:url('add')}" 
+                target="frame_dispose" 
+                onclick="open_frame('添加', 50, 50, true);">
+                添加菜单
+            </a>
+        </li>
+        <li>
+            <a
+                href="{:url('add_method')}"
+                target="frame_dispose"
+                onclick="open_frame('添加', 100, 100, true);">
+                设置方法为菜单
+            </a>
+        </li>
+    </ul>
+
+    <div class="table-box">
+
+        <table class="table">
+            <tr>
+                <th width="20">#</th>
+                <th width="200">名称</th>
+                <th width="100">模块</th>
+                <th width="150">控制器</th>
+                <th width="100">是否显示</th>
+                <th>方法</th>
+                <th width="100">操作</th>
+            </tr>
+        </table>
+
+        {foreach $menu AS $onekey => $oneval}
+            <div class="tableshow-topbox">
+            <h1 class="top-module mt10 cl-blue">{$onekey}</h1>
+            {foreach $oneval AS $key => $val}
+                <h2 class="tableshow" style="border-top: solid #e7e7e7 1px;">
+                    {$val.name}
+                </h2>
+                <table class="table">
+                    {volist name='val.child' id='v'}
+                    <tr>
+                        <td width="20"></td>
+                        <td width="200">
+                            {if !empty($v.address)}
+                                <span class="cl-red">【方法菜单】</span>
+                            {else}
+                                <span class="cl-blue">【控制器菜单】</span>
+                            {/if}
+                            {$v.name}
+                        </td>
+                        <td width="100">{$v.module}</td>
+                        <td width="150">{$v.controller}</td>
+                        <td width="100">
+                            {if condition="$v['is_show'] eq 1"}
+                            <span class="label label-info f12">是</span>
+                            {else}
+                            <span class="label label-danger f12">否</span>
+                            {/if}
+                        </td>
+                        <td>
+                            {if !empty($v.address)}
+                                {$v.name} ({$v.address})
+                            {else}
+                                {volist name='v.method' id='val'}
+                                    {$val.name}（{$val.method}）,
+                                {/volist}
+                            {/if}
+                        </td>
+                        <td class="operation" width='100'>
+                            {if empty($v.address)}
+                                <a href="{:url('edit',['id'=>$v['id']])}" target="frame_dispose"
+                                    onclick="open_frame('Create data', 100, 100, true)"
+                                    class="glyphicon glyphicon-edit" title="编辑"></a>
+                            {/if}
+
+                            <a class="glyphicon glyphicon-trash"
+                                onclick="ajax_post('{:url('del')}',{'id':{$v['id']}});" title="删除"></a>
+
+                        </td>
+                    </tr>
+                    {/volist}
+                </table>
+            {/foreach}
+            </div>
+        {/foreach}
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="common/footer"}

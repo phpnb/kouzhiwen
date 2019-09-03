@@ -1,0 +1,181 @@
+{include file="common/header"}
+<style>
+    .lockshow tr td{ border: solid #ccc 1px; }
+    .table thead tr th{ font-size: 13px; }
+    .uheader{ margin-top: 10px; border-bottom: solid #ccc 1px; font-size: 12px;}
+    .uheader li,.ubody li{ float: left; min-width: 118px; max-width: 310px; color: #6699CC; font-weight: bold; padding-left: 10px; line-height: 30px; word-wrap: break-word;}
+    .ubody{border-bottom: solid #ccc 1px;}
+    .ubody li{ color: #666; font-weight: 400; height: auto;}
+    .ubom p{ line-height: 30px; min-height: 30px; padding: 4px 10px; color: #666;}
+    .ubom p b{ color:  #6699CC;}
+    .token{ line-height: 30px; background: #e7e7e7; padding: 20px;}
+    .token b{ font-size: 16px; color: red;}
+    .token p{ padding-left: 20px; color: #666; }
+    .modal-backdrop{ z-index: -1; }
+    /*.modal-content{ position: relative; z-index: 999; }*/
+</style>
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        接口列表
+    </div>
+    
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="#" class="this">数据列表</a></li>
+        <li>
+            <a 
+                href="{:url('add')}" target="frame_dispose" 
+                onclick="open_frame('添加', 100, 100, true);">
+                添加数据
+            </a>
+        </li>
+
+    </ul>
+    
+    <p class="mt10 f14 cl-gre">所有接口返回值 status 0 未登录，1 成功，其他全是失败，失败信息在msg中</p>
+    <div class="table-box">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>接口名称</th>
+                    <th>请求地址</th>
+                    <th>请求方式</th>
+                    <th>需要登录</th>
+                    <th width="240">操作</th>
+                </tr>
+                </thead>
+                
+                {foreach $data AS $key => $val}
+                    <tr style="cursor: pointer; background: #f1f4f7" class="click_show" showod="{$key}">
+                        <td><span class="badge" style="background: #5bc0de;">{$key}</span></td>
+                        <td colspan="20" style="font-size: 12px; color: #666;">{$checkVal['cat'][$key]}</td>
+                    </tr>
+
+                    <tbody class="cathide" id="catshow_{$key}" style="display: ; ">
+
+                    {foreach $val AS $k => $v}
+                        <tr style="color: #666;" class="hhtop">
+                            <td></td>
+                            <td>{$v.name}</td>
+                            <td>{$v.url}</td>
+                            <td>
+                                {if $v['method'] == 'post'}
+                                    <span class="label label-info">POST</span>
+                                {else/}
+                                    <span class="label label-warning">GET</span>
+                                {/if}
+                            </td>
+                            <td>
+                                {if $v['islogin'] == '否'}
+                                    <i class="glyphicon glyphicon-remove" style="color: red;"></i>
+                                {else/}
+                                    <i class="glyphicon glyphicon-ok" style="color: green;"></i>
+                                {/if}
+                            </td>
+                            <td class="">
+                                <a href="{:url('edit',['id'=>$v['id']])}" target="frame_dispose" 
+                                onclick="open_frame('修改数据', 100, 100, true)" 
+                                class="glyphicon glyphicon-edit f14 mr5 cl-gre" title="编辑"></a>
+
+                                <a class="glyphicon glyphicon-trash f14 mr5 cl-red" href="#" 
+                                onclick="ajax_post('{:url('del')}',{'id':{$v['id']}});" title="删除"></a>
+
+                                <a href="#" data-toggle="modal" data-target="#lockBox_{$v.id}"
+                                   class="glyphicon glyphicon-folder-open lock f14 mr5 cl-blue" title="货品列表"></a>
+                            </td>
+                        </tr>
+
+                        <!-- 参数框 begin -->
+                        <div class="modal fade" id="lockBox_{$v.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width: 1000px; margin: 0 auto; z-index: 999;">
+                            <div class="modal-dialog" role="document" style="width: 980px;">
+                                <div class="modal-content" style="padding: 10px;">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel" style="color: #669999; font-size: 14px; font-weight: bold;">
+                                            <i><i class="glyphicon glyphicon-transfer"></i>{$v.name}</i>
+                                        </h4>
+                                    </div>
+
+                                    <div class="ubom">
+                                        <p style="border-bottom: solid #ccc 1px; ">
+                                            <b>请求地址：</b>{$v.url}
+                                        </p>
+                                        <p style="border-bottom: solid #ccc 1px; ">
+                                            <b>请求方式：</b>
+                                            {if $v['method'] == 'post'}
+                                                <span class="label label-info">POST</span>
+                                            {else/}
+                                                <span class="label label-warning">GET</span>
+                                            {/if}
+                                        </p>
+                                        <p style="border-bottom: solid #ccc 1px; ">
+                                            <b>需要登录：</b>
+                                            {if $v['islogin'] == '否'}
+                                                <i class="glyphicon glyphicon-remove" style="color: red;"></i>
+                                            {else/}
+                                                <i class="glyphicon glyphicon-ok" style="color: green;"></i>
+                                                <span style="color: red;">需要将登录返回的logintoken放置header头来请求</span>
+                                            {/if}
+                                        </p>
+                                    </div>
+
+                                    <ul class="uheader clearfix">
+                                        <li>参数名</li>
+                                        <li>参数类型</li>
+                                        <li>是否必须</li>
+                                        <li class="w300">示例值</li>
+                                        <li class="w200">描述</li>
+                                    </ul>
+                                    {foreach $v['param'] AS $val}
+                                        <ul class="ubody clearfix">
+                                            <li>{$val.name}&nbsp;</li>
+                                            <li><if condition="$val['name'] neq ''">{$val.type}</if>&nbsp;</li>
+                                            <li><if condition="$val['name'] neq ''">{$val.must}</if>&nbsp;</li>
+                                            <li class="w300">{$val.value}&nbsp;</li>
+                                            <li class="w200">{$val.msg}&nbsp;</li>
+                                        </ul>
+                                    {/foreach}
+
+                                    <div class="ubom clearfix">
+                                        <p style="border-bottom: solid #ccc 1px; "><b>参数加密排序：</b>{$v.sort}</p>
+                                        <p class="clearfix">
+                                            <b>&nbsp;&nbsp;&nbsp;返回值示例：</b>
+                                        </p>
+                                        <div style="width: 800px; float: left; padding-left: 20px; margin-bottom: 10px;">
+                                            <pre class="p10" style="color: #666;">{$v.return}</pre>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+
+                                    <div class="cb"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 参数框 end -->
+                    {/foreach}
+                    </tbody>
+                {/foreach}
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+//        $('.click_show').click(function(){
+//            var _id = $(this).attr('showod');
+//            // $(this).css({'background':'#5bc0de'}).find('td').css({'color':'#fff'});
+//            // $(this).parents('tbody').siblings().find('.click_show').css({'background':'none'}).find('td').css({'color':'#666'});
+//            $('.cathide').hide();
+//            $('#catshow_' + _id).fadeTo(500,1);
+//        })
+    })
+</script>
+{include file="common/footer"}

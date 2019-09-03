@@ -1,0 +1,13 @@
+<link href="/static/common/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+<link href="/static/common/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/static/common/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="/static/common/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script>
+    $(function(){
+        if ($('.date-plugin').length > 0) {
+            $('.date-plugin').change(function(){
+                $(this).blur();
+            })
+        }
+    })
+</script>

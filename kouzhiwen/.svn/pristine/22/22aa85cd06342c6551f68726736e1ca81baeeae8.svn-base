@@ -1,0 +1,69 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">姓名</th>
+                <td><input name="name" type="text" class="form-control w400"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">账号</th>
+                <td><input name="phone" type="text" class="form-control w400" datatype="/^1\d{10}$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">密码</th>
+                <td><input name="password" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+{include file="admin/root/common/dateplugin"}
+
+<script>
+$(function(){
+    file_upload({
+    pick        : '#face-picker',
+    container   : '#face-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'face',
+});
+
+$('#time-birth').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:'zh-CN',
+    minView:2,
+    autoclose:true
+});
+
+file_upload({
+    pick        : '#id_photo_pos-picker',
+    container   : '#id_photo_pos-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'id_photo_pos'
+});
+
+file_upload({
+    pick        : '#id_photo_neg-picker',
+    container   : '#id_photo_neg-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'id_photo_neg'
+});
+
+
+})
+</script>
+{include file="admin/root/common/footer"}

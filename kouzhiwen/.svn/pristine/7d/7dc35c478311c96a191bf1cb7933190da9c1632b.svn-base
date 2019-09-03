@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZPF Framework doc</title>
+    <link rel="stylesheet" href="/static/common/bootstrap/css/bootstrap.css?1=1">
+    <link rel="stylesheet" href="/static/common/css/base.css">
+    <link rel="stylesheet" href="/static/common/css/Validform.css">
+    <link rel="stylesheet" href="/static/admin/css/main.css?1=3">
+    <link rel="stylesheet" href="/static/doc/main.css?1=3">
+</head>
+<body>
+<div id="right_content">
+    <h1 class="cl-blue">权限控制详解</h1>
+    
+    <p class="cl-gre">
+        进入系统管理 -> 权限组管理 可以看到已添加的组，已添加的组会在框架顶部菜单出现
+    </p>
+
+    <img src="/static/doc/acc/acc1.png" alt="">
+
+    <p class="cl-gre mt20">
+        添加权限组，自行配置权限
+    </p>
+
+    <img src="/static/doc/acc/acc2.png" alt="">
+
+    <p class="cl-gre mt20">
+        进入系统管理 -> 后台管理员 编辑或添加账户，设置该账户所属组，可自行搭配出各种花样的权限 非常灵活 <br>
+    </p>
+
+    <img src="/static/doc/acc/acc3.png" alt="">
+
+    <p class="cl-red mt20">
+        最后 再重新登录账户即可
+    </p>
+</div>
+</body>
+</html>

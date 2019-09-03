@@ -1,0 +1,437 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    body {
+        background: #141414;
+    }
+    .banner {
+        width: 100%;
+        height: 205px;
+        line-height: 205px;
+        text-align: center;
+        color: #fff;
+        font-size: 48px;
+        background: url(https://img.alicdn.com/tps/TB1qhMsQXXXXXadXXXXXXXXXXXX-1920-264.jpg) no-repeat center center;
+    }
+    .video-ipt {
+        width: 100%;
+        padding: 20px 0;
+        background: #282828;
+    }
+    
+    .video-ipt .video-in-ipt {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .video-ipt .video-in-ipt .video-config {
+        display: inline-block;
+        overflow: hidden;
+        margin: 5px 20px;
+    }
+    
+    .video-ipt .video-in-ipt .video-config .label {
+        display: inline-block;
+        width: 80px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 44px;
+    }
+    
+    .video-ipt .video-in-ipt .video-config .sel {
+        display: inline-block;
+        width: 196px;
+        height: 44px;
+        line-height: 44px;
+        background: #7b7b7b;
+    }
+    
+    .video-ipt .video-in-ipt .video-config select {
+        width: 165px;
+        height: 44px;
+        line-height: 44px;
+        background: none;
+        border: 0;
+        color: #fff;
+    }
+    .video-ipt .video-in-ipt .video-config select option{
+        color: #333;
+    }
+    
+    .video-ipt .video-in-ipt .video-config.video-url {
+        display: block;
+    }
+    
+    .video-ipt .video-in-ipt .video-config.video-url .ipt {
+        display: inline-block;
+        width: 850px;
+        height: 44px;
+        line-height: 44px;
+        background: #7b7b7b;
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    .video-ipt .video-in-ipt .video-config.video-url input {
+        outline: none;
+        width: 820px;
+        height: 44px;
+        padding: 0 15px;
+        background: #7b7b7b;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    .btn-start,
+    .btn-end {
+        display: inline-block;
+        width: 170px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        background: #00b383;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    .video-box {
+        width: 100%;
+        padding: 25px 0;
+        background: #161616;
+    }
+    
+    .J_prism1Player {
+        display: block;
+        width: 1000px;
+        height: 750px;
+        margin: 0 auto;
+        padding: 5px;
+        background: #292929;
+    }
+    .lists {
+        width: 1200px;
+        margin: 0 auto 50px auto;
+        text-align: center;
+    }
+    
+    .lists a {
+        text-decoration: underline;
+        color: #9a9a9a;
+        margin: 10px 35px;
+        line-height: 32px;
+        font-size: 16px;
+    }
+    </style>
+    <script src="http://a.tbcdn.cn/app/dp/vd/js/swfobject.js?t=200912211129.js"></script>
+    <script type="text/javascript">
+        function start_play() {
+            var url = document.getElementById("upload_url").value;
+            if (url.length < 8) {
+                alert('请输入完整的url地址！');
+            } else {
+                swfobject.getObjectById('tblive').Start(url);
+            }
+        }
+
+        function stop_play() {
+            swfobject.getObjectById('tblive').Stop();
+        }
+
+        function pause_video() {
+            swfobject.getObjectById('tblive').ShutdownVideo();
+        }
+
+        function volumechange(value) {
+            var test = parseFloat(value) + parseFloat(document.getElementById("test").value);
+            swfobject.getObjectById('tblive').setMic(test);
+        }
+
+        function onPlay() {
+            document.getElementById("info").value += "start live stream" + "\n";
+        }
+
+        function onStop() {
+            document.getElementById("info").value += "stop live stream" + "\n";
+        }
+
+        function onJitter() {
+            document.getElementById("info").value += "jitter" + "\n";
+        }
+
+        function onNetworkchange() {
+            document.getElementById("info").value += "networkChange" + "\n";
+        }
+
+        function setdata(value) {
+            document.getElementById("info").value += "onData:" + value + "\n";
+        }
+
+        function onNetworkchange() {
+            document.getElementById("info").value += "onNetworkchanged.\n";
+        }
+        function getUrl(id,type) {
+            //1.创建ajax对象
+            //只兼容非ie6的浏览器，在ie6浏览器上运行会提示没有被定义
+            //var oAjax = new XMLHttpRequest();//这才是ajax实际的请求
+            //alert(oAjax);
+
+            //ie6浏览器下按照下面方法写,但是在别的浏览器中不能用，会报错。
+            //var oAjax = new ActiveXObject("Microsoft.XMLHTTP");
+            //alert(oAjax);
+
+            //鉴于上面出现的问题，可以采取下面的方法解决，用if判断是否为IE6浏览器
+            if (window.XMLHttpRequest) //如果有XMLHttpRequest，那就是非IE6浏览器。()里面加window的原因下面会有描述。
+            {
+                var oAjax = new XMLHttpRequest(); //创建ajax对象
+            } else //如果没有XMLHttpRequest，那就是IE6浏览器
+            {
+                var oAjax = new ActiveXObject("Microsoft.XMLHTTP"); //IE6浏览器创建ajax对象
+            }
+            //2.连接服务器
+            //open(方法、文件名、异步传输）
+            //方法：
+            //传输方式是get方式还是post方式。
+            //文件名
+            //告诉服务器要读哪个文件
+            //异步传输
+            //异步：多件事一件一件的做
+            //同步：多件事情一起进行
+            //但是js里面的同步和异步和现实的同步异步相反。
+            //同步：多件事一件一件的做
+            //异步：多件事情一起进行
+            //ajax天生是用来做异步的
+            oAjax.open("GET", "http://kouzhiwenteacher.zpftech.com/course/broadcast/web/id/" + id+"/type/"+type, true); //加上t='+new Date().getTime()"的目的是为了消除缓存，每次的t的值不一样。
+
+            //3.发送请求
+            oAjax.send();
+
+            //4.接收返回
+            //客户端和服务器端有交互的时候会调用onreadystatechange
+            oAjax.onreadystatechange = function () {
+                //oAjax.readyState  //浏览器和服务器，进行到哪一步了。
+                //0->（未初始化）：还没有调用 open() 方法。
+                //1->（载入）：已调用 send() 方法，正在发送请求。
+                //2->载入完成）：send() 方法完成，已收到全部响应内容。
+                //3->（解析）：正在解析响应内容。
+                //4->（完成）：响应内容解析完成，可以在客户端调用。
+                if (oAjax.readyState == 4) {
+                    if (oAjax.status == 200) //判断是否成功,如果是200，就代表成功
+                    {
+                        //return oAjax.responseText; //读取a.txt文件成功就弹出成功。后面加上oAjax.responseText会输出a.txt文本的内容
+                        document.getElementById("upload_url").value = JSON.parse(oAjax.responseText).data
+                    } else {}
+                }
+            };
+        }
+
+        function getParam(paramName) {
+            paramValue = "", isFound = !1;
+            if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+                arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+                while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() ==
+                paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+            }
+            return paramValue == "" && (paramValue = null), paramValue
+        }
+        getUrl(getParam('id'),getParam('type'));
+
+    </script>
+    <script type="text/javascript">
+        swfobject.embedSWF("liveroom.swf", "tblive", 1000, 750, "9.0", "liveroom.swf?", {}, {
+            quality: "high",
+            allowFullScreen: "true",
+            wmode: "transparent",
+            menu: "false",
+            allowScriptAccess: "always"
+        });
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <div class="video-ipt">
+            <div class="video-in-ipt">
+                <div class="video-config">
+                    <div class="label">摄像头:</div>
+                    <div class="sel">
+                        <select name="publish-camera" id="publish-camera">
+                            <option value="cam">Integrated WebCam(1bcf:2985)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="video-config">
+                    <div class="label">麦克风:</div>
+                    <div class="sel">
+                        <select name="publish-microPhone" id="publish-microPhone">
+                            <option value="default">默认</option>
+                            <option value="make">麦克风阵列</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="video-config">
+                    <div class="label">清晰度:</div>
+                    <div class="sel">
+                        <select name="cam_defination" id="cam_defination" class="j-publish-defination">
+                            <option value="0">流畅(分辨率：640x360,码率：400kbps)</option>
+                            <option value="1">标清(分辨率: 960x540,码率: 800kbps)</option>
+                            <option value="2">高清(分辨率: 1280x720,码率：1.2mbps)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="video-config video-url">
+                    <div class="label" id="upload_url_name">推流地址:</div>
+                    <div class="ipt">
+                        <input id="upload_url" type="text" value="rtmp://">
+                    </div>
+                </div>
+                <div class="btn-start" onclick="start_play()">开始直播</div>
+                <div class="btn-end" onclick="stop_play()">结束直播</div>
+            </div>
+        </div>
+    </form>
+    <div class="video-box">
+        <div class="J_prism1Player">
+            <div id="tblive"></div>
+        </div>
+</body>
+
+</html>

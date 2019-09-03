@@ -1,0 +1,32 @@
+[ 2018-08-16T09:58:43+08:00 ] 127.0.0.1 127.0.0.1 POST /common/uploads/upload_img
+[ log ] kouzhiwenapi.zpftech.com/common/uploads/upload_img [运行时间：1.764848s][吞吐率：0.57req/s] [内存消耗：1,478.71kb] [文件加载：51]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'uploads',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '269599',
+  'content-type' => 'multipart/form-data; boundary=--------------------------913215470521250185280730',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=uav7tridtapouud5jo5m4jgle3',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => '0a89e798-d3e7-48d4-8527-ddd886cbb47a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/common/uploads/upload_img' => '',
+)
+[ info ] [ RUN ] app\api\common\controller\Uploads->uploadImg[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\common\controller\Uploads.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

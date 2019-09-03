@@ -1,0 +1,38 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@example.com
+    DocumentRoot "/www/wwwroot/kouzhiwen/public"
+    ServerName d242d5e6.api.kzwchina.com
+    ServerAlias api.kzwchina.com teacher.kzwchina.com admin.kzwchina.com web.kzwchina.com
+    errorDocument 404 /404.html
+    ErrorLog "/www/wwwlogs/api.kzwchina.com-error_log"
+    CustomLog "/www/wwwlogs/api.kzwchina.com-access_log" combined
+
+    #DENY FILES
+    <Files ~ (\.user.ini|\.htaccess|\.git|\.svn|\.project|LICENSE|README.md)$>
+        Order allow,deny
+        Deny from all
+    </Files>
+
+    #PHP
+    <FilesMatch \.php$>
+        SetHandler "proxy:unix:/tmp/php-cgi-56.sock|fcgi://localhost"
+    </FilesMatch>
+
+    #PATH
+    <Directory "/www/wwwroot/kouzhiwen/admin">
+    SetOutputFilter DEFLATE
+    Options FollowSymLinks
+    AllowOverride Alladmin
+
+    Require all granted
+    DirectoryIndex index.php index.html index.htm default.php default.html default.htm
+    </Directory>
+
+    <Directory "/www/wwwroot/kouzhiwen/te">
+    SetOutputFilter DEFLATE
+    Options FollowSymLinks
+    AllowOverride All
+    Require all granted
+    DirectoryIndex index.php index.html index.htm default.php default.html default.htm
+    </Directory>
+</VirtualHost>

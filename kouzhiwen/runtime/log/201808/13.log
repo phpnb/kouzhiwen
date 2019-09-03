@@ -1,0 +1,462 @@
+[ 2018-08-13T10:39:48+08:00 ] 127.0.0.1 127.0.0.1 POST /discover/teacher/pecialist
+[ log ] kouzhiwenapi.zpftech.com/discover/teacher/pecialist [运行时间：10.636368s][吞吐率：0.09req/s] [内存消耗：2,291.31kb] [文件加载：57]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'teacher',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '167',
+  'content-type' => 'multipart/form-data; boundary=--------------------------140718512951579072129278',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => 'b0a349d3-82a5-4158-8da5-b887ffe71298',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'ac9abf4cb557130fa3913443235b56cd',
+)
+[ info ] [ PARAM ] array (
+  '/discover/teacher/pecialist' => '',
+  'classify_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:5.350337s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:2.136787s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'ac9abf4cb557130fa3913443235b56cd' LIMIT 1 [ RunTime:1.327599s ]
+
+---------------------------------------------------------------
+[ 2018-08-13T10:40:09+08:00 ] 127.0.0.1 127.0.0.1 POST /discover/teacher/pecialist
+[ log ] kouzhiwenapi.zpftech.com/discover/teacher/pecialist [运行时间：1.339747s][吞吐率：0.75req/s] [内存消耗：2,435.91kb] [文件加载：63]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'teacher',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '167',
+  'content-type' => 'multipart/form-data; boundary=--------------------------943637278025356496126352',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => '60d20f3f-5ee6-431f-aec8-bf2653c813a1',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'f999131c73c2fb56824c114617e7e9e1',
+)
+[ info ] [ PARAM ] array (
+  '/discover/teacher/pecialist' => '',
+  'classify_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Teacher->pecialist[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\discover\controller\Teacher.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.291743s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.107170s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'f999131c73c2fb56824c114617e7e9e1' LIMIT 1 [ RunTime:0.085454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.086004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 2  AND `identity` LIKE '%3%' LIMIT 1 [ RunTime:0.101083s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`phone`,`photo`,`consult_num` FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 2  AND `identity` LIKE '%3%' LIMIT 0,10 [ RunTime:0.093262s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.148184s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_article` [ RunTime:0.099652s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 3 LIMIT 0,3 [ RunTime:0.095208s ]
+
+---------------------------------------------------------------
+[ 2018-08-13T10:40:22+08:00 ] 127.0.0.1 127.0.0.1 POST /discover/teacher/pecialist
+[ log ] kouzhiwenapi.zpftech.com/discover/teacher/pecialist [运行时间：1.911303s][吞吐率：0.52req/s] [内存消耗：2,412.16kb] [文件加载：63]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'teacher',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '167',
+  'content-type' => 'multipart/form-data; boundary=--------------------------992788937116178628207787',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => '994bab23-8ee1-4e73-9225-bf99a4802eb4',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'f999131c73c2fb56824c114617e7e9e1',
+)
+[ info ] [ PARAM ] array (
+  '/discover/teacher/pecialist' => '',
+  'classify_id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Teacher->pecialist[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\discover\controller\Teacher.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.234865s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.511001s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'f999131c73c2fb56824c114617e7e9e1' LIMIT 1 [ RunTime:0.202146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.172825s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 1  AND `identity` LIKE '%3%' LIMIT 1 [ RunTime:0.222885s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`phone`,`photo`,`consult_num` FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 1  AND `identity` LIKE '%3%' LIMIT 0,10 [ RunTime:0.525507s ]
+
+---------------------------------------------------------------
+[ 2018-08-13T10:40:57+08:00 ] 127.0.0.1 127.0.0.1 POST /discover/teacher/pecialist
+[ log ] kouzhiwenapi.zpftech.com/discover/teacher/pecialist [运行时间：2.465064s][吞吐率：0.41req/s] [内存消耗：2,435.91kb] [文件加载：63]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'teacher',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '167',
+  'content-type' => 'multipart/form-data; boundary=--------------------------674084811601185292483422',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => '22c5d645-180d-4433-b5d8-2a9076f35ba8',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'f999131c73c2fb56824c114617e7e9e1',
+)
+[ info ] [ PARAM ] array (
+  '/discover/teacher/pecialist' => '',
+  'classify_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Teacher->pecialist[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\discover\controller\Teacher.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.219268s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.248774s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'f999131c73c2fb56824c114617e7e9e1' LIMIT 1 [ RunTime:0.166528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.280545s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 2  AND `identity` LIKE '%3%' LIMIT 1 [ RunTime:0.208843s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`phone`,`photo`,`consult_num` FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 2  AND `identity` LIKE '%3%' LIMIT 0,10 [ RunTime:0.304883s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.358953s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_article` [ RunTime:0.342949s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 3 LIMIT 0,3 [ RunTime:0.286564s ]
+
+---------------------------------------------------------------
+[ 2018-08-13T10:41:31+08:00 ] 127.0.0.1 127.0.0.1 POST /discover/teacher/pecialist
+[ log ] kouzhiwenapi.zpftech.com/discover/teacher/pecialist [运行时间：1.373316s][吞吐率：0.73req/s] [内存消耗：2,454.63kb] [文件加载：63]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'teacher',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '167',
+  'content-type' => 'multipart/form-data; boundary=--------------------------123216426296732594008630',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => '0892321a-212d-49de-91cc-f1c2665322e1',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'f999131c73c2fb56824c114617e7e9e1',
+)
+[ info ] [ PARAM ] array (
+  '/discover/teacher/pecialist' => '',
+  'classify_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Teacher->pecialist[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\discover\controller\Teacher.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.178787s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.105773s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'f999131c73c2fb56824c114617e7e9e1' LIMIT 1 [ RunTime:0.090119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.124088s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 2  AND `identity` LIKE '%3%' LIMIT 1 [ RunTime:0.095202s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`phone`,`photo`,`consult_num` FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 2  AND `identity` LIKE '%3%' LIMIT 0,10 [ RunTime:0.106651s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.143336s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_article` [ RunTime:0.111552s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 2 LIMIT 0,3 [ RunTime:0.133934s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142327s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 3 LIMIT 0,3 [ RunTime:0.095366s ]
+
+---------------------------------------------------------------
+[ 2018-08-13T10:42:03+08:00 ] 127.0.0.1 127.0.0.1 POST /discover/teacher/pecialist
+[ log ] kouzhiwenapi.zpftech.com/discover/teacher/pecialist [运行时间：1.978196s][吞吐率：0.51req/s] [内存消耗：2,510.65kb] [文件加载：63]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'teacher',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '167',
+  'content-type' => 'multipart/form-data; boundary=--------------------------319746055931430394923949',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => '702bc328-481c-4b20-bb12-1eaf2ff162ad',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'f999131c73c2fb56824c114617e7e9e1',
+)
+[ info ] [ PARAM ] array (
+  '/discover/teacher/pecialist' => '',
+  'classify_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Teacher->pecialist[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\discover\controller\Teacher.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.161218s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.085135s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'f999131c73c2fb56824c114617e7e9e1' LIMIT 1 [ RunTime:0.107241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher` [ RunTime:0.102704s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 2  AND `identity` LIKE '%3%' LIMIT 1 [ RunTime:0.083284s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`phone`,`photo`,`consult_num` FROM `tpn_teacher` WHERE  `status` = 1  AND `enterprise_id` = 0  AND `classify_id` = 2  AND `identity` LIKE '%3%' LIMIT 0,10 [ RunTime:0.110379s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.126571s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_teacher_article` [ RunTime:0.080434s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 1 LIMIT 0,3 [ RunTime:0.088422s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131009s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 2 LIMIT 0,3 [ RunTime:0.094897s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.147490s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 3 LIMIT 0,3 [ RunTime:0.091736s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.199791s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 4 LIMIT 0,3 [ RunTime:0.090126s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131929s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tpn_teacher_article` WHERE  `teacher_id` = 5 LIMIT 0,3 [ RunTime:0.086353s ]
+
+---------------------------------------------------------------
+[ 2018-08-13T16:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /discover/course/look_class_course
+[ log ] kouzhiwenapi.zpftech.com/discover/course/look_class_course [运行时间：2.509154s][吞吐率：0.40req/s] [内存消耗：2,428.13kb] [文件加载：66]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => 'f015ec98-7512-496e-b71c-f6061ef92070',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'f999131c73c2fb56824c114617e7e9e1',
+)
+[ info ] [ PARAM ] array (
+  '/discover/course/look_class_course' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Course->lookClassCourse[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\discover\controller\Course.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.136147s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.109058s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'f999131c73c2fb56824c114617e7e9e1' LIMIT 1 [ RunTime:0.090105s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_record` [ RunTime:0.090723s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_record` `a` LEFT JOIN `tpn_course` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `a`.`uid` = 1  AND `a`.`type` = 6  AND `c`.`type` = 3  AND `c`.`enterprise_id` = null ORDER BY a.created_at desc LIMIT 1 [ RunTime:0.079086s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`photo`,`c`.`look_num`,`t`.`name` FROM `tpn_user_record` `a` LEFT JOIN `tpn_course` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `a`.`uid` = 1  AND `a`.`type` = 6  AND `c`.`type` = 3  AND `c`.`enterprise_id` = null ORDER BY a.created_at desc LIMIT 0,10 [ RunTime:0.080696s ]
+[ error ] [8]未定义数组索引: classify_id[E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\common\model\UserRecord.php:110]
+[ error ] [8]未定义数组索引: enterprise_id[E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\common\model\UserRecord.php:118]
+[ error ] [8]未定义数组索引: classify_id[E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\common\model\UserRecord.php:110]
+[ error ] [8]未定义数组索引: enterprise_id[E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\common\model\UserRecord.php:118]
+
+---------------------------------------------------------------
+[ 2018-08-13T16:35:42+08:00 ] 127.0.0.1 127.0.0.1 POST /discover/course/look_class_course
+[ log ] kouzhiwenapi.zpftech.com/discover/course/look_class_course [运行时间：0.577060s][吞吐率：1.73req/s] [内存消耗：2,390.07kb] [文件加载：63]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '280',
+  'content-type' => 'multipart/form-data; boundary=--------------------------637640560066489140749632',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => '3a443962-f2dc-4589-b6e4-da4289d7f039',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'f999131c73c2fb56824c114617e7e9e1',
+)
+[ info ] [ PARAM ] array (
+  '/discover/course/look_class_course' => '',
+  'classify_id' => '1',
+  'enterprise_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Course->lookClassCourse[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\discover\controller\Course.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.135608s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.088863s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'f999131c73c2fb56824c114617e7e9e1' LIMIT 1 [ RunTime:0.077549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_record` [ RunTime:0.079917s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_record` `a` LEFT JOIN `tpn_course` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `a`.`uid` = 1  AND `a`.`type` = 6  AND `c`.`classify_id` = '1'  AND `c`.`type` = 3  AND `c`.`enterprise_id` = '0' ORDER BY a.created_at desc LIMIT 1 [ RunTime:0.076133s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`photo`,`c`.`look_num`,`t`.`name` FROM `tpn_user_record` `a` LEFT JOIN `tpn_course` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `a`.`uid` = 1  AND `a`.`type` = 6  AND `c`.`classify_id` = '1'  AND `c`.`type` = 3  AND `c`.`enterprise_id` = '0' ORDER BY a.created_at desc LIMIT 0,10 [ RunTime:0.078522s ]
+
+---------------------------------------------------------------
+[ 2018-08-13T16:38:36+08:00 ] 127.0.0.1 127.0.0.1 POST /discover/course/look_class_course
+[ log ] kouzhiwenapi.zpftech.com/discover/course/look_class_course [运行时间：0.711067s][吞吐率：1.41req/s] [内存消耗：2,390.07kb] [文件加载：63]
+[ info ] [ LANG ] E:\basic\PHP\phpstudy\WWW\zpf-pro2\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'discover',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '280',
+  'content-type' => 'multipart/form-data; boundary=--------------------------577074998966261200630360',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=8j173og98s5itu818fn5m2e400',
+  'host' => 'kouzhiwenapi.zpftech.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.2.0',
+  'postman-token' => 'c8eaf751-f09c-4616-aba2-feedab9bfca7',
+  'cache-control' => 'no-cache',
+  'logintoken' => 'f999131c73c2fb56824c114617e7e9e1',
+)
+[ info ] [ PARAM ] array (
+  '/discover/course/look_class_course' => '',
+  'classify_id' => '1',
+  'enterprise_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\discover\controller\Course->lookClassCourse[ E:\basic\PHP\phpstudy\WWW\zpf-pro2\application\api\discover\controller\Course.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.168024s ] mysql:dbname=kouzhiwen;host=139.196.255.96;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.129369s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `logintoken` = 'f999131c73c2fb56824c114617e7e9e1' LIMIT 1 [ RunTime:0.097463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user_record` [ RunTime:0.086146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tpn_user_record` `a` LEFT JOIN `tpn_course` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `a`.`uid` = 1  AND `a`.`type` = 6  AND `c`.`classify_id` = '1'  AND `c`.`type` = 3  AND `c`.`enterprise_id` = '0' ORDER BY a.created_at desc LIMIT 1 [ RunTime:0.079134s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`photo`,`c`.`look_num`,`t`.`name` FROM `tpn_user_record` `a` LEFT JOIN `tpn_course` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `tpn_teacher` `t` ON `c`.`teacher_id`=`t`.`id` WHERE  `a`.`uid` = 1  AND `a`.`type` = 6  AND `c`.`classify_id` = '1'  AND `c`.`type` = 3  AND `c`.`enterprise_id` = '0' ORDER BY a.created_at desc LIMIT 0,10 [ RunTime:0.089870s ]
+
+---------------------------------------------------------------

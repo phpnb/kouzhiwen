@@ -1,0 +1,43 @@
+{include file="common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <th width="120" class="msg">所属分类</th>
+                <td>
+                    <select name="mcid" class="form-control w326 category-check" datatype="*">
+                        <option value="">请选择</option>
+                        {foreach $category AS $key => $val}
+                        <option value="" disabled>{$key}</option>
+                        {foreach $val AS $v}
+                        <option module="{$v.module}" value="{$v.id}">&nbsp&nbsp&nbsp&nbsp|----{$v.name}</option>
+                        {/foreach}
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th class="msg">菜单名称</th>
+                <td>
+                    <input type="text" name="name" datatype="*" class="form-control w300">
+                </td>
+            </tr>
+            <tr>
+                <th class="msg">访问地址</th>
+                <td>
+                    <input type="text" name="address" datatype="*" class="form-control w300">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">Save Change</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+
+</script>
+{include file="common/footer"}

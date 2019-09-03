@@ -1,0 +1,41 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="msg">类型</th>
+                <td>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="type" value="1"> 专业知识课
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="type" value="2"> 选修课
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="type" value="3"> 直播课
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">名称</th>
+                <td><input name="name" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script>
+$(function(){
+    
+})
+</script>
+{include file="admin/root/common/footer"}

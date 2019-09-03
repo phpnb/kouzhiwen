@@ -1,0 +1,62 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="msg">班级</th>
+                <td>
+                    <select name="class_id" class="form-control w426" datatype="*">
+                        {foreach $checkVal['class_idVal'] as $k=>$v}
+                        <option value="{$k}">{$v}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td><input name="title" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th class='msg'>图片</th>
+                <td>
+                    <div id="photo-picker">上传图片</div>
+                    <div id="photo-list" class="uploader-list">
+                        <div class="upload-ts">
+                            <input type="hidden" name="photo" value="" datatype="*" nullmsg="请上传图片">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class="msg">描述</th>
+                <td><textarea name="describe" datatype="*"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+
+<script>
+$(function(){
+    file_upload({
+    pick        : '#photo-picker',
+    container   : '#photo-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'photo'
+});
+
+
+})
+</script>
+{include file="admin/root/common/footer"}

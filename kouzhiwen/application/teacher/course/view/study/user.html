@@ -1,0 +1,92 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <!-- 菜单 -->
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="姓名/昵称">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+
+            </form>
+        </div>
+        <table class="table">
+            <tr>
+                <th width="20">序号</th>
+                <th width="200">姓名</th>
+                <th width="200">昵称</th>
+                <th width="200">头像</th>
+                <th width="200">电话</th>
+                <th width="200">身份</th>
+                <th width="200">状态</th>
+                <th width="100">加入时间</th>
+                <th width="100">操作</th>
+            </tr>
+            <!-- </table>-->
+            {if (!empty($data))}
+            {foreach $data AS $k=>$v}
+            <tr>
+                <td width="20">{$k+1}</td>
+                <td width="200">{$v.name}</td>
+                <td width="200">{$v.nickname}</td>
+                <td>
+                    <img src='{$v.face}' style='max-width:100px;'>
+                </td>
+                <td width="200">{$v.phone}</td>
+                <td width="200">{$v.call}</td>
+                <td width="200">
+                    {if($v['status']==1)}
+                    <span class="label label-success f12">正常</span>
+                    {else}
+                    <span class="label label-warning f12">禁言</span>
+                    {/if}
+                </td>
+                <td width="100" class="operation">
+                    {:date('Y-m-d H:i:s', $v.created_at)}
+                </td>
+                <td>
+                    <a href="{:url('useredit',['id'=>$v['id']])}" target="frame_dispose"
+                       onclick="open_frame('成员编辑', 100, 100, true)"
+                       class="glyphicon glyphicon-edit" title="讨论组成员编辑"></a>
+                <a href="{:url('info/user/sign',['uid'=>$v['uid'],'qun_id'=>$v['qun_id']])}" target="frame_dispose"
+                           onclick="open_frame('签到记录', 100, 100, true)"
+                           class="glyphicon glyphicon-list-alt" title="签到记录"></a>
+                        <a href="{:url('info/user/achievement',['uid'=>$v['uid'],'type'=>4])}" target="frame_dispose"
+                           onclick="open_frame('学员成绩', 100, 100, true)"
+                           class="glyphicon glyphicon-list-alt" title="学员成绩"></a>
+                        <a href="{:url('info/user/studyrecord',['uid'=>$v['uid'],'type'=>1])}" target="frame_dispose"
+                           onclick="open_frame('学习记录', 100, 100, true)"
+                           class="glyphicon glyphicon-list-alt" title="学习记录"></a>
+                        <a href="{:url('info/user/progress',['uid'=>$v['uid']])}" target="frame_dispose"
+                           onclick="open_frame('学习进度', 100, 100, true)"
+                           class="glyphicon glyphicon-list-alt" title="学习进度"></a>
+                        <a href="{:url('info/user/consume',['uid'=>$v['uid']])}" target="frame_dispose"
+                           onclick="open_frame('消费记录', 100, 100, true)"
+                           class="glyphicon glyphicon-usd" title="消费记录"></a>
+                            {if($v['status']==1)}
+                           <a class="glyphicon glyphicon glyphicon-volume-off"
+                           onclick="ajax_post('{:url('stop')}',{'id':{$v['id']}});" title="禁言"></a>
+                            {else}
+                           <a class="glyphicon glyphicon-volume-down"
+                           onclick="ajax_post('{:url('stop')}',{'id':{$v['id']}});" title="解除禁言"></a>
+                            {/if}
+                           <!--<a class="glyphicon glyphicon-trash"-->
+                           <!--onclick="ajax_post('{:url('delgou')}',{'uid':{$v['uid']},'qun_id':{$v['qun_id']}});" title="踢出群组"></a>-->
+                       </td>
+            </tr>
+            {/foreach}
+            {else}
+            <tr>
+                <td align="center" colspan="20">暂无数据！</td>
+            </tr>
+            {/if}
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+</script>
+{include file="admin/root/common/footer"}

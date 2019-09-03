@@ -1,0 +1,99 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">类型</th>
+                <td>
+                    {foreach $checkVal['typeVal'] as $v=>$k}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="type" checked value="{$v}">
+                        &nbsp;&nbsp;{$k}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td><input name="title" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">内容</th>
+                <td>
+                    <textarea id="editorEditor" name="content"  style="width:600px;height:300px;" datatype="*"  nullmsg="请填写内容！" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+{include file="admin/root/common/ueditor"}
+{include file="admin/root/common/dateplugin"}
+<script>
+$(function(){
+    UE.getEditor('editorEditor', {
+        autoHeight: false,
+        /* toolbars:[[
+             'undo', //撤销
+             'redo', //重做
+             'bold', //加粗
+             'indent', //首行缩进
+             'italic', //斜体
+             'underline', //下划线
+             'strikethrough', //删除线
+             'subscript', //下标
+             'fontborder', //字符边框
+             'superscript', //上标
+             'formatmatch', //格式刷
+             'pasteplain', //纯文本粘贴模式
+             'selectall', //全选
+             'preview', //预览
+             'horizontal', //分隔线
+             'removeformat', //清除格式
+             'time', //时间
+             'date', //日期
+             'inserttitle', //插入标题
+             'cleardoc', //清空文档
+             'simpleupload', //单图上传
+             'fontfamily', //字体
+             'fontsize', //字号
+             'paragraph', //段落格式
+             'link', //超链接
+             'emotion', //表情
+             'spechars', //特殊字符
+             'searchreplace', //查询替换
+             'justifyleft', //居左对齐
+             'justifyright', //居右对齐
+             'justifycenter', //居中对齐
+             'justifyjustify', //两端对齐
+             'forecolor', //字体颜色
+             'backcolor', //背景色
+             'insertorderedlist', //有序列表
+             'insertunorderedlist', //无序列表
+             'fullscreen', //全屏
+             'directionalityltr', //从左向右输入
+             'directionalityrtl', //从右向左输入
+             'rowspacingtop', //段前距
+             'rowspacingbottom', //段后距
+             'imagenone', //默认
+             'imageleft', //左浮动
+             'imageright', //右浮动
+             'imagecenter', //居中
+             'lineheight', //行间距
+             'edittip ', //编辑提示
+             'customstyle', //自定义标题
+             'autotypeset', //自动排版
+             'drafts' // 从草稿箱加载
+         ]]*/
+    });
+})
+</script>
+{include file="admin/root/common/footer"}

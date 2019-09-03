@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZPF Framework doc</title>
+    <link rel="stylesheet" href="/static/common/bootstrap/css/bootstrap.css?1=1">
+    <link rel="stylesheet" href="/static/common/css/base.css">
+    <link rel="stylesheet" href="/static/common/css/Validform.css">
+    <link rel="stylesheet" href="/static/admin/css/main.css?1=3">
+    <link rel="stylesheet" href="/static/doc/main.css?1=3">
+</head>
+<body>
+<div id="right_content">
+    <h1 class="cl-blue">发送邮件</h1>
+    
+    <p class="cl-red">配置文件：/application/extra/email.php</p>
+    <pre class="mt20">
+        <code>
+        'from_name'         => '' // 发件人姓名
+
+        'address'           => '', // 邮箱地址
+
+        'loginname'         => '', // 邮箱登录帐号
+
+        'smtp'              => '', // 邮箱SMTP服务器
+
+        'password'          => '', // 邮箱密码
+        </code>
+    </pre>
+    
+    <p class="cl-red mt20">实例</p>
+    <pre class="mt20">
+        <code>
+        use app\common\extend\Email;
+
+        $obj = new Email;
+        
+        $address = 收件人地址   
+
+        $title   = 邮件标题
+
+        $content = 邮件内容
+
+        $obj -> sendMeail($address, $title, $content);
+
+        返回 true || false  返回false时 用 $obj -> err 来获取错误信息
+
+        </code>
+    </pre>
+
+    <p class="cl-gre mt20">
+        如需使用html形式发送邮件 <br>
+        在/application/common/extend/Email.php 的 _emailTpl 方法中修改主模板 <br>
+        sendMeail 方法中 $mail -> IsHTML(true);  $mail -> Body = $this -> _emailTpl($content);
+     </p>
+     <p class="cl-red">注意：有些邮件服务不支持html形式发送邮件</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

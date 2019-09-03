@@ -1,0 +1,69 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        提现管理
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="{:url('index',['status'=>1])}"  {if($status==1)}class="this"{/if}>资金分配</a></li>
+        <li><a href="{:url('index',['status'=>2])}"  {if($status==2)}class="this"{/if}>提现记录</a></li>
+
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <form action="" method="get" class="clearfix fr">
+                <input type="hidden" value="{$status}" name="status" >
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="打款账号/老师名称">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>企业名称</th>
+                <th>教师名称</th>
+                <th>打款账号</th>
+                <th>提现方式</th>
+                <th>提现金额</th>
+                <th>手续费</th>
+                <th>创建时间</th>
+                <th width="100">操作</th>
+            </tr>
+            {if (!empty($data))}
+            {foreach $data AS $v}
+                <tr>
+                    <td>{$v.id}</td>
+                    <td>{$v.enterprisename|default="平台"}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.account_num}</td>
+                    <td>
+                        {if (!empty($checkVal['pay_typeVal'][$v['pay_type']]))}
+                            {$checkVal['pay_typeVal'][$v['pay_type']]}
+                        {/if}
+                    </td>
+                    <td>{$v.account}</td>
+                    <td>{$v.brokerage}</td>
+                    <td>{$v.created_at ? date('Y-m-d H:i:s', $v.created_at) : '----'}</td>
+
+                    <td class="operation">
+                        <a class="glyphicon glyphicon-saved"
+                           onclick="ajax_post('{:url('pay')}',{'id':{$v['id']}});" title="打款"></a>
+                    </td>
+                </tr>
+            {/foreach}
+            {/if}
+        </table>
+        <div>{$page}</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="admin/root/common/footer"}

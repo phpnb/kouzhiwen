@@ -1,0 +1,194 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">账号</th>
+                <td><input name="phone" value="{$data.phone}" type="text" class="form-control w400" datatype="/^1\d{10}$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">密码</th>
+                <td><input name="password" value="" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">姓名</th>
+                <td><input name="name" value="{$data.name}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">昵称</th>
+                <td><input name="nickname" value="{$data.nickname}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th class='msg'>头像</th>
+                <td>
+                    <div id="face-picker">上传图片</div>
+                    <div id="face-list" class="uploader-list">
+                        <div class="upimg-box upload-ts">
+                            <span class="glyphicon glyphicon-remove-sign remove-img"></span>
+                            <input type="hidden" name="face" value="{$data.face}" datatype="/^.*?$/" nullmsg="请上传图片">
+                            <img src="{$data.face}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">身份证</th>
+                <td><input name="identity" value="{$data.identity}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th class="msg">性别</th>
+                <td>
+                    {foreach $checkVal['sexVal'] AS $n => $m}
+                    {if ($n ==1)}
+                    <label class="radio-inline">
+                        <input type="radio" name="sex" value="{$n}" datatype="/^.*?$/" {if ($data['sex'] == $n)} checked="checked"{/if}> {$m}
+                        <u class="Validform_checktip"></u>
+                    </label>
+                    {else/}
+                    <label class="radio-inline">
+                        <input type="radio" name="sex" value="{$n}" {if ($data['sex'] == $n)} checked="checked"{/if}> {$m}
+                    </label>
+                    {/if}
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <th class='msg'>出生年月</th>
+                <td>
+                    <input type="text" id="time-birth" name="birth" class="date-plugin form-control w200" value="{$data.birth}" placeholder="选择日期" datatype="/^.*?$/">
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">办公电话</th>
+                <td><input name="oph" value="{$data.oph}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">手机</th>
+                <td><input name="tel" value="{$data.tel}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">邮箱</th>
+                <td><input name="email" value="{$data.email}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">学校</th>
+                <td><input name="school" value="{$data.school}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th class="msg">学历</th>
+                <td>
+                    {foreach $checkVal['educationVal'] AS $n => $m}
+                    {if ($n ==3)}
+                        <label class="radio-inline">
+                            <input type="radio" name="education" value="{$n}" datatype="/^.*?$/" {if ($data['education'] == $n)} checked="checked"{/if}> {$m}
+                            <u class="Validform_checktip"></u>
+                        </label>
+                   {else/}
+                        <label class="radio-inline">
+                            <input type="radio" name="education" value="{$n}" {if ($data['education'] == $n)} checked="checked"{/if}> {$m}
+                        </label>
+                    {/if}
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">单位职称</th>
+                <td><input name="unit_title" value="{$data.unit_title}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">公司名称</th>
+                <td><input name="company_name" value="{$data.company_name}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th class="msg">公司介绍</th>
+                <td><textarea name="company_introduce" datatype="/^.*?$/">{$data.company_introduce}</textarea></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">公司详细地址</th>
+                <td><input name="company_adddetailed" value="{$data.company_adddetailed}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">家庭详细地址</th>
+                <td><input name="address_detailed" value="{$data.address_detailed}" type="text" class="form-control w400" datatype="/^.*?$/"></td>
+            </tr>
+            <tr>
+                <th class='msg'>证件照 正面</th>
+                <td>
+                    <div id="id_photo_pos-picker">上传图片</div>
+                    <div id="id_photo_pos-list" class="uploader-list">
+                        <div class="upimg-box upload-ts">
+                            <span class="glyphicon glyphicon-remove-sign remove-img"></span>
+                            <input type="hidden" name="id_photo_pos" value="{$data.id_photo_pos}" datatype="/^.*?$/" nullmsg="请上传图片">
+                            <img src="{$data.id_photo_pos}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class='msg'>证件照 反面</th>
+                <td>
+                    <div id="id_photo_neg-picker">上传图片</div>
+                    <div id="id_photo_neg-list" class="uploader-list">
+                        <div class="upimg-box upload-ts">
+                            <span class="glyphicon glyphicon-remove-sign remove-img"></span>
+                            <input type="hidden" name="id_photo_neg" value="{$data.id_photo_neg}" datatype="/^.*?$/" nullmsg="请上传图片">
+                            <img src="{$data.id_photo_neg}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input name="uid" type="hidden" value="{$data.uid}">
+                </td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+{include file="admin/root/common/dateplugin"}
+
+<script>
+file_upload({
+    pick        : '#face-picker',
+    container   : '#face-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'face'
+});
+
+$('#time-birth').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:'zh-CN',
+    minView:2,
+    autoclose:true
+});
+
+file_upload({
+    pick        : '#id_photo_pos-picker',
+    container   : '#id_photo_pos-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'id_photo_pos'
+});
+
+file_upload({
+    pick        : '#id_photo_neg-picker',
+    container   : '#id_photo_neg-list',
+    server      : '{:url("admin/root/upload/upload")}',
+    mulit       : false,
+    inputname   : 'id_photo_neg'
+});
+
+
+</script>
+{include file="admin/root/common/footer"}

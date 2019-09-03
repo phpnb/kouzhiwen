@@ -1,0 +1,24 @@
+{include file="common/header"}
+<div id="right_content">
+    <form action="" method="get" class="rform">
+        <table class="table">
+            <tr>
+                <th width="150" class="msg">所属模块</th>
+                <td>
+                    <select name="module_name" id="" class="form-control w326">
+                        {foreach $module AS $v}
+                            <option value="admin/{$v}">{$v}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">Next</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+{include file="common/footer"}

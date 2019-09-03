@@ -1,0 +1,165 @@
+{include file="common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform" style="width: 1600px;">
+        <table class="table">
+            <tr>
+                <th width="150">接口名称</th>
+                <td>
+                    <input type="text" name="name" value="{$old.name}" class="form-control w400" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <th width="150">所属分类</th>
+                <td>
+                    <select name="cid" class="form-control w426">
+                        {foreach $checkVal['cat'] AS $k => $v}
+                        <option value="{$k}" {if $k == $old['cid']}selected="selected"{/if}>{$v}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>请求地址</th>
+                <td>
+                    <input type="text" name="url" value="{$old.url}" class="form-control w400" placeholder="">
+                </td>
+            </tr>
+
+            <tr>
+                <th>请求方式</th>
+                <td>
+                    <div class="radio_box fl mr10">
+                        <span {if $old.method == 'get'}class="this"{/if}></span>
+                        <u>GET</u>
+                        <input type="radio" name="method" {if $old.method == 'get'}checked="checked"{/if} value="get">
+                    </div>
+                    <div class="radio_box fl mr10">
+                        <span {if $old.method == 'post'}class="this"{/if}></span>
+                        <u>POST</u>
+                        <input type="radio" name="method" {if $old.method == 'post'}checked="checked"{/if} value="post">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>需要登录</th>
+                <td>
+                    <div class="radio_box fl mr10">
+                        <span {if $old.islogin == '否'}class="this"{/if}></span>
+                        <u>否</u>
+                        <input type="radio" name="islogin" {if $old.islogin == '否'}checked="checked"{/if} value="否">
+                    </div>
+                    <div class="radio_box fl mr10">
+                        <span {if $old.islogin == '是'}class="this"{/if}></span>
+                        <u>是</u>
+                        <input type="radio" name="islogin" {if $old.islogin == '是'}checked="checked"{/if} value="是">
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>请求参数</th>
+                <td class="parambox">
+                    {foreach $old.param AS $v}
+                        <div class="param clearfix mt10" style="">
+                            <div class="fl mr10">
+                                <label for="">名称</label> <br>
+                                <input type="text" name="param[name][]" value="{$v.name}" class="form-control w150">
+                            </div>
+                            <div class="fl mr10">
+                                <label for="">类型</label> <br>
+                                <select name="param[type][]" class="form-control w100">
+                                    <option value="String" {if $v.type == 'String'}selected="selected"{/if}>String</option>
+                                    <option value="Int" {if $v.type == 'Int'}selected="selected"{/if}>Int</option>
+                                </select>
+                            </div>
+                            <div class="fl mr10">
+                                <label for="">是否必须</label> <br>
+                                <select name="param[must][]" class="form-control w100">
+                                    <option value="Yes" {if $v.must eq 'Yes'}selected="selected"{/if}>Yes</option>
+                                    <option value="No" {if $v.must eq 'No'}selected="selected"{/if}>No</option>
+                                </select>
+                            </div>
+                            <div class="fl mr10">
+                                <label for="">示例值</label> <br>
+                                <input type="text" name="param[value][]" value="{$v.value}" class="form-control w200">
+                            </div>
+                            <div class="fl mr10">
+                                <label for="">描述</label> <br>
+                                <input type="text" name="param[msg][]" value="{$v.msg}" class="form-control w300">
+                            </div>
+                            <div class="fl mr10">
+                                <button type="button" class="btn btn-danger delparam" style="margin-top: 17px; display: ;">删除参数</button>
+                            </div>
+                        </div>
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td colspan="10"><button type="button" class="btn btn-info addparam">增加参数</button></td>
+            </tr>
+            <tr>
+                <th>返回值示例</th>
+                <td>
+                    <div class="radio">
+                        <textarea name="return" style="width: 500px; height: 200px;">{$old.return}</textarea>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="hidden" name="id" value="{$old.id}"></td>
+                <td><button type="submit" class="btn btn-success">Save Change</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <div class="paramcl param clearfix mt10" style="display: none;">
+        <div class="fl mr10">
+            <label for="">名称</label> <br>
+            <input type="text" name="param[name][]" class="form-control w150">
+        </div>
+        <div class="fl mr10">
+            <label for="">类型</label> <br>
+            <select name="param[type][]" class="form-control w100">
+                <option value="String">String</option>
+                <option value="Int">Int</option>
+            </select>
+        </div>
+        <div class="fl mr10">
+            <label for="">是否必须</label> <br>
+            <select name="param[must][]" class="form-control w100">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="fl mr10">
+            <label for="">示例值</label> <br>
+            <input type="text" name="param[value][]" class="form-control w200">
+        </div>
+        <div class="fl mr10">
+            <label for="">描述</label> <br>
+            <input type="text" name="param[msg][]" class="form-control w300">
+        </div>
+        <div class="fl mr10">
+            <button type="button" class="btn btn-danger delparam" style="margin-top: 17px; display: none;">删除参数</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        // 增加参数
+        $('.addparam').click(function(){
+            var _clone = $('.paramcl').clone();
+            _clone.removeClass('paramcl').css({'display':'block'}).find('.delparam').css({'display':'block'});
+            $('.parambox').append(_clone);
+        })
+
+        $('.parambox').on('click','.delparam', function(){
+            $(this).parents('.param').remove();
+        })
+
+    })
+</script>
+{include file="common/footer"}

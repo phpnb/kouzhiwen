@@ -1,0 +1,44 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">名称</th>
+                <td><input name="name" value="{$data.name}" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th class="msg">上级分类</th>
+                <td>
+                    <select name="up" class="form-control w426" datatype="/^.*?$/">
+                        <option value="0" {eq name="$data.up" value="0" }selected{/eq}>请选择上级分类</option>
+                        {if (!empty($checkVal['upVal']))}
+                        {foreach $checkVal['upVal'] as $v}
+                        <option value="{$v.id}" {eq name="$data.up" value="$v.id" }selected{/eq}>{$v.name}</option>
+                        {/foreach}
+                        {/if}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input name="id" type="hidden" value="{$data.id}">
+                </td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script>
+
+</script>
+{include file="admin/root/common/footer"}
+
+
+
+

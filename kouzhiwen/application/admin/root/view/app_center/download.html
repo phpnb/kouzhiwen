@@ -1,0 +1,32 @@
+{include file="common/header" /}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        模块下载
+    </div>
+
+    <form action="{:url('install')}" class="pt20 pb20">
+        <table class="table">
+            <tr>
+                <th class="msg">菜单初始化至</th>
+                <td>
+                    <select name="top_module" class="form-control w426">
+                        {foreach $module AS $v}
+                            <option value="admin/{$v}">admin/{$v}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="hidden" name="proof" value="{$proof}">
+                    <button type="submit" class="btn btn-success">下载安装</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+{include file="common/footer"}

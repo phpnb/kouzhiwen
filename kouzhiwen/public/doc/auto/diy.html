@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZPF Framework doc</title>
+    <link rel="stylesheet" href="/static/common/bootstrap/css/bootstrap.css?1=1">
+    <link rel="stylesheet" href="/static/common/css/base.css">
+    <link rel="stylesheet" href="/static/common/css/Validform.css">
+    <link rel="stylesheet" href="/static/admin/css/main.css?1=3">
+    <link rel="stylesheet" href="/static/doc/main.css?1=1">
+</head>
+<body>
+<div id="right_content">
+    <h1 class="cl-blue">创建菜单 - 并生成定义配置</h1>
+    <h2 class="cl-gre">系统管理 - 菜单列表 - 添加数据 - 配置选项</h2>
+
+    <h2>选项说明</h2>
+    <p>
+        选择所属分类，输入菜单名称，选择该菜单是否显示，选择创建类型为 自动生成操作 <br>
+        输入数据表的名称<span class="cl-red">（不带表前缀）</span>，选择要生成的后台操作和API接口 <br>
+        这里先以单表查询作为介绍，选择数据是否分页，模板配置 这里先以自定义配置作为介绍 <br>
+        添加完成后，在权限组管理中勾选上相应的权限就可以只用使用了
+    </p>
+
+    <h2 class="cl-red">自定义配置选项说明</h2>   
+    <p>
+        <span class="cl-blue">列名：</span>取的是数据库字段的备注，这里可以自定义为模板上想要展示的<br>
+        <span class="cl-blue">输入类型：</span>指的是后台添加数据时 表单类型 <br>
+        <span class="cl-blue">输入类型有：</span>text输入框，textarea文本框，password，下拉选择，多选，单选，时间选择，范围时间选择，单图上传，多图上传，编辑器 <br>
+        <span class="cl-blue">设置值：</span>
+        <span class="cl-red">下拉选择，多选，单选 需要指定</span>，
+        <span class="cl-gre">例如：男-1,女-2</span> ，<br>
+        设置后还可以在控制器中修改，<span class="cl-red">这里强烈建议给上默认的，方便以后在控制器中扩展</span><br>
+        <span class="cl-blue">验证规则：</span>指定后会生成模板的JS验证和PHP的数据验证，内置的验证规则有：不验证，必须，数字，字符串，邮编，手机号，邮箱，网址，自定义（自定义正则） <br>
+        <span class="cl-blue">附加规则：</span><span cl-red>数字，字符串，自定义可以指定附加规则</span><br>
+        数字，字符串的附加规则：2-5  这样代表长度为2到5位 <br>
+        自定义的附加规则：/^[0-9]{10}$/ 就是自己定义正则规则来验证 <br>
+        <span class="cl-blue">其他设置：</span>可以指定该字段 是否需要添加，是否需要更新，更新时是否需要验证
+    </p>
+
+    <h2 class="cl-red mt20">设置值修改</h2>
+    <p class="cl-gre">
+        在生成好的控制器中 - 初始化里面可以很容易的修改之前设置的值 <br>
+        <span class="cl-red">命名规则为 字段名 + Val</span> <br>
+        只需要修改这里的设置值就可以，模板和控制器其他的地方均不需要修改
+    </p>
+    <pre>
+        <code>
+    class Test extends Common{
+        protected $checkVal = [];
+        /**
+         * [_initialize 初始化]
+         */
+        public function _initialize(){
+            parent::_initialize();
+            $this -> checkVal = [
+                'selectVal' => [
+                    '1' => 'A',
+                    '2' => 'B',
+                    '3' => 'C',
+                ],
+                'checkboxVal' => [
+                    '1' => 'A',
+                    '2' => 'B',
+                    '3' => 'C',
+                ],
+                'radioVal' => [
+                    '1' => 'A',
+                    '2' => 'B',
+                    '3' => 'C',
+                ],
+            ];
+        }
+    }
+        </code>
+    </pre>  
+    
+    <img src="/static/doc/img/6.png" alt="">
+    <P class="cl-gre mt20">自定义的表单和验证规则已生成好</P>
+    <img src="/static/doc/img/7.png" alt="">
+    <img src="/static/doc/img/8.png" alt="">
+    
+
+</div>
+</body>
+</html>

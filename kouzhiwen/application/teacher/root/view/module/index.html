@@ -1,0 +1,84 @@
+{include file="common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        菜单分类
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li>
+            <a href="#" class="this">模块列表</a>
+        </li>
+        <li>
+            <a
+                href="{:url('add')}"
+                target="frame_dispose"
+                onclick="open_frame('初始化模块', 100, 100, true);">
+                初始化模块
+            </a>
+        </li>
+    </ul>
+
+    <div class="table-box">
+        <table class="table">
+            <tr>
+                <th width="20">#</th>
+                <th width="200">管理员</th>
+                <th>所属组</th>
+                <th width="100">操作</th>
+            </tr>
+        </table>
+
+        {foreach $data AS $v}
+        <!--<div class="tableshow-topbox">-->
+        <div>
+        <h2 class="tableshow clearfix">
+            <span class="fl">admin/{$v.name}</span>
+            <p class="fr operation" style="margin-right: 80px;">
+                <a href="{:url('admin/add',['module'=>$v['name']])}" target="frame_dispose"
+                   onclick="open_frame('添加管理员', 100, 100, true)"
+                   class="glyphicon glyphicon-plus cl-blue" title="添加管理员"></a>
+            </p>
+        </h2>
+        <table class="mb20">
+            {foreach $v.user AS $val}
+            <tr style="border-bottom: solid #e7e7e7 1px;">
+                <td width="20"></td>
+                <td class="operation" width="220">
+                    <div class="mb10 mt10 clearfix">
+                        <a class="glyphicon glyphicon-trash fl" style="margin-right: 10px; margin-top: 3px;"
+                           onclick="ajax_post('{:url('admin/del')}',{'aid':{$val['aid']}});" title="删除"></a>
+                        {if $val.islock == 0}
+                            <a href="{:url('admin/edit',['aid'=>$val['aid']])}" target="frame_dispose"
+                               onclick="open_frame('修改信息', 100, 100, true)"
+                               class="fl" title="编辑"><span class="label label-success">{$val.username}</span></a>
+                        {else}
+                            <a href="{:url('admin/edit',['aid'=>$val['aid']])}" target="frame_dispose"
+                               onclick="open_frame('修改信息', 100, 100, true)"
+                               class="fl" title="编辑"><span class="label label-danger">{$val.username}</span></a>
+                        {/if}
+                    </div>
+                </td>
+                <td class="operation">
+                    <?php $g = explode(',', $val['group_id']);?>
+
+                    {foreach $g AS $m}
+                    {if $group[$m]['name']}
+                    <a href="{:url('access_group/edit',['id'=>$group[$m]['id']])}?module_name=admin/{$v.name}" target="frame_dispose"
+                       onclick="open_frame('修改权限组', 100, 100, true)"
+                       class="" title="编辑">
+                        <span class="label label-info">{$group[$m]['name']}</span>
+                    </a>
+                    {/if}
+                    {/foreach}
+                </td>
+            </tr>
+            {/foreach}
+        </table>
+        </div>
+        {/foreach}
+    </div>
+</div>
+
+{include file="common/footer"}

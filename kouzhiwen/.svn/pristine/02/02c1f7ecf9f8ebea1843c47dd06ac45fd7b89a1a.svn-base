@@ -1,0 +1,101 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        企业管理
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="{:url('index',['type'=>1])}" {if($type==1)}class="this"{/if}>数据列表</a></li>
+        <li><a href="{:url('index',['type'=>3])}" {if($type==3)}class="this"{/if}>快过期</a></li>
+        <li><a href="{:url('index',['type'=>4])}" {if($type==4)}class="this"{/if}>已过期</a></li>
+        <li><a href="{:url('index',['type'=>2])}" {if($type==2)}class="this"{/if}>已停用</a></li>
+        <li>
+            <a
+                href="{:url('add')}" target="frame_dispose"
+                onclick="open_frame('添加', 100, 100, true);">
+                添加数据
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+                {if($type==2)}
+                <button type="button" class="btn btn-danger btn-sm"
+                onclick="all_operation('{:url('del',['status'=>1])}','id[]');">
+                    恢复正常<i class="glyphicon glyphicon-ok ml5"></i>
+                </button>
+                {elseif($type==4)}
+                <button type="button" class="btn btn-danger btn-sm"
+                        onclick="all_operation('{:url('del',['status'=>2])}','id[]');">
+                    停用<i class="glyphicon glyphicon-trash ml5"></i>
+                </button>
+                {/if}
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="hidden" value="{$type}" name="type"/>
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="企业名称">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th width="20">
+                    <input onclick="check_all('id[]');" name="check_all" type="checkbox" value="">
+                </th>
+                <th>ID</th>
+                <th>企业名称</th>
+                <th>企业logo</th>
+                <th>学员人数上限</th>
+                <th>到期时间</th>
+                <th width="100">操作</th>
+            </tr>
+            {if (!empty($data))}
+            {foreach $data AS $v}
+                <tr>
+                    <td>
+                        <input name="id[]" type="checkbox" value="{$v.id}">
+                    </td>
+                    <td>{$v.id}</td>
+                    <td>{$v.name}</td>
+                    <td><img src='{$v.logo}' style='max-width:100px;'></td>
+                    <td>{$v.student}</td>
+                    <td>{$v.expire}</td>
+
+                    <td class="operation">
+                        <a href="{:url('edit',['id'=>$v['id']])}" target="frame_dispose"
+                        onclick="open_frame('修改数据', 100, 100, true)"
+                        class="glyphicon glyphicon-edit" title="编辑"></a>
+                        <a href="{:url('useradd',['enterprise_id'=>$v['id']])}" target="frame_dispose"
+                           onclick="open_frame('添加企业成员', 100, 100, true)"
+                           class="glyphicon glyphicon-plus cl-blue" title="添加企业成员"></a>
+                        <a href="{:url('user',['id'=>$v['id']])}" target="frame_dispose"
+                           onclick="open_frame('企业成员', 100, 100, true)"
+                           class="glyphicon glyphicon-user cl-blue" title="企业成员"></a>
+                        {if($type==2)}
+                        <a class="glyphicon glyphicon-ok"
+                        onclick="ajax_post('{:url('del',['status'=>1])}',{'id':{$v['id']}});" title="恢复正常"></a>
+                        {elseif(($type==4))}
+                        <a class="glyphicon glyphicon-trash"
+                           onclick="ajax_post('{:url('del',['status'=>2])}',{'id':{$v['id']}});" title="停用"></a>
+                        {/if}
+                    </td>
+                </tr>
+            {/foreach}
+            {/if}
+        </table>
+        <div>{$page}</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="admin/root/common/footer"}

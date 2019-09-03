@@ -1,0 +1,121 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        视频管理
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="#" class="this">数据列表</a></li>
+        <li>
+            <a
+                href="{:url('add')}" target="frame_dispose"
+                onclick="open_frame('添加', 100, 100, true);">
+                添加数据
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+                <button type="button" class="btn btn-danger btn-sm"
+                onclick="all_operation('{:url('del')}','id[]');">
+                    删除<i class="glyphicon glyphicon-trash ml5"></i>
+                </button>
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="课程名称">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th width="20">
+                    <input onclick="check_all('id[]');" name="check_all" type="checkbox" value="">
+                </th>
+                <th>ID</th>
+                {neq name="$checkVal['enterprise_id']" value="0"}
+                <th>分类</th>
+                {else /}
+                <th>平台分类</th>
+                {/neq}
+                <th>讲师</th>
+                <th>课程名称</th>
+                <th>图片</th>
+                <th>类型</th>
+                <th>阅读量</th>
+                <th>描述</th>
+                <th>单价</th>
+                <th>权重</th>
+                <th>学习量</th>
+                <th>评论数量</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+
+                <th width="100">操作</th>
+            </tr>
+            {if (!empty($data))}
+            {foreach $data AS $v}
+                <tr>
+                    <td>
+                        <input name="id[]" type="checkbox" value="{$v.id}">
+                    </td>
+                    <td>{$v.id}</td>
+                    {neq name="$checkVal['enterprise_id']" value="0"}
+                    <td>
+                        {if (!empty($checkVal['type_idVal'][$v['type_id']]))}
+                            {$checkVal['type_idVal'][$v['type_id']]}
+                        {/if}
+                    </td>
+                    {else /}
+                    <td>
+                        {if (!empty($checkVal['classify_idVal'][$v['classify_id']]))}
+                            {$checkVal['classify_idVal'][$v['classify_id']]}
+                        {/if}
+                    </td>
+                    {/neq}
+                    <td>
+                        {$v.name}
+                    </td>
+                    <td>{$v.title}</td>
+                    <td><img src='{$v.photo}' style='max-width:100px;'></td>
+                    <td>
+                        {if (!empty($checkVal['typeVal'][$v['type']]))}
+                            {$checkVal['typeVal'][$v['type']]}
+                        {/if}
+                    </td>
+                    <td>{$v.reading}</td>
+                    <td>{$v.describe}</td>
+                    <td>{$v.price}</td>
+                    <td>{$v.weight}</td>
+                    <td>{$v.look_num}</td>
+                    <td>{$v.comment_num}</td>
+                    <td>{$v.created_at ? date('Y-m-d H:i:s', $v.created_at) : '----'}</td>
+                    <td>{$v.updated_at ? date('Y-m-d H:i:s', $v.updated_at) : '----'}</td>
+
+                    <td class="operation">
+                        <a href="{:url('edit',['id'=>$v['id']])}" target="frame_dispose"
+                        onclick="open_frame('修改数据', 100, 100, true)"
+                        class="glyphicon glyphicon-edit" title="编辑"></a>
+<a class="glyphicon glyphicon-trash"
+                        onclick="ajax_post('{:url('del')}',{'id':{$v['id']}});" title="删除"></a>
+
+                    </td>
+                </tr>
+            {/foreach}
+            {/if}
+        </table>
+        <div>{$page}</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="admin/root/common/footer"}

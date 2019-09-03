@@ -1,0 +1,93 @@
+{include file="common/header"}
+<div id="right_content" style="width: 1300px;">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <th width="120" class="msg">所属分类</th>
+                <td>
+                    <select name="mcid" class="form-control w326 category-check" datatype="*">
+                        <option value="">请选择</option>
+                        {foreach $category AS $key => $val}
+                        <option value="" disabled>{$key}</option>
+                        {foreach $val AS $v}
+                        <option module="{$v.module}" value="{$v.id}" {if ($data['mcid'] == $v['id'])} selected="selected"{/if}>&nbsp&nbsp&nbsp&nbsp|----{$v.name}</option>
+                        {/foreach}
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="msg">所属模块</th>
+                <td>
+                    <input type="text" name="module" value="{$data.module}" datatype="*" class="form-control w300">
+                </td>
+            </tr>
+
+            <tr>
+                <th class="msg">菜单名称</th>
+                <td><input type="text" name="name" value="{$data.name}" class="form-control w300" datatype="*" ></td>
+            </tr>
+            <tr>
+                <th class="msg">菜单显示</th>
+                <td class="isauto-check">
+                    <label class="radio-inline">
+                        <input type="radio" name="is_show" value="1" {if ($data['is_show'] == 1)} checked="checked"{/if} > 显示
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="is_show" value="0" {if ($data['is_show'] == 0)} checked="checked"{/if}> 不显示
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <th>方法</th>
+                <td class="method-box" width="500">
+                    {if (!empty($data['method']))}
+                    {foreach $data['method'] AS $v}
+                        <div class="clearfix mbox mt10">
+                            <input type="text" name="mname[]" value="{$v['name']}" class="form-control w150 fl mr10">
+                            <input type="text" name="method[]" value="{$v['method']}" class="form-control w150 fl mr10">
+                            <button type="button" class="btn btn-danger del-box">删除方法</button>
+                        </div>
+                    {/foreach}
+                    {else/}
+                        <div class="clearfix mbox mt10">
+                            <input type="text" name="mname[]" class="form-control w150 fl mr10">
+                            <input type="text" name="method[]" class="form-control w150 fl mr10">
+                            <button type="button" class="btn btn-danger del-box">删除方法</button>
+                        </div>
+                    {/if}
+                </td>
+                <td>
+                    <button type="button" class="btn btn-info mt10" onclick="add_mbox();">添加方法</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="hidden" name="id" value="{$data['id']}"></td>
+                <td><button type="submit" class="btn btn-success">Save Change</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+$(function(){
+    // 分类选择 - 写入模块
+    $('.category-check').change(function(){
+        var module = $(this).find('option:selected').attr('module');
+        $('input[name=module]').val(module);
+    })
+})
+/**
+ * [add_mbox 添加方法]
+ */
+function add_mbox(){
+    var box = $('.mbox:eq(0)').clone();
+    box.css({'margin-top':'10px'}).find('input').val('');
+    $('.method-box').append(box);
+}
+$('.method-box').on('click', '.del-box', function(){
+    $(this).parent('.mbox').remove();
+})
+</script>
+{include file="common/footer"}

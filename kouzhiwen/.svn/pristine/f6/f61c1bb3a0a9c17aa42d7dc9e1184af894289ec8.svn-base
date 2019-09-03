@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZPF Framework doc</title>
+    <link rel="stylesheet" href="/static/common/bootstrap/css/bootstrap.css?1=1">
+    <link rel="stylesheet" href="/static/common/css/base.css">
+    <link rel="stylesheet" href="/static/common/css/Validform.css">
+    <link rel="stylesheet" href="/static/admin/css/main.css?1=3">
+    <link rel="stylesheet" href="/static/doc/main.css?1=3">
+</head>
+<body>
+<div id="right_content">
+    <h1 class="cl-blue">模型开发须知</h1>
+    <h2 class="cl-gre">
+        模型位于 /application/模块/model/模型名称.php  <br> 
+        模型一般放置于 /application/common/model/ <br>
+        该模型不与其他模块公共的话，就放到自己模块下的model中
+    </h2>
+    <p class="cl-red">
+        模型统一继承 common 模块下的 CommonModel <br>
+        验证规则写在模型中，控制器中 添加和更新 自行设置不需要验证的字段
+    </p>
+
+    <h2 class="cl-gre">模型写法</h2>
+    <pre>
+        <code>
+        namespace app\common\model;
+        use think\Validate;
+
+        class Type extends CommonModel{
+            public $err;         // 错误信息
+            public $data;       // 验证后保存数据
+            public $pk = 'tid'; // 主键
+
+            /**
+             * [checkData 验证数据]
+             */
+            public function checkData($data, $noverify = []){
+                // 验证规则
+                $rule = [
+                   'tname' => 'require',
+               ];
+
+                // 去除不需要验证的字段
+                if (!empty($noverify)) {
+                    foreach ($noverify as $v) {
+                        unset($rule[$v]);
+                    }
+                }
+
+                // 错误提示
+                $message = [
+                    'tid' => '请填写正确的主键',
+                    'tname' => '请填写正确的类型名称',
+                ];
+
+                // 创建验证
+                if (!empty($rule) && !empty($message)) {
+                    // 创建验证规则
+                    $validate = new Validate($rule, $message);
+                    // 执行验证
+                    if (!$validate -> check($data)) {
+                        // 保存错误信息
+                        $this -> err = $validate -> getError();
+                        return false;
+                    }
+                }
+
+                // 保存验证过的数据
+                $this -> data = $data;
+                return true;
+            }
+        }
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">控制器中验证数据</h2>
+    <pre>
+        <code>
+        // 实例化模型
+        $model = new model;
+        // 获取post数据
+        $data = input('post.');
+        
+        // 验证 - 第二参数为不需要验证的字段
+        if (!$model -> checkData($data, ['id'])) {
+            return ajax($model -> err, 2);
+        }
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">新增数据</h2>
+    <pre>
+        <code>
+        // $data 为要添加的数据
+        $model -> editData($where = [], $data = []);
+
+        // 如果用了验证之后，数据会被保存 这里的数据就可以直接留空
+        $mode -> checkData($data);
+        $mode -> editData();
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">删除数据</h2>
+    <pre>
+        <code>
+        $model -> delData($where = []);
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">获取一条数据</h2>
+    <pre>
+        <code>
+        $model -> getOne($where = []);
+        </code>
+    </pre>
+
+    <h2 class="cl-gre">获取多条数据</h2>
+    <pre>
+        <code>
+        $model -> getAll($where = [], $orderby = '');
+        </code>
+    </pre>
+</div>
+</body>
+</html>

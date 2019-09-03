@@ -1,0 +1,128 @@
+{include file="teacher/root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        学习班管理
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="#" class="this">数据列表</a></li>
+        <!-- <li>
+            <a
+                href="{:url('add')}" target="frame_dispose"
+                onclick="open_frame('添加', 100, 100, true);">
+                添加数据
+            </a>
+        </li> -->
+
+
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <!--<div class="all-operation fl clearfix">-->
+            <!--<button type="button" class="btn btn-danger btn-sm"-->
+            <!--onclick="all_operation('{:url('del')}','id[]');">-->
+            <!--删除<i class="glyphicon glyphicon-trash ml5"></i>-->
+            <!--</button>-->
+            <!--</div>-->
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="班级名称">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            <tr>
+                <!--<th width="20">-->
+                <!--<input onclick="check_all('id[]');" name="check_all" type="checkbox" value="">-->
+                <!--</th>-->
+                <th>ID</th>
+                {neq name="$checkVal['enterprise_id']" value="0"}
+                <th>分类</th>
+                {else /}
+                <th>分类</th>
+                {/neq}
+                <th>班级名称</th>
+                <th>图片</th>
+                <th>限定人数</th>
+                <th>开始时间</th>
+                <th>结束时间</th>
+                <th>价格</th>
+                <th>班主任</th>
+                <th>类别</th>
+                <th>签到二维码</th>
+                <th>创建时间</th>
+
+                <th width="100">操作</th>
+            </tr>
+            {if (!empty($data))}
+            {foreach $data AS $v}
+            <tr>
+                <!--<td>-->
+                <!--<input name="id[]" type="checkbox" value="{$v.id}">-->
+                <!--</td>-->
+                <td>{$v.id}</td>
+                {neq name="$checkVal['enterprise_id']" value="0"}
+                <td>
+                    {if (!empty($checkVal['class_type_idVal'][$v['class_type_id']]))}
+                    {$checkVal['class_type_idVal'][$v['class_type_id']]}
+                    {/if}
+                </td>
+                {else /}
+                <td>
+                    {if (!empty($checkVal['classify_idVal'][$v['classify_id']]))}
+                    {$checkVal['classify_idVal'][$v['classify_id']]}
+                    {/if}
+                </td>
+                {/neq}
+                <td>{$v.name}</td>
+                <td><img src='{$v.photo}' style='max-width:100px;'></td>
+                <td>{$v.number}</td>
+                <td>{$v.start ? date('Y-m-d', $v.start) : '----'}</td>
+                <td>{$v.end ? date('Y-m-d', $v.end) : '----'}</td>
+                <td>{$v.price}</td>
+                <td>{$v.teachername}</td>
+                <td>
+                    {if (!empty($checkVal['typeVal'][$v['type']]))}
+                    {$checkVal['typeVal'][$v['type']]}
+                    {/if}
+                </td>
+                <td><img src='{$v.img_url}' style='max-width:100px;'></td>
+
+                <td>{$v.created_at ? date('Y-m-d H:i:s', $v.created_at) : '----'}</td>
+
+                <td class="operation">
+                    <a href="{:url('discuss',['id'=>$v['id']])}" target="frame_dispose"
+                       onclick="open_frame('讨论组', 100, 100, true)"
+                       class="glyphicon glyphicon-comment" title="讨论组"></a>
+                    <!--<a href="{:url('edit',['id'=>$v['id']])}" target="frame_dispose"-->
+                    <!--onclick="open_frame('修改数据', 100, 100, true)"-->
+                    <!--class="glyphicon glyphicon-edit" title="编辑"></a>-->
+                    <a href="{:url('user',['id'=>$v['id']])}" target="frame_dispose"
+                       onclick="open_frame('班级成员', 100, 100, true)"
+                       class="glyphicon glyphicon-user" title="班级成员"></a>
+                    <a href="{:url('sign',['id'=>$v['id']])}" target="frame_dispose"
+                       onclick="open_frame('签到记录', 100, 100, true)"
+                       class="glyphicon glyphicon-list-alt" title="签到记录"></a>
+                    <a href="{$url}/im/im.html?id={$v['teacherid']}" target="_blank"
+                       class="glyphicon glyphicon-envelope" title="消息"></a>
+                    <!--<a class="glyphicon glyphicon-trash"-->
+                    <!--onclick="ajax_post('{:url('del')}',{'id':{$v['id']}});" title="删除"></a>-->
+
+                </td>
+            </tr>
+            {/foreach}
+            {/if}
+        </table>
+        <div>{$page}</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="teacher/root/common/footer"}

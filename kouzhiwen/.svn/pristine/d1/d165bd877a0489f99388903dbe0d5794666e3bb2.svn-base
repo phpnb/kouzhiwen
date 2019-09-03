@@ -1,0 +1,47 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <ul class="clearfix menu">
+        <li><a href="{:url('studyrecord',['uid'=>$uid,'type'=>1])}" {if ($type==1)}class="this"{/if}>发表发现文章记录</a></li>
+        <li><a href="{:url('article',['uid'=>$uid,'type'=>2])}" {if ($type==2)}class="this"{/if}>发表班级热点文章记录</a></li>
+        <li><a href="{:url('share',['uid'=>$uid,'type'=>3])}" {if ($type==3)}class="this"{/if}>分享记录</a></li>
+        <li><a href="{:url('achievement',['uid'=>$uid,'type'=>4])}"  {if ($type==4)}class="this"{/if}>成绩记录</a></li>
+        <li><a href="{:url('avgscore',['uid'=>$uid,'type'=>5])}" {if ($type==5)}class="this"{/if}>学习班考试平均成绩</a></li>
+    </ul>
+    <!-- 菜单 -->
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="标题">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+        <table class="table">
+            <tr>
+                <th width="20">序号</th>
+                <th width="200">班级名称</th>
+                <th width="200">平均名称</th>
+            </tr>
+            <!-- </table>-->
+            {if (!empty($data))}
+            {foreach $data AS $k=>$v}
+            <tr>
+                <td width="20">{$k+1}</td>
+                <td>{$v.name}</td>
+                <td>{$v.avg_score}</td>
+            </tr>
+            {/foreach}
+            {else}
+            <tr>
+                <td align="center" colspan="20">暂无数据！</td>
+            </tr>
+            {/if}
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{include file="admin/root/common/footer"}

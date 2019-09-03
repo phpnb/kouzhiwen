@@ -1,0 +1,58 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">标题</th>
+                <td><input name="name" type="text" class="form-control w400" datatype="*"></td>
+            </tr>
+            <tr>
+                <th class='msg'>图片</th>
+                <td>
+                    <div id="photo-picker">上传图片</div>
+                    <div id="photo-list" class="uploader-list">
+                        <div class="upload-ts">
+                            <input type="hidden" name="cover_img" value="">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class='msg'>内容</th>
+                <td>
+                    <textarea name="contents" style="width:800px;height:400px;" datatype="*" id="describeEditor"></textarea>
+                </td>
+            </tr>
+            <input type="hidden" name="type" value="{$type}" />
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="teacher/root/common/webuploader"}
+{include file="teacher/root/common/ueditor"}
+{include file="teacher/root/common/dateplugin"}
+<script>
+    $(function(){
+        file_upload({
+            pick        : '#photo-picker',
+            container   : '#photo-list',
+            server      : '{:url("teacher/root/upload/AliyunOss")}',
+            mulit       : false,
+            inputname   : 'cover_img'
+        });
+        setTimeout(function(){
+            UE.getEditor('describeEditor', {
+                autoHeight: false,
+            });
+        },500);
+    })
+</script>
+{include file="admin/root/common/footer"}

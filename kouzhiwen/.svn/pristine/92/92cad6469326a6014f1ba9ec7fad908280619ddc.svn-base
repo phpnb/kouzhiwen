@@ -1,0 +1,364 @@
+[ 2019-02-12T19:56:50+08:00 ] 172.31.69.247 113.88.37.99 POST /common/login/send_code
+[ log ] api.kzwchina.com/common/login/send_code [运行时间：0.086678s][吞吐率：11.54req/s] [内存消耗：4,990.66kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.4; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'phone' => '13699814280',
+  'type' => 'user',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->sendCode[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '13699814280'  AND `status` = 1 LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '13699814280' LIMIT 1 [ RunTime:0.000257s ]
+
+---------------------------------------------------------------
+[ 2019-02-12T19:56:57+08:00 ] 172.31.69.247 113.88.37.99 POST /common/login/login
+[ log ] api.kzwchina.com/common/login/login [运行时间：0.028847s][吞吐率：34.67req/s] [内存消耗：3,796.64kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.4; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '77',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'login_type' => 'phone',
+  'password' => 'tingting123456',
+  'phone' => '13699814280',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->login[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '13699814280'  AND `status` = 1 LIMIT 1 [ RunTime:0.000567s ]
+
+---------------------------------------------------------------
+[ 2019-02-12T19:57:16+08:00 ] 172.31.69.247 113.88.37.99 POST /common/login/login
+[ log ] api.kzwchina.com/common/login/login [运行时间：0.027947s][吞吐率：35.78req/s] [内存消耗：3,796.64kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.4; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '77',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'login_type' => 'phone',
+  'password' => 'Tingting123456',
+  'phone' => '13699814280',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->login[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '13699814280'  AND `status` = 1 LIMIT 1 [ RunTime:0.000546s ]
+
+---------------------------------------------------------------
+[ 2019-02-12T19:57:21+08:00 ] 172.31.69.247 113.88.37.99 POST /common/login/send_code
+[ log ] api.kzwchina.com/common/login/send_code [运行时间：0.350428s][吞吐率：2.85req/s] [内存消耗：5,057.55kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.4; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'phone' => '13699814280',
+  'type' => 'user',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->sendCode[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '13699814280'  AND `status` = 1 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '13699814280' LIMIT 1 [ RunTime:0.000225s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'OS' in 'field list'[/www/wwwroot/kouzhiwen/thinkphp/library/think/db/Connection.php:457]
+
+---------------------------------------------------------------
+[ 2019-02-12T19:57:24+08:00 ] 172.31.69.247 113.88.37.99 POST /common/login/send_code
+[ log ] api.kzwchina.com/common/login/send_code [运行时间：0.086064s][吞吐率：11.62req/s] [内存消耗：4,990.72kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.4; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'phone' => '13699814280',
+  'type' => 'user',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->sendCode[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000932s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '13699814280'  AND `status` = 1 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '13699814280' LIMIT 1 [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2019-02-12T19:57:31+08:00 ] 172.31.69.247 113.88.37.99 POST /common/login/login
+[ log ] api.kzwchina.com/common/login/login [运行时间：0.028393s][吞吐率：35.22req/s] [内存消耗：3,808.95kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.4; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '61',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'code' => '1674',
+  'login_type' => 'sms',
+  'phone' => '13699814280',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->login[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000472s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '13699814280'  AND `code` = 1674 LIMIT 1 [ RunTime:0.000350s ]
+
+---------------------------------------------------------------
+[ 2019-02-12T20:08:38+08:00 ] 172.31.69.247 123.115.5.182 POST /common/login/send_code
+[ log ] api.kzwchina.com/common/login/send_code [运行时间：0.339012s][吞吐率：2.95req/s] [内存消耗：5,054.95kb] [文件加载：87]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.2; Scale/3.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '47',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'phone' => '18101093557',
+  'type' => 'exist',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->sendCode[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000465s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_user` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_user` WHERE  `phone` = '18101093557'  AND `status` = 1 LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '18101093557' LIMIT 1 [ RunTime:0.000236s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'OS' in 'field list'[/www/wwwroot/kouzhiwen/thinkphp/library/think/db/Connection.php:457]
+
+---------------------------------------------------------------
+[ 2019-02-12T20:08:48+08:00 ] 172.31.69.247 123.115.5.182 POST /common/login/code
+[ log ] api.kzwchina.com/common/login/code [运行时间：0.027104s][吞吐率：36.90req/s] [内存消耗：3,727.14kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.2; Scale/3.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'code' => '3335',
+  'phone' => '18101093557',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->code[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '18101093557'  AND `code` = 3335 LIMIT 1 [ RunTime:0.000341s ]
+
+---------------------------------------------------------------
+[ 2019-02-12T20:08:59+08:00 ] 172.31.69.247 123.115.5.182 POST /common/login/code
+[ log ] api.kzwchina.com/common/login/code [运行时间：0.027639s][吞吐率：36.18req/s] [内存消耗：3,727.14kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/kouzhiwen/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.kzwchina.com',
+  'os' => 'iOS',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'version' => '1.0',
+  'user-agent' => 'kouzhiwen/1.0 (iPhone; iOS 12.1.2; Scale/3.00)',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '46',
+)
+[ info ] [ PARAM ] array (
+  'OS' => 'iOS',
+  'code' => '3335',
+  'phone' => '18101093557',
+  'version' => '1.0',
+)
+[ info ] [ RUN ] app\api\common\controller\Login->code[ /www/wwwroot/kouzhiwen/application/api/common/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:dbname=kouzhiwen;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpn_code` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `tpn_code` WHERE  `phone` = '18101093557'  AND `code` = 3335 LIMIT 1 [ RunTime:0.000414s ]
+
+---------------------------------------------------------------

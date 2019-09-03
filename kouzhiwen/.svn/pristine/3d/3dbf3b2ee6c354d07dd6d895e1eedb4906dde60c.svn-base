@@ -1,0 +1,822 @@
+<?php
+/**
+ * [学习班]
+ * Created by PhpStorm.
+ * User: admin
+ * Date: 18-7-18
+ * Time: 下午5:14
+ */
+
+
+namespace app\api\discover\controller;
+use app\api\common\controller\Api;
+use app\common\extend\JGPush;
+use app\common\model\Department;
+use app\common\model\Regions;
+use app\common\model\Studys;
+use app\common\model\ClassCourse;
+use app\common\model\Course;
+use app\common\model\Share;
+use app\common\model\User;
+use app\common\model\UserCollect;
+use app\common\model\Zan;
+use app\common\model\Dynamic;
+use app\common\model\Questions;
+use app\common\model\Answer;
+use app\common\model\Follow;
+use app\common\model\Enterprise;
+use app\common\model\Banner;
+use app\common\model\Information;
+use app\common\model\Report;
+use app\common\model\Signreward;
+use app\common\model\Comment;
+use app\common\model\ClassDiscuss;
+use app\common\model\ClassDiscussUser;
+use app\common\extend\Rongcloudapi;
+use app\common\model\TeacherArticle;
+use app\common\model\Label;
+use app\common\model\UserNotice;
+use app\common\model\UserRanking;
+use app\common\model\IntDetailed;
+use app\common\model\Charts;
+use app\common\extend\Aliyun;
+
+
+class Study extends Api{
+
+
+    /**
+     * 添加和取消点赞
+     */
+    public function setLike(){
+        if(!$this->param['cid'])return ajax("请上传内容id",2);
+        $uid = $this->user['uid'];
+        $cid = $this->param['cid'];
+        $type = $this->param['type'];
+        $author = $this->param['author'];
+        $where    = ['cid'=>$cid,'type'=>$type,'uid'=>$uid,'author_id'=>$author];
+        $zan = new Zan();
+        $Charts = new Charts();
+        $one = $zan->where($where)->field('z_type')->select()->toArray();
+//        dump($one);
+//        return ajax('操作成功', 1,$one);
+        if($type=='1'){
+            $questions = new Questions();
+            if(!$one){
+                //未点赞过 添加点赞
+                $data = [
+                    'uid'            => $this->user['uid'],
+                    'type'     => $type,
+                    'cid'       => $cid,
+                    'author_id'       => $author
+                ];
+                $rs = $zan->insertGetId($data);
+                $questions->where(['id'=>$cid])->setInc('zan');
+                (new Charts)->updateRanking($cid,'zan_num');
+
+            }else{
+                //点赞过 取消点赞
+                $rs = $zan->where($where)->delete();
+                $questions->where(['id'=>$cid])->setDec('zan');
+                $Charts->where(['uid'=>$cid])->setDec('zan_num');
+
+            }
+        }
+
+        if($type=='2'){
+            $questions = new TeacherArticle();
+            $UserRanking = new UserRanking();
+            if(!$one){
+                //未点赞过 添加点赞
+                $data = [
+                    'uid'       => $this->user['uid'],
+                    'type'      => $type,
+                    'cid'       => $cid,
+                    'author_id'       => $author
+                ];
+                $rs = $zan->insertGetId($data);
+                $questions->where(['id'=>$cid])->setInc('zan');
+                $UserRanking->where(['uid'=>$author])->setInc('blue');
+
+            }else{
+                //点赞过 取消点赞
+                $rs = $zan->where($where)->delete();
+                $questions->where(['id'=>$cid])->setDec('zan');
+                $UserRanking->where(['uid'=>$author])->setDec('blue');
+            }
+        }
+
+
+
+        if(!$rs) return ajax('操作失败', 2);
+        return ajax('操作成功', 1);
+    }
+
+
+
+    /**
+     * 学习班
+     */
+    public function datalist(){
+        if(!$this->param['classify_id']) return ajax("缺少平台分类id",2);
+        $this->param['enterprise_id'] = 0; //平台
+        $this->param['uid'] = $this->user['uid'];//当前用户
+        $this->param['time']= time();
+
+        $StudysModel = new Studys();
+        $model = $StudysModel->getDataList($this->param);
+        $total = $model->count();
+        //tp5.0会清空上一次的查询条件
+        $model =  $StudysModel->getDataList($this->param);
+        $data  = api_page($model,'','', '',$total);
+        if(!$data['data']) return ajax('已是全部数据', 1, $data);
+        return ajax('获取成功', 1, $data);
+    }
+
+    /**
+     * 添加提问
+     */
+    public function addquestions()
+    {
+        // 实例化模型
+        $model = new Questions();
+        $harts = new Charts();
+        $user = new User();
+        $intdetailedmodel = new IntDetailed();
+        //通知表实例化
+        $UserNotice=new UserNotice();
+        $id = $user->where(['uid'=>$this->user['uid']])->field('enterprise_id')->select()->toArray();
+        $data['e_id'] = $id[0]['enterprise_id'];
+        $data['add_time'] = time();
+        $data['zan'] = 0;
+        $data['u_id'] = $this->user['uid'];
+        $data['contents'] = input('contents');
+        $data['classify'] = input('classify');
+        $data['lid'] = input('lid');
+        $data['type'] = input('type');
+        $data['url'] = input('url');
+        $data['money'] = input('money');
+        $user_id = input('user_id');
+        $qid = $model->insertGetId($data);
+        if (!$qid) return ajax('添加失败', 2);
+        $intdetailedmodel->addData(['uid'=>$this -> user['uid'],'type'=>1,'title'=>'添加提问','price'=>'1','created_at'=>$data['add_time']]);
+        $user->where(['uid'=>$this->user['uid']])->setInc('integral');
+        //排行榜
+        (new Charts)->updateRanking($this->user['uid'],'questions_num');
+        $data['id'] = $qid;
+        if($data['type'] != 4){
+            // 添加数据
+            if($data['money'] != 0){
+                $time = time();
+                $intdetailedmodel->addData(['uid'=>$this -> user['uid'],'type'=>2,'title'=>'添加赏金','price'=>$data['money'],'created_at'=>$data['add_time']]);
+                $all_id=$user->field(['uid','phone'])->where(['enterprise_id'=>$id[0]['enterprise_id']])->select()->toArray();
+                //组合数据
+                $content=$data['contents'];
+                //写进通知表
+                foreach ($all_id as $k=>$v){
+                    $UserNotice->addData(['uid'=>$v['uid'],'title'=>'悬赏提问','content'=>$content,'reading'=>0,'created_at'=>$time]);
+                }
+                $jguid = $this->array_convert($all_id,'uid','phone');
+                $mas = '悬赏通知';
+                $JGPush = new JGPush();
+                $res = $JGPush->sendUrgentNotify($jguid,$mas,$mas,'all',$data);
+                return ajax('添加成功',1);
+
+            }
+            if($user_id){
+
+                $time = time();
+                $all_user = explode(",",$user_id);
+                $all_id=$user->field(['uid','phone'])->where(['uid'=>['in', $all_user]])->select()->toArray();
+                //组合数据
+                $content=$data['contents'];
+                //写进通知表
+                foreach ($all_id as $k=>$v){
+                    $UserNotice->addData(['uid'=>$v['uid'],'title'=>'好友提问','content'=>$content,'reading'=>0,'created_at'=>$time]);
+                }
+                $jguid = $this->array_convert($all_id,'uid','phone');
+                $mas = '悬赏通知';
+//            dump($uid);
+                // 修改数据
+                $JGPush = new JGPush();
+                $res = $JGPush->sendUrgentNotify($jguid,$mas,$mas,'all',$data);
+
+                return ajax('添加成功',1);
+            }
+        }
+
+        return ajax('添加成功');
+
+
+    }
+
+
+
+    /**
+     * 添加提问
+     */
+    public function addlabel()
+    {
+        // 实例化模型
+        $labelmodel = new Label();
+        $enterprise_id = input('enterprise_id');
+        $data = $labelmodel->where(['enterprise_id'=>$enterprise_id])->select()->toArray();
+        if(!$data){
+            return ajax('暂无标签',2);
+        }
+                return ajax('获取成功',1,$data);
+
+
+
+
+    }
+
+    /**
+     * 删除提问
+     */
+    public function delquestions()
+    {
+        // 实例化模型
+        $model = new Questions();
+        $uid = $this->user['uid'];
+        $id = $this->param['id'];
+        $where = ['id'=>$id,'u_id'=>$uid];
+        $res = $model->delData($where);
+        if(!$res){
+            return ajax('删除失败',2);
+        }
+        return ajax('删除成功',1);
+
+
+    }
+
+
+    /**
+     * 首页提问最新
+     */
+    public function newquestions()
+    {
+        // 实例化模型
+        if(empty($this->param['enterprise_id'])) return ajax("请传企业id",2);
+        $uid = $this->user['uid'];
+        $model = new Questions();
+        $where=['e_id'=>$this->param['enterprise_id'],'classify' => array(['=',1],['=',2],'or')];
+        $model=$model->alias('p')
+            ->join('user t','t.uid=p.u_id','left')
+        ;
+        // 获取数据
+        $field=array('p.id','p.money','p.contents','p.url','p.add_time','t.company_name','t.unit_title',' t.name','t.face','p.zan','p.comment_num','p.type','t.uid',
+            "(select if(count(*)>0,1,0) from `tpn_zan` where `cid`=p.id and `uid`='{$uid}') z_type");
+        $data  = admin_page($model, $where,'p.add_time desc',$field);
+        $user = new user();
+        $field=array(
+            "c.uid","c.face","c.unit_title","c.company_name","c.name",
+            "(select SUM(questions_num+look_num+fans_num+zan_num+answer_num) from `tpn_charts` `r` where `r`.`uid`=`c`.`uid`) ranking_num",
+        );
+        $user = new user();
+        $data['ranking'] = $user->alias('c')
+            ->where(['enterprise_id'=>$this->param['enterprise_id']])
+            ->field($field)
+            ->limit(0,10)
+            ->order('ranking_num desc')
+            ->select()
+            ->toArray();
+        if(!$data['data']) return ajax('已是全部数据', 1, $data);
+        return ajax('获取成功', 1, $data);
+
+
+    }
+
+    /**
+     * 首页提问推荐
+     */
+    public function cryquestions()
+    {
+        // 实例化模型
+        if(empty($this->param['enterprise_id'])) return ajax("请传企业id",2);
+        $uid = $this->user['uid'];
+        $model = new Questions();
+        $where=['e_id'=>$this->param['enterprise_id'],'classify' => array(['=',1],['=',2],'or')];
+        $model=$model->alias('p')
+            ->join('user t','t.uid=p.u_id','left');
+        // 获取数据
+        $field=array('p.id','p.money','p.contents','p.url','p.add_time','t.company_name','t.unit_title',' t.name','t.face','p.zan','p.comment_num','p.type','t.uid',
+            "(select if(count(*)>0,1,0) from `tpn_zan` where `cid`=p.id and `uid`='{$uid}') z_type");
+        $data  = admin_page($model, $where,'p.comment_num desc,p.zan desc',$field);
+        if(!$data['data']) return ajax('已是全部数据', 1, $data);
+        return ajax('获取成功', 1, $data);
+
+
+    }
+    /**
+     * 首页关注
+     */
+    public function followuser()
+    {
+        if(empty($this->param['enterprise_id'])) return ajax("请传企业id",2);
+        $follow = new Follow();
+        $id = $this->user['uid'];
+        $where = ['uid'=>$id,'status'=>1];
+        $fid = $follow->where($where)->field('fid')->select()->toArray();
+        $followid=$this->array_convert($fid,'fid','fid');
+        $user = new User();
+        $data = $user->where('uid','in',$followid)->page($this->param['page'],10)->field('face,name,uid')->select()->toArray();
+        if(!$data['data']) return ajax('已是全部数据', 1, $data);
+        return ajax('获取成功', 1, $data);
+    }
+    /**
+     * 首页关注
+     */
+    public function followhome()
+    {
+        if(empty($this->param['enterprise_id'])) return ajax("请传企业id",2);
+        $follow = new Follow();
+        $id = $this->user['uid'];
+        $where = ['uid'=>$id];
+        $fid = $follow->where($where)->field('fid')->select()->toArray();
+        $followid=$this->array_convert($fid,'fid','fid');
+        // 实例化模型
+        $model = new Questions();
+        $where=['classify' => array(['=',1],['=',2],'or')];
+        $model=$model->alias('p')
+            ->join('user t','t.uid=p.u_id','left');
+        // 获取数据
+        $field=array('t.uid','p.id','p.money','p.contents','p.url','p.add_time','t.company_name','t.unit_title',' t.name','t.face','p.zan','p.comment_num','p.type',
+             "(select if(count(*)>0,1,0) from `tpn_zan` where `cid`=p.id and `uid`='{$id}') z_type");
+        $data = $model->where('u_id','in',$followid)->where($where)->page($this->param['page'],10)->field($field)->select()->toArray();
+
+        return ajax('获取成功', 1, $data);
+
+    }
+
+
+    /**
+     * 提问详情
+     */
+    public function detailsquestions()
+    {
+        // 实例化模型
+        if(empty($this->param['id'])) return ajax("请上传提问id",2);
+        $questions = new Questions();
+        $where=['id'=>$this->param['id']];
+        $id =  $this->param['id'];
+        $uid =  $this->user['uid'];
+        $zan = new Zan();
+        $zanmodel = $zan->where(['uid'=>$uid,'cid'=>$this->param['id'],'type'=>1])->field('z_type')->select()->toArray();
+        $model=$questions->alias('p')
+            ->join('user t','t.uid=p.u_id','left');
+        // 获取数据
+        $field=array('p.contents','p.money','p.url','p.money','p.add_time','p.comment_num','t.company_name','t.unit_title',' t.name','t.face','p.is_accept');
+        $data  = admin_page($model, $where,$field);
+        $collect = $questions->collection($id,$this->user['uid']);
+        $data['data'][0]['collect'] = $collect['collec'];
+        $model->where(['id'=>$this->param['id']])->setInc('pv');
+        //状态
+        if($zanmodel[0]['z_type'] ==1){
+            $data['data'][0]['z_type'] = 1;
+        }else{
+            $data['data'][0]['z_type'] = 0;
+        }
+        if(!$data['data']) return ajax('已是全部数据', 1, $data);
+        return ajax('获取成功', 1, $data);
+    }
+    /**
+     * 获取首页轮播图
+     */
+    public function homebanner(){
+        if ($this -> user['allot']==1 || $this -> user['enterprise_id']==0) return ajax('您没有权限查看', 2);
+        $bannermodel=new Banner();
+        $Course=new Course();
+        $Study=new Study();
+        $Information =new Information();
+
+
+        //轮播图
+        $enterprise_id =input('enterprise_id');
+        $banner=$bannermodel->dataList(['enterprise_id'=>$enterprise_id,'type'=>1],$this->user['uid']);
+        $data['banner']=$banner?$banner:[];
+
+        return ajax('获取成功', 1,$data);
+    }
+
+
+    /**
+     * 企业通讯录
+     */
+    public function maillist()
+    {
+        // 实例化模型
+        if(empty($this->param['enterprise_id'])) return ajax("请上传企业ID",2);
+        $model = new User();
+        $department_id = input('department_id');
+        $Regions_id = input('Regions_id');
+        $where=['enterprise_id'=>$this->param['enterprise_id'],'department_id'=>$department_id,'Regions_id'=>$Regions_id];
+        // 获取数据
+        $field=array('face','name','uid');
+        $data  = admin_page($model, $where,'uid desc',$field);
+        if(!$data['data']) return ajax('已是全部数据', 1, $data);
+        return ajax('获取成功', 1, $data);
+    }
+
+
+    /**
+     * 举报
+     */
+    public function reportuser()
+    {
+        // 实例化模型
+        if(empty($this->param['qid'])) return ajax("请上传提问ID",2);
+        $model = new Report();
+        $data['qid'] = input('qid');
+        $data['enterprise_id'] = $this->param['enterprise_id'];
+        $data['type'] = input('type');
+        $data['uid'] = $this->user['uid'];
+        $data['content'] = input('content');
+        $data['created_at'] = time();
+        $id = $model->addData($data);
+        if(!$id) return ajax('举报失败', 2);
+        return ajax('举报成功', 1);
+    }
+
+    /**
+     * 关注好友
+     */
+    public function removefollow()
+    {
+        // 实例化模型
+        if(empty($this->param['fid'])) return ajax("请上传关注ID",2);
+        $follow = new Follow();
+        $Charts = new Charts();
+        $data['fid'] = $this->param['fid'];
+        $data['uid'] = $this -> user['uid'];
+        $data['f_type'] = $this -> param['f_type'];
+        $where = ['fid'=>$this->param['fid'],'uid'=>$this -> user['uid']];
+//        $res = $follow->where($where)->find();
+//        dump($res);
+        if($data['f_type'] == 1){
+            $id = $follow->addData($data);
+            if(!$id) return ajax('关注失败', 2);
+            (new Charts)->updateRanking($data['fid'],'fans_num');
+            return ajax('关注成功', 1);
+        }else{
+            $id = $follow->delData($where);
+            if(!$id) return ajax('取关失败', 2);
+            $Charts->where(['uid'=>$data['fid']])->setDec('fans_num');
+            return ajax('取关成功', 1);
+        }
+//        dump($this -> user['uid']);
+    }
+    /**
+     * 回答被采纳
+     */
+    public function accept()
+    {
+
+        if(empty($this->param['uid'])) return ajax("请上传用户ID",2);
+        $id = $this->param['id'];
+        $mid = $this->param['mid'];
+        $time = time();
+        // 实例化模型
+        $model = new Questions();
+        $user = new user();
+        $intdetailedmodel = new IntDetailed();
+        $CommentModle = new Comment();
+        $money = $model->where(['id'=>$id])->field('money,id,type')->select()->toArray();
+        $take = 100;
+        $num = $take + $money[0]['money'];
+        $user->where(['uid'=>$this->user['uid']])->setony('integral',$money[0]['money']);
+        $age = $user->where(['uid'=>$this->param['uid']])->setall('integral',$num);
+        if(!$age) return ajax('采纳通知', 2);
+        $intdetailedmodel->addData(['uid'=>$this->param['uid'],'type'=>1,'title'=>'回答采纳','price'=>$num,'created_at'=>$time]);
+
+
+
+        $data=$user->field(['uid','phone'])->where(['uid'=>['in', $this->param['uid']]])->select()->toArray();
+        $typedata = $model->where(['id'=>$id])->select()->toArray();
+        $pp['type'] = $typedata[0]['type'];
+        $pp['url'] = $typedata[0]['url'];
+        $pp['id'] = $typedata[0]['id'];
+        $jguid = $this->array_convert($data,'uid','phone');
+        $mas = '采纳通知';
+        $JGPush = new JGPush();
+        $res = $JGPush->sendUrgentNotify($jguid,$mas,$mas,'all',$pp);
+        if($res['code']!==200){
+            return ajax($res['msg'], 2);
+        }
+
+
+        $model->editData(['id'=>$id],['is_accept'=>0]);
+        $CommentModle->editData(['id'=>$mid],['is_accept'=>1]);
+        return ajax('采纳成功', 1);
+
+    }
+
+    /**
+     * 用户积分
+     */
+    public function selectintegral()
+    {
+
+        $user = new User();
+        $data = $user->where(['uid'=>$this->user['uid']])->field('integral')->select()->toArray();
+        return ajax('获取成功', 1,$data);
+
+    }
+    /**
+     * 打赏
+     */
+    public function reward()
+    {
+
+        $user = new User();
+        $intdetailedmodel = new IntDetailed();
+        $time=time();
+        if(empty($this->param['uid'])) return ajax("请上传用户ID",2);
+        $pp['name'] = $user->where(['uid'=>$this->user['uid']])->field('name')->select()->toArray();
+        $reward = $this->param['reward'];
+        $pp['reward'] = $reward;
+        // 实例化模型
+        $user = new user();
+        $user->where(['uid'=>$this->user['uid']])->setony('integral',$reward);
+        $age = $user->where(['uid'=>$this->param['uid']])->setall('integral',$reward);
+        $data=$user->field(['uid','phone'])->where(['uid'=>['in', $this->param['uid']]])->select()->toArray();
+        $jguid = $this->array_convert($data,'uid','phone');
+        $mas = '打赏通知';
+        $JGPush = new JGPush();
+        $res = $JGPush->sendUrgentNotify($jguid,$mas,$mas,'all',$pp);
+        if($res['code']!==200){
+            return ajax($res['msg'], 2);
+        }
+        if(!$age) return ajax('打赏失败', 2);
+        $intdetailedmodel->addData(['uid'=>$this->param['uid'],'type'=>1,'title'=>'打赏','price'=>$reward,'created_at'=>$time]);
+        return ajax('打赏成功', 1);
+
+    }
+
+    /**
+     * 签到
+     */
+    public function signreward()
+    {
+        if(empty($this->param['uid'])) return ajax("请上传用户ID",2);
+        $data['uid'] = $this->param['uid'];
+        $data['sign_time'] = time();
+        $where = ['uid' => $data['uid']];
+        $time = time();
+
+//        // 实例化模型
+        $signreward = new Signreward();
+        $user = new User();
+        $intdetailedmodel = new IntDetailed();
+        //原来的数据
+        $sing = $signreward->where($where)->find();
+        if(!$sing){
+            $res = $signreward->addData($data);
+            $data = ['fraction'=>1];
+            if(!$res) return ajax('签到失败', 2);
+            $user->where($where)->setInc('integral');
+            $intdetailedmodel->addData(['uid'=>$this->param['uid'],'type'=>1,'title'=>'签到','price'=>'1','created_at'=>$time]);
+            return ajax('签到成功', 1,$data);
+
+        }
+        $field = array('sign_time','uid','fraction');
+        $orddata = $signreward->where($where)->field($field)->select()->toArray();
+        //时间运算
+        $res = $signreward->checkTime($orddata);
+//        dump($res);
+        if($res == 2 ){
+            return ajax('您今天已经签到', 2);
+        }
+        return ajax('签到成功', 1,$res);
+    }
+
+    /**
+     * 知识库
+     */
+    public function zskquestions()
+    {
+        // 实例化模型
+        if(empty($this->param['enterprise_id'])) return ajax("请传企业id",2);
+        $questions = new Questions();
+        $page = $this->param['page'];
+        $where=['e_id'=>$this->param['enterprise_id'],'science'=>2];
+        $questionsmodel=$questions->alias('p')
+            ->join('user t','t.uid=p.u_id','left');
+        // 获取数据
+        $field=array('p.id','t.uid','p.contents','p.money','p.url','p.add_time','t.company_name','t.unit_title',' t.name','t.face','p.zan','p.comment_num','p.type');
+        $data = $questions->where($where)->order('p.add_time desc')->field($field)->limit($page,10)->select()->toArray();
+//        dump($data);
+//        $data  = admin_page($questionsmodel, $where,'p.add_time desc',$field);
+        foreach ($data as $k=>$v){
+            $collect = $questions->collection($v['id'],$this->user['uid']);
+            $data[$k]['collect'] = $collect['collec'];
+        }
+//
+        if(!$data['data']) return ajax('已是全部数据', 1, $data);
+        return ajax('获取成功', 1, $data);
+
+
+    }
+
+    /**
+     * 个人主页头部
+     */
+    public function userheader()
+    {
+        // 实例化模型
+        $uid = $this->user['uid'];
+        if(empty($this->param['uid'])) return ajax("请传用户id",2);
+        $user = new User();
+        $where=['uid'=>$this->param['uid'],'status'=>1];
+        $user = $user->where($where)->field('uid,name,face,company_name,unit_title,integral,background')->find();
+        $follow =  new Follow();
+        $followmodel = $follow->where(['uid'=>$uid,'fid'=>$this->param['uid'],'f_type'=>1])->field('f_type')->select()->toArray();
+        if(!$followmodel[0]['f_type']){
+            $user['f_type'] = 0;
+        }else{
+            $user['f_type'] = 1;
+        }
+        $fans = $follow->where(['fid'=>$this->param['uid'],'f_type'=>1])->select()->toArray();
+        $fansnum = count($fans);
+        $user['fansnum'] = $fansnum;
+        //问题数
+        $questions =  new Questions();
+        $questionsmodel = $questions->where(['u_id'=>$this->param['uid']])->select()->toArray();
+        $questionsnum = count($questionsmodel);
+        $user['questionsnum'] = $questionsnum;
+        //回答条数
+        $comment =  new Comment();
+        $commentmodel = $comment->where(['uid'=>$this->param['uid'],'type'=>5])->select()->toArray();
+        $commentnum = count($commentmodel);
+        $user['commentnum'] = $commentnum;
+        //获赞条数
+        $zan = new Zan();
+        $zanmodel = $zan->where(['author_id'=>$this->param['uid']])->select()->toArray();
+        $zannum = count($zanmodel);
+        $user['zannum'] = $zannum;
+
+//        dump($follow);
+
+        return ajax('获取成功', 1, $user);
+
+
+    }
+
+
+
+
+    /*****
+     *添加班级讨论组
+     *****/
+    public function addQun(){
+            $model = new ClassDiscuss();
+            // 获取post数据
+            $data = input('post.');
+            $data['created_at'] = time();
+            $data['class_id'] = 0;
+            $uid = $this->user['uid'];
+            if(empty($data['name'])){
+                return ajax('请输入讨论组名称',2);
+            }
+            if (!$id = $model->addData($data)) return ajax('添加失败', 2);
+            $Rongcloud = new Rongcloudapi();
+            $res = $Rongcloud->RongCloud->group()->create(["u_".$uid],"d_$id",$data['name']);
+            $code = json_decode($res,true);
+            if($code['code'] !== 200) return ajax('添加失败',2);
+            $user = new ClassDiscussUser();
+            $add = array(
+                'discuss_id'=>$id,
+                'call'=>'组长',
+                'discuss_user_id'=>"u_".$uid,
+                'user_id'=>$uid,
+                'type'=>1
+            );
+            $user->addData($add);
+            $alluid = explode(",", $data['user_id']);
+                foreach ($alluid as $v){
+                    $res = $Rongcloud->RongCloud->group()->join(["u_".$v],"d_".$id,$data['name']);
+                    $code = json_decode($res,true);
+                    if($code['code'] !== 200) return ajax('添加失败',2);
+                    $add = array(
+                        'discuss_id'=>$id,
+                        'call'=>'学员',
+                        'discuss_user_id'=>"d_".$v,
+                        'user_id'=>$v,
+                        'type'=>1
+                    );
+                    $user->addData($add);
+                }
+
+                return ajax('添加成功');
+
+    }
+
+    /**
+     * 用户模块
+     */
+    public function usermodel()
+    {
+        // 实例化模型
+        if(empty($this->param['type'])) return ajax("请传分类id",2);
+        $type = $this->param['type'];
+        $uid = $this->param['uid'];
+        if($type ==1){
+            $model = new Questions();
+
+            $where=['u_id'=>$uid,'classify' => array(['=',1],['=',2],'or')];
+            $model=$model->alias('p')
+                ->join('user t','t.uid=p.u_id','left');
+            // 获取数据
+            $field=array('p.id','p.money','p.contents','p.url','p.add_time','t.company_name','t.unit_title',' t.name','t.face','p.zan','p.comment_num','p.type',
+                "(select if(count(*)>0,1,0) from `tpn_zan` where `cid`=p.id and `uid`='{$this->user['uid']}') z_type");
+            $data  = admin_page($model, $where,'p.add_time desc',$field);
+            if(!$data['data']) return ajax('已是全部数据', 1, $data);
+            return ajax('获取成功', 1, $data);
+        }
+        if($type ==2){
+            $model = new Questions();
+            $where=['classify'=>1,'u_id'=>$uid];
+            $model=$model->alias('p')
+                ->join('user t','t.uid=p.u_id','left');
+            // 获取数据
+            $field=array('p.id','p.money','p.contents','p.url','p.add_time','t.company_name','t.unit_title',' t.name','t.face','p.zan','p.comment_num','p.type',
+                "(select if(count(*)>0,1,0) from `tpn_zan` where `cid`=p.id and `uid`='{$this->user['uid']}') z_type");
+            $data  = admin_page($model, $where,'p.add_time desc',$field);
+            if(!$data['data']) return ajax('已是全部数据', 1, $data);
+            return ajax('获取成功', 1, $data);
+        }
+        if($type ==3){
+            $model = new Questions();
+            $where=['classify'=>3,'u_id'=>$uid];
+            $model=$model->alias('p')
+                ->join('user t','t.uid=p.u_id','left');
+            // 获取数据
+            $field=array('p.id','p.money','p.contents','p.url','p.add_time','t.company_name','t.unit_title',' t.name','t.face','p.zan','p.comment_num','p.type',
+                "(select if(count(*)>0,1,0) from `tpn_zan` where `cid`=p.id and `uid`='{$this->user['uid']}') z_type");
+            $data  = admin_page($model, $where,'p.add_time desc',$field);
+            if(!$data['data']) return ajax('已是全部数据', 1, $data);
+            return ajax('获取成功', 1, $data);
+        }
+        if($type ==4){
+            $model = new User();
+            $where=['uid'=>$uid];
+            $data  = admin_page($model, $where);
+            if(!$data['data']) return ajax('已是全部数据', 1, $data);
+            return ajax('获取成功', 1, $data);
+        }
+
+
+    }
+
+    /**
+     * app创建直播
+     */
+    public function addlive()
+    {
+
+        $Course = new Course();
+        if(empty($this->param['title'])) return ajax("请上传正确参数",2);
+        $data['title'] = $this->param['title'];
+        $data['photo'] = $this -> param['photo'];
+        $data['describe'] = $this -> param['describe'];
+        $data['start'] = $this -> param['start'];
+        $data['created_at']=time();
+        $data['teacher_id'] = $this->user['uid'];
+        $data['enterprise_id'] = $this->user['enterprise_id'];
+        $data['type']=3;
+        $data['scene']=1;
+        $id = $Course->addData($data);
+        if (!$id) return ajax('添加失败', 2);
+
+        $Rongcloud =new Rongcloudapi();
+        $Aliyun =new Aliyun();
+        $Rongcloud->RongCloud->chatroom()->create(["zb_a_$id"=>$data['title']]);
+        $updatadata=array();
+        $updatadata['aliyun_push'] =$Aliyun->getPushSteam("zb_a_$id",$data['start']);
+        $updatadata['aliyun_pulla'] =$Aliyun->getPullSteam("zb_a_$id",$data['start']);
+        $Course -> editData(['id'=>$id],$updatadata);
+
+
+        return ajax($updatadata['aliyun_push'], 1);
+
+
+    }
+
+    /**
+     * 直播结束
+     */
+    public function endlive()
+    {
+
+        $Course = new Course();
+
+        if(empty($this->param['id'])) return ajax("请上传直播课id",2);
+        $id = $this->param['id'];
+        $where = ['id'=>$id];
+        $Course->editData($where,['scene'=>2]);
+        return ajax('结束成功', 1);
+
+    }
+
+
+}

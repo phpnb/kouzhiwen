@@ -1,0 +1,73 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th width="150" class="msg">banner位置</th>
+                <td>
+                    {foreach $checkVal['type'] as $v=>$k}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="type" value="{$v}">
+                        &nbsp;&nbsp;{$k}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">跳转位置</th>
+                <td>
+                    {foreach $checkVal['mold'] as $v=>$k}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="mold" value="{$v}">
+                        &nbsp;&nbsp;{$k}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">关联id</th>
+                <td><input name="pid" type="text" class="form-control w400 intNumber" maxlength="10" datatype="*"></td>
+            </tr>
+            <tr>
+                <th>图片</th>
+                <td>
+                    <div id="filePicker">上传图片</div>
+                    <div id="fileList" class="uploader-list" datnum="all">
+                        <div class="upload-ts">
+                            <input type="hidden" name="img_url" value="" datatype="*" nullmsg="请上传图片">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit" class="btn btn-success">保 存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+<script type="text/javascript"  src="/static/admin/js/plugin.js"></script>
+<script>
+    $(function(){
+        FloatNumber(".floatNumber",2);
+        inputIntNumber(".intNumber");
+        file_upload({
+            pick        : '#filePicker',
+            container   : '#fileList',
+            server      : '{:url("admin/root/upload/AliyunOss")}',
+            mulit       : false,
+            inputname   : 'img_url',
+            len:6
+        });
+
+    })
+</script>
+{include file="admin/root/common/footer"}

@@ -1,0 +1,140 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <form action="" class="verify-form rform">
+        <table class="table">
+            <tr>
+                <td width="150"></td>
+                <td></td>
+            </tr>
+            {eq name="$checkVal['enterprise_id']" value="0"}
+            <tr id="classify_id">
+                <th class="msg">分类</th>
+                <td>
+                    <select name="classify_id" class="form-control w426" datatype="n">
+                        {foreach $checkVal['classify_idVal'] as $k=>$v}
+                        <option value="{$k}" {if($data.classify_id==$k)} selected {/if}>{$v}</option>
+                        {/foreach}
+                    </select>
+                </td>
+            </tr>
+            {/eq}
+            <tr>
+                <th width="150" class="msg">banner位置</th>
+                <td>
+                    {foreach $checkVal['type'] as $v=>$k}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="type" value="{$v}" {if($data.type==$v)} checked {/if}>
+                        &nbsp;&nbsp;{$k}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">跳转位置</th>
+                <td>
+                    {foreach $checkVal['mold'] as $v=>$k}
+                    <label class="checkbox-inline">
+                        <input type="radio" name="mold" value="{$v}" {if($data.mold==$v)} checked {/if}>
+                        &nbsp;&nbsp;{$k}
+                    </label>
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">关联数据</th>
+                <td>
+                    <select name="pid" class="form-control w426 pid" datatype="*">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="150" class="msg">图片</th>
+                <td>
+                    <div id="filePicker">上传图片</div>
+                    <div id="fileList" class="uploader-list" datnum="all">
+                        <div class="upload-ts">
+                            <input type="hidden" name="img_url" value="{$data.img_url}" datatype="*" nullmsg="请上传图片">
+                            <img src="{$data.img_url}" style="max-width:200px;">
+                            <span class="Validform_checktip"></span>
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input name="id" type="hidden" value="{$data.id}">
+                </td>
+                <td><button type="submit" class="btn btn-success">保存</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{include file="admin/root/common/webuploader"}
+<script type="text/javascript"  src="/static/admin/js/plugin.js"></script>
+<script>
+    $(function(){
+        FloatNumber(".floatNumber",2);
+        inputIntNumber(".intNumber");
+        file_upload({
+            pick        : '#filePicker',
+            container   : '#fileList',
+            server      : '{:url("admin/root/upload/AliyunOss")}',
+            mulit       : false,
+            inputname   : 'img_url',
+            len:6
+        });
+        $("input[name='mold']").click(function () {
+            classlist(this.value);
+        });
+        $("input[name='type']").click(function(){
+            pricetype(this.value);
+        });
+    })
+
+    function classlist(type) {
+            $('.class_id').html('');
+            $.ajax({
+                url: '{:url("admin/root/banner/typelist")}',
+                type: 'get',
+                dataType: 'json',
+                data: {type: type},
+                success: function (data) {
+                    let html = "";
+                    if (data.data.length > 0) {
+                        data = data.data;
+                        for (var i = 0; i < data.length; i++) {
+                            let selected='';
+                            if({$data.pid}==data[i]['id']){
+                                selected='selected';
+                            }
+
+                            html += "<option value=" + data[i]['id'] + " "+selected+">" + data[i]['title'] + "</option>";
+                        }
+                    }
+                    $('.pid').html(html);
+
+                },
+                error: function () {
+
+                }
+            })
+    }
+
+    function pricetype(type) {
+        var enterprise_id={$checkVal['enterprise_id']};
+        if(enterprise_id !=0){
+            return true;
+        }
+        if(type==4){
+            $("#classify_id").show();
+        }else{
+            $("#classify_id").hide();
+        }
+    }
+
+    classlist({$data.mold});
+    pricetype({$data.type});
+</script>
+{include file="admin/root/common/footer"}

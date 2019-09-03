@@ -1,0 +1,60 @@
+{include file="admin/root/common/header"}
+<div id="right_content">
+    <div class="top-info">
+        <i class="glyphicon glyphicon-home"></i>
+        通知管理
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="clearfix menu">
+        <li><a href="{:url('index')}" >用户列表</a></li>
+        <li><a href="{:url('record')}" class="this">推送记录</a></li>
+    </ul>
+
+    <div class="table-box">
+        <div class="table-header clearfix">
+            <div class="all-operation fl clearfix">
+
+            </div>
+            <form action="" method="get" class="clearfix fr">
+                <input type="text" value="{$keywords}" name="keywords" class="form-control search-in" placeholder="账号/姓名/昵称">
+                <button onclick="loding();" type="submit" class="btn btn-info btn-sm fl">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th>账号</th>
+                <th>姓名</th>
+                <th>昵称</th>
+                <th>头像</th>
+                <th>关联类型</th>
+                <th>标题</th>
+                <th>描述</th>
+                <th>推送时间</th>
+            </tr>
+            {if (!empty($data))}
+            {foreach $data AS $v}
+            <tr>
+                <td>{$v.phone}</td>
+                <td>{$v.name}</td>
+                <td>{$v.nickname}</td>
+                <td><img src='{$v.face}' style='max-width:100px;'></td>
+                <td>
+                    {if (!empty($checkVal['noticetypeVal'][$v['type']]))}
+                    {$checkVal['noticetypeVal'][$v['type']]}
+                    {/if}
+                </td>
+                <td>{$v.title}</td>
+                <td>{$v.describe}</td>
+                <td>{$v.created_at ? date('Y-m-d H:i:s', $v.created_at) : '----'}</td>
+            </tr>
+            {/foreach}
+            {/if}
+        </table>
+        <div>{$page}</div>
+    </div>
+</div>
+{include file="admin/root/common/footer"}

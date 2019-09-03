@@ -1,0 +1,307 @@
+<!DOCTYPEhtml><html><head><metacharset="UTF-8"><title>SystemError</title><metaname="robots"content="noindex,nofollow"/><metaname="viewport"content="width=device-width, initial-scale=1, user-scalable=no"><style>/*Base*/body{
+    color: #333;font: 14pxVerdana,
+    "Helvetica Neue",
+    helvetica,
+    Arial,
+    'MicrosoftYaHei',
+    sans-serif;margin: 0;padding: 020px20px;word-break: break-word;
+}h1{
+     margin: 10px00;font-size: 28px;font-weight: 500;line-height: 32px;
+ }h2{
+      color: #4288ce;font-weight: 400;padding: 6px0;margin: 6px00;font-size: 18px;border-bottom: 1pxsolid#eee;
+  }h3.subheading{
+       color: #4288ce;margin: 6px00;font-weight: 400;
+   }h3{
+        margin: 12px;font-size: 16px;font-weight: bold;
+    }abbr{
+         cursor: help;text-decoration: underline;text-decoration-style: dotted;
+     }a{
+          color: #868686;cursor: pointer;
+      }a: hover{
+           text-decoration: underline;
+       }.line-error{
+            background: #f8cbcb;
+        }.echotable{
+             width: 100%;
+         }.echopre{
+              padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border: 0;border-radius: 3px;font-family: Consolas,
+    "Liberation Mono",
+    Menlo,
+    Courier,
+    monospace;
+          }.echopre>pre{
+               padding: 0;margin: 0;
+           }/*Layout*/.col-md-3{
+                          width: 25%;
+                      }.col-md-9{
+                           width: 75%;
+                       }[
+    class^="col-md-"
+]{
+                            float: left;
+                        }.clearfix{
+                             clear: both;
+                         }@mediaonlyscreenand(min-device-width: 375px)and(max-device-width: 667px){
+    .col-md-3,
+    .col-md-9{
+        width: 100%;
+    }
+}/*ExceptionInfo*/.exception{
+                      margin-top: 20px;
+                  }.exception.message{
+                       padding: 12px;border: 1pxsolid#ddd;border-bottom: 0none;line-height: 18px;font-size: 16px;border-top-left-radius: 4px;border-top-right-radius: 4px;font-family: Consolas,
+    "Liberation Mono",
+    Courier,
+    Verdana,
+    "微软雅黑";
+                   }.exception.code{
+                        float: left;text-align: center;color: #fff;margin-right: 12px;padding: 16px;border-radius: 4px;background: #999;
+                    }.exception.source-code{
+                         padding: 6px;border: 1pxsolid#ddd;background: #f9f9f9;overflow-x: auto;
+                     }.exception.source-codepre{
+                          margin: 0;
+                      }.exception.source-codepreol{
+                           margin: 0;color: #4288ce;display: inline-block;min-width: 100%;box-sizing: border-box;font-size: 14px;font-family: "Century Gothic",
+    Consolas,
+    "Liberation Mono",
+    Courier,
+    Verdana;padding-left: 56px;
+                       }.exception.source-codepreli{
+                            border-left: 1pxsolid#ddd;height: 18px;line-height: 18px;
+                        }.exception.source-codeprecode{
+                             color: #333;height: 100%;display: inline-block;border-left: 1pxsolid#fff;font-size: 14px;font-family: Consolas,
+    "Liberation Mono",
+    Courier,
+    Verdana,
+    "微软雅黑";
+                         }.exception.trace{
+                              padding: 6px;border: 1pxsolid#ddd;border-top: 0none;line-height: 16px;font-size: 14px;font-family: Consolas,
+    "Liberation Mono",
+    Courier,
+    Verdana,
+    "微软雅黑";
+                          }.exception.traceol{
+                               margin: 12px;
+                           }.exception.traceolli{
+                                padding: 2px4px;
+                            }.exceptiondiv: last-child{
+                                 border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;
+                             }/*ExceptionVariables*/.exception-vartable{
+                                                        width: 100%;margin: 12px0;box-sizing: border-box;table-layout: fixed;word-wrap: break-word;
+                                                    }.exception-vartablecaption{
+                                                         text-align: left;font-size: 16px;font-weight: bold;padding: 6px0;
+                                                     }.exception-vartablecaptionsmall{
+                                                          font-weight: 300;display: inline-block;margin-left: 10px;color: #ccc;
+                                                      }.exception-vartabletbody{
+                                                           font-size: 13px;font-family: Consolas,
+    "Liberation Mono",
+    Courier,
+    "微软雅黑";
+                                                       }.exception-vartabletd{
+                                                            padding: 06px;vertical-align: top;word-break: break-all;
+                                                        }.exception-vartabletd: first-child{
+                                                             width: 28%;font-weight: bold;white-space: nowrap;
+                                                         }.exception-vartabletdpre{
+                                                              margin: 0;
+                                                          }/*CopyrightInfo*/.copyright{
+                                                                                margin-top: 24px;padding: 12px0;border-top: 1pxsolid#eee;
+                                                                            }/*SPANelementswiththeclassesbelowareaddedbyprettyprint.*/pre.prettyprint.pln{
+                                                                                                                                          color: #000
+                                                                                                                                      }/*plaintext*/pre.prettyprint.str{
+                                                                                                                                                        color: #080
+                                                                                                                                                    }/*stringcontent*/pre.prettyprint.kwd{
+                                                                                                                                                                          color: #008
+                                                                                                                                                                      }/*akeyword*/pre.prettyprint.com{
+                                                                                                                                                                                       color: #800
+                                                                                                                                                                                   }/*acomment*/pre.prettyprint.typ{
+                                                                                                                                                                                                    color: #606
+                                                                                                                                                                                                }/*atypename*/pre.prettyprint.lit{
+                                                                                                                                                                                                                  color: #066
+                                                                                                                                                                                                              }/*aliteralvalue*//*punctuation,
+lispopenbracket,
+lispclosebracket*/pre.prettyprint.pun,
+                                                                                                                                                                                                                                 pre.prettyprint.opn,
+                                                                                                                                                                                                                                 pre.prettyprint.clo{
+                                                                                                                                                                                                                                     color: #660
+                                                                                                                                                                                                                                 }pre.prettyprint.tag{
+                                                                                                                                                                                                                                      color: #008
+                                                                                                                                                                                                                                  }/*amarkuptagname*/pre.prettyprint.atn{
+                                                                                                                                                                                                                                                         color: #606
+                                                                                                                                                                                                                                                     }/*amarkupattributename*/pre.prettyprint.atv{
+                                                                                                                                                                                                                                                                                  color: #080
+                                                                                                                                                                                                                                                                              }/*amarkupattributevalue*/pre.prettyprint.dec,
+                                                                                                                                                                                                                                                                                                        pre.prettyprint.var{
+                                                                                                                                                                                                                                                                                                            color: #606
+                                                                                                                                                                                                                                                                                                        }/*adeclaration;avariablename*/pre.prettyprint.fun{
+                                                                                                                                                                                                                                                                                                                                           color: red
+                                                                                                                                                                                                                                                                                                                                       }/*afunctionname*/</style></head><body><divclass="echo">NULL</div><divclass="exception"><divclass="message"><divclass="info"><div><h2>[
+    2
+    ]<abbrtitle="think\exception\ErrorException">ErrorException</abbr>in<aclass="toggle"title="/www/wwwroot/kouzhiwen/application/common/model/Comment.php line 96">Comment.phpline96</a></h2></div><div><h1>Illegalstringoffset'contents'</h1></div></div></div><divclass="source-code"><preclass="prettyprint lang-php"><olstart="87"><liclass="line-87"><code>'a.like_num',
+
+</code></li><liclass="line-88"><code>'a.comment_num',
+
+</code></li><liclass="line-89"><code>'u.nickname',
+
+</code></li><liclass="line-90"><code>'u.face',
+
+</code></li><liclass="line-91"><code>&quot;(selectif(count(*)&gt;0,
+    1,
+    0)from`tpn_comment_like`where`comment_id`=a.idand`uid`='{
+    $uid
+    }')is_like&quot;//是否点赞
+</code></li><liclass="line-92"><code>
+    ];
+</code></li><liclass="line-93"><code>$data=$this-&gt;alias('a')-&gt;field($field)-&gt;join(&quot;useru&quot;,
+    &quot;u.uid=a.uid&quot;)
+</code></li><liclass="line-94"><code>-&gt;where($where)-&gt;order(&quot;iddesc&quot;)-&gt;find()-&gt;toArray();
+</code></li><liclass="line-95"><code>foreach($dataas$k=&gt;$v){
+
+</code></li><liclass="line-96"><code>var_dump($v[
+    'contents'
+    ]);
+</code></li><liclass="line-97"><code>//$data[
+    $k
+    ][
+    'contents'
+    ]=base64_decode($v[
+    'contents'
+    ]);
+</code></li><liclass="line-98"><code>
+    }
+</code></li><liclass="line-99"><code>die;
+</code></li><liclass="line-100"><code>if(!$data)return$data;
+</code></li><liclass="line-101"><code>
+</code></li><liclass="line-102"><code>//获取评论下的子评论
+</code></li><liclass="line-103"><code>$data[
+    'cmment'
+    ]=$this-&gt;getPidData($id);
+</code></li><liclass="line-104"><code>
+</code></li><liclass="line-105"><code>return$data;
+</code></li></ol></pre></div><divclass="trace"><h2>CallStack</h2><ol><li>in<aclass="toggle"title="/www/wwwroot/kouzhiwen/application/common/model/Comment.php line 96">Comment.phpline96</a></li><li>at<abbrtitle="think\Error">Error</abbr>: : appError(2,
+    '<aclass="toggle"title="Illegal string offset 'contents'">Illegalstringoffse...</a>',
+    '<aclass="toggle"title="/www/wwwroot/kouzhiwen/application/common/model/Comment.php">/www/wwwroot/kouzhiw...</a>',
+    96,
+    [
+    'id'=>'809',
+    'uid'=>600,
+    'where'=>[
+    'a.id'=>'809'
+    ],
+    ...
+    ])in<aclass="toggle"title="/www/wwwroot/kouzhiwen/application/common/model/Comment.php line 96">Comment.phpline96</a></li><li>at<abbrtitle="app\common\model\Comment">Comment</abbr>->getDetails('809',
+    600)in<aclass="toggle"title="/www/wwwroot/kouzhiwen/application/api/discover/controller/Comment.php line 194">Comment.phpline194</a></li><li>at<abbrtitle="app\api\discover\controller\Comment">Comment</abbr>->details()</li><li>at<abbrtitle="ReflectionMethod">ReflectionMethod</abbr>->invokeArgs(<em>object</em>(<abbrtitle="app\api\discover\controller\Comment">Comment</abbr>),
+    [
+
+    ])in<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php line 224">App.phpline224</a></li><li>at<abbrtitle="think\App">App</abbr>: : invokeMethod([
+    <em>object</em>(<abbrtitle="app\api\discover\controller\Comment">Comment</abbr>),
+    'details'
+    ],
+    [
+
+    ])in<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php line 425">App.phpline425</a></li><li>at<abbrtitle="think\App">App</abbr>: : module([
+    'api',
+    'discover',
+    'comment'
+    ],
+    [
+    'app_namespace'=>'app',
+    'app_debug'=><em>true</em>,
+    'app_trace'=><em>false</em>,
+    ...
+    ],
+    <em>null</em>)in<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/library/think/App.php line 130">App.phpline130</a></li><li>at<abbrtitle="think\App">App</abbr>: : run()in<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/start.php line 18">start.phpline18</a></li><li>atrequire('<aclass="toggle"title="/www/wwwroot/kouzhiwen/thinkphp/start.php">/www/wwwroot/kouzhiw...</a>')in<aclass="toggle"title="/www/wwwroot/kouzhiwen/public/index.php line 34">index.phpline34</a></li></ol></div></div><divclass="exception-var"><h2>ExceptionDatas</h2><table><caption>ErrorContext</caption><tbody><tr><td>id</td><td>809</td></tr><tr><td>uid</td><td>600</td></tr><tr><td>where</td><td>{
+    &quot;a.id&quot;: &quot;809&quot;
+    }</td></tr><tr><td>field</td><td>[
+    &quot;a.id&quot;,
+    &quot;a.contents&quot;,
+    &quot;a.add_time&quot;,
+    &quot;a.like_num&quot;,
+    &quot;a.comment_num&quot;,
+    &quot;u.nickname&quot;,
+    &quot;u.face&quot;,
+    &quot;(selectif(count(*)&gt;0,
+    1,
+    0)from`tpn_comment_like`where`comment_id`=a.idand`uid`='600')is_like&quot;
+    ]</td></tr><tr><td>data</td><td>{
+    &quot;id&quot;: 809,
+    &quot;contents&quot;: &quot;8J+YofCfmKE=&quot;,
+    &quot;add_time&quot;: 1567152490,
+    &quot;like_num&quot;: 1,
+    &quot;comment_num&quot;: 1,
+    &quot;nickname&quot;: &quot;庞公铭&quot;,
+    &quot;face&quot;: &quot;\/uploads\/user\/images\/2019\/08\/06\/1565054458cd94d894731f94ffa4482c6fdd07d799.jpg&quot;,
+    &quot;is_like&quot;: 1
+    }</td></tr><tr><td>k</td><td>contents</td></tr><tr><td>v</td><td>8J+YofCfmKE=</td></tr></tbody></table></div><divclass="exception-var"><h2>EnvironmentVariables</h2><div><divclass="clearfix"><divclass="col-md-3"><strong>GETData</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><h3class="subheading">POSTData</h3><div><divclass="clearfix"><divclass="col-md-3"><strong>comment_id</strong></div><divclass="col-md-9"><small>809</small></div></div></div></div><div><divclass="clearfix"><divclass="col-md-3"><strong>Files</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><divclass="clearfix"><divclass="col-md-3"><strong>Cookies</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><divclass="clearfix"><divclass="col-md-3"><strong>Session</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><h3class="subheading">Server/RequestData</h3><div><divclass="clearfix"><divclass="col-md-3"><strong>USER</strong></div><divclass="col-md-9"><small>www</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HOME</strong></div><divclass="col-md-9"><small>/home/www</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>FCGI_ROLE</strong></div><divclass="col-md-9"><small>RESPONDER</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REDIRECT_STATUS</strong></div><divclass="col-md-9"><small>200</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>proxy-nokeepalive</strong></div><divclass="col-md-9"><small>1</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_ACCEPT</strong></div><divclass="col-md-9"><small>text/html,
+    application/xhtml+xml,
+    application/xml;q=0.9,
+    */*;q=0.8</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_CONNECTION</strong></div><divclass="col-md-9"><small>close</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONTENT_TYPE</strong></div><divclass="col-md-9"><small>application/x-www-form-urlencoded</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_LOGINTOKEN</strong></div><divclass="col-md-9"><small>d770830ce0d769d9f3e56e2233a65b5c</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_CACHE_CONTROL</strong></div><divclass="col-md-9"><small>no-cache</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_PRAGMA</strong></div><divclass="col-md-9"><small>no-cache</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_USER_AGENT</strong></div><divclass="col-md-9"><small>Java/1.8.0_171</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>HTTP_HOST</strong></div><divclass="col-md-9"><small>api.kzwchina.com</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONTENT_LENGTH</strong></div><divclass="col-md-9"><small>14</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>PATH</strong></div><divclass="col-md-9"><small>/usr/local/sbin: /usr/local/bin: /usr/sbin: /usr/bin</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>LD_LIBRARY_PATH</strong></div><divclass="col-md-9"><small>/www/server/apache/lib</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_SIGNATURE</strong></div><divclass="col-md-9"><small>&lt;address&gt;ApacheServeratapi.kzwchina.comPort80&lt;/address&gt;</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_SOFTWARE</strong></div><divclass="col-md-9"><small>Apache</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_NAME</strong></div><divclass="col-md-9"><small>api.kzwchina.com</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_ADDR</strong></div><divclass="col-md-9"><small>172.31.69.247</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_PORT</strong></div><divclass="col-md-9"><small>80</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REMOTE_ADDR</strong></div><divclass="col-md-9"><small>120.78.228.12</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>DOCUMENT_ROOT</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_SCHEME</strong></div><divclass="col-md-9"><small>http</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONTEXT_PREFIX</strong></div><divclass="col-md-9"><small></small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONTEXT_DOCUMENT_ROOT</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_ADMIN</strong></div><divclass="col-md-9"><small>webmaster@example.com</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SCRIPT_FILENAME</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public/index.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REMOTE_PORT</strong></div><divclass="col-md-9"><small>47606</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REDIRECT_URL</strong></div><divclass="col-md-9"><small>/discover/comment/details</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REDIRECT_QUERY_STRING</strong></div><divclass="col-md-9"><small>s=/discover/comment/details</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>GATEWAY_INTERFACE</strong></div><divclass="col-md-9"><small>CGI/1.1</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SERVER_PROTOCOL</strong></div><divclass="col-md-9"><small>HTTP/1.1</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_METHOD</strong></div><divclass="col-md-9"><small>POST</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>QUERY_STRING</strong></div><divclass="col-md-9"><small>s=/discover/comment/details</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_URI</strong></div><divclass="col-md-9"><small>/discover/comment/details</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>SCRIPT_NAME</strong></div><divclass="col-md-9"><small>/index.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>PHP_SELF</strong></div><divclass="col-md-9"><small>/index.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_TIME_FLOAT</strong></div><divclass="col-md-9"><small>1567154228.0927</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>REQUEST_TIME</strong></div><divclass="col-md-9"><small>1567154228</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>PATH_INFO</strong></div><divclass="col-md-9"><small>/discover/comment/details</small></div></div></div></div><div><divclass="clearfix"><divclass="col-md-3"><strong>EnvironmentVariables</strong></div><divclass="col-md-9"><small>empty</small></div></div></div><div><h3class="subheading">ThinkPHPConstants</h3><div><divclass="clearfix"><divclass="col-md-3"><strong>APP_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public/../application/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>EXTEND_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public/../extend/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>THINK_VERSION</strong></div><divclass="col-md-9"><small>5.0.7</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>THINK_START_TIME</strong></div><divclass="col-md-9"><small>1567154228.0932</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>THINK_START_MEM</strong></div><divclass="col-md-9"><small>270408</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>EXT</strong></div><divclass="col-md-9"><small>.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>DS</strong></div><divclass="col-md-9"><small>/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>THINK_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/thinkphp/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>LIB_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/thinkphp/library/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CORE_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/thinkphp/library/think/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>TRAIT_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/thinkphp/library/traits/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>ROOT_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>VENDOR_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/vendor/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>RUNTIME_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/runtime/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>LOG_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/runtime/log/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CACHE_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/runtime/cache/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>TEMP_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/runtime/temp/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONF_PATH</strong></div><divclass="col-md-9"><small>/www/wwwroot/kouzhiwen/public/../application/</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>CONF_EXT</strong></div><divclass="col-md-9"><small>.php</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>ENV_PREFIX</strong></div><divclass="col-md-9"><small>PHP_</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>IS_CLI</strong></div><divclass="col-md-9"><small>false</small></div></div><divclass="clearfix"><divclass="col-md-3"><strong>IS_WIN</strong></div><divclass="col-md-9"><small>false</small></div></div></div></div></div><divclass="copyright"><atitle="官方网站"href="http://www.thinkphp.cn">ThinkPHP</a><span>V5.0.7</span><span>{
+十年磨一剑-为API开发设计的高性能框架
+}</span></div><script>varLINE=96;function$(selector,
+    node){
+    varelements;node=node||document;if(document.querySelectorAll){
+        elements=node.querySelectorAll(selector);
+    }else{
+        switch(selector.substr(0,
+            1)){
+            case'#': elements=[
+                node.getElementById(selector.substr(1))
+            ];break;case'.': if(document.getElementsByClassName){
+                elements=node.getElementsByClassName(selector.substr(1));
+            }else{
+                elements=get_elements_by_class(selector.substr(1),
+                    node);
+            }break;default: elements=node.getElementsByTagName();
+        }
+    }returnelements;functionget_elements_by_class(search_class,
+        node,
+        tag){
+        varelements=[
+
+        ],
+            eles,
+            pattern=newRegExp('(^|\\s)'+search_class+'(\\s|$)');node=node||document;tag=tag||'*';eles=node.getElementsByTagName(tag);for(vari=0;i<eles.length;i++){
+            if(pattern.test(eles[
+                i
+                ].className)){
+                elements.push(eles[
+                    i
+                    ])
+            }
+        }returnelements;
+    }
+}$.getScript=function(src,
+                      func){
+    varscript=document.createElement('script');script.async='async';script.src=src;script.onload=func||function(){
+
+    };$('head')[
+        0
+        ].appendChild(script);
+};(function(){
+    varfiles=$('.toggle');varol=$('ol',
+        $('.prettyprint')[
+            0
+            ]);varli=$('li',
+        ol[
+            0
+            ]);//短路径和长路径变换for(vari=0;i<files.length;i++){
+    files[
+        i
+        ].ondblclick=function(){
+        vartitle=this.title;this.title=this.innerHTML;this.innerHTML=title;
+    }
+}//设置出错行varerr_line=$('.line-'+LINE,
+ol[
+    0
+    ])[
+    0
+];err_line.className=err_line.className+'line-error';$.getScript('//cdn.bootcss.com/prettify/r298/prettify.min.js',
+    function(){
+        prettyPrint();//解决Firefox浏览器一个很诡异的问题//当代码高亮后，ol的行号莫名其妙的错位//但是只要刷新li里面的html重新渲染就没有问题了if(window.navigator.userAgent.indexOf('Firefox')>=0){
+        ol[
+            0
+            ].innerHTML=ol[
+            0
+            ].innerHTML;
+    }
+});
+})();</script></body></html>
